@@ -389,13 +389,6 @@
 
   
   <url>
-    <loc>http://yoursite-url/tags/SourceCode/</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite-url/tags/Ajax/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
@@ -410,7 +403,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
+    <loc>http://yoursite-url/tags/SourceCode/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -424,35 +417,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Java8/</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/tags/ORM-%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/tags/JavaScript/</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/tags/Maven/</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/tags/MySQL/</loc>
+    <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -466,7 +431,42 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/tags/ORM-%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2020-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/Maven/</loc>
+    <lastmod>2020-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/Java8/</loc>
+    <lastmod>2020-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/JavaScript/</loc>
+    <lastmod>2020-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/tags/NIO/</loc>
+    <lastmod>2020-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/MySQL/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -508,6 +508,13 @@
   </url>
   
   <url>
+    <loc>http://yoursite-url/tags/%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2020-12-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/tags/%E7%BA%BF%E7%A8%8B/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
@@ -515,7 +522,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/%E6%9F%A5%E6%89%BE%E7%AE%97%E6%B3%95/</loc>
+    <loc>http://yoursite-url/tags/Java-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E7%BB%93%E6%9E%84%E5%9E%8B%EF%BC%89/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -543,7 +550,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/tags/Java-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%88%E7%BB%93%E6%9E%84%E5%9E%8B%EF%BC%89/</loc>
+    <loc>http://yoursite-url/tags/%E9%87%8D%E4%B8%AD%E4%B9%8B%E9%87%8D/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -551,13 +558,6 @@
   
   <url>
     <loc>http://yoursite-url/tags/JVM/</loc>
-    <lastmod>2020-12-31</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/tags/%E9%87%8D%E4%B8%AD%E4%B9%8B%E9%87%8D/</loc>
     <lastmod>2020-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
