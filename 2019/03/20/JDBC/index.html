@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="Time" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2019/03/20/JDBC/">
+  <title>
+    
+    Java DataBase Connectivity - Bolg
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">所爱隔山海</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#JDBC" title="JDBC">JDBC</a>
+              
+            </div>
+            <h1>Java DataBase Connectivity</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 余腾 on
+              2019-03-20
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">16</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">4.5k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="一、JDBC是-java-访问数据库的基石"><a href="#一、JDBC是-java-访问数据库的基石" class="headerlink" title="一、JDBC是 java 访问数据库的基石"></a>一、JDBC是 java 访问数据库的基石</h2><h3 id="1、JDBC基础"><a href="#1、JDBC基础" class="headerlink" title="1、JDBC基础"></a>1、JDBC基础</h3><ul>
+<li>JDBC(Java Database Connectivity)是一个独立于特定数据库管理系统、通用的SQL数据库存取和操作的公共接口（一组API）。</li>
+<li>定义了用来访问数据库的标准Java类库，使用这个类库可以以一种标准的方法、方便地访问数据库资源。</li>
+<li>JDBC为访问不同的数据库提供了一种统一的途径，为开发者屏蔽了一些细节问题。</li>
+<li>JDBC的目标是使Java程序员使用JDBC可以连接任何提供了JDBC驱动程序的数据库系统。</li>
+<li>这样就使得程序员无需对特定的数据库系统的特点有过多的了解，从而大大简化和加快了开发过程。</li>
+</ul>
+<h3 id="2、数据持久化"><a href="#2、数据持久化" class="headerlink" title="2、数据持久化"></a>2、数据持久化</h3><ul>
+<li>持久化(persistence)：把数据保存到可掉电式存储设备中以供之后使用。</li>
+<li>大多数情况下，特别是企业级应用，数据持久化意味着将内存中的数据保存到硬盘上加以”固化”，而持久化的实现过程大多通过各种关系数据库来完成。</li>
+<li>持久化的主要应用是将内存中的数据存储在关系型数据库中，当然也可以存储在磁盘文件、XML数据文件中。 </li>
+</ul>
+<hr>
+<h3 id="3、JDBC体系结构"><a href="#3、JDBC体系结构" class="headerlink" title="3、JDBC体系结构"></a>3、JDBC体系结构</h3><ul>
+<li>JDBC接口（API）包括两个层次：<ul>
+<li>面向应用的API：Java API，抽象接口，供应用程序开发人员使用（连接数据库，执行SQL语句，获得结果）。</li>
+<li>面向数据库的API：Java Driver API，供开发商开发数据库驱动程序用。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="4、JDBC驱动程序分类"><a href="#4、JDBC驱动程序分类" class="headerlink" title="4、JDBC驱动程序分类"></a>4、JDBC驱动程序分类</h3><ul>
+<li>JDBC驱动程序：各个数据库厂商根据JDBC的规范制作的 JDBC 实现类的类库。</li>
+<li>JDBC驱动程序总共有四种类型：<br>第一类：JDBC-ODBC桥。 (Open Database Connectivity，开放式数据库连接)<br>第二类：部分本地API部分Java的驱动程序。<br>第三类：JDBC网络纯Java驱动程序。 </li>
+<li><em>第四类：本地协议的纯 Java 驱动程序。*</em></li>
+</ul>
+<p>第三、四两类都是纯Java的驱动程序，因此，对于Java开发者来说，它们在性能、可移植性、功能等方面都有优势。</p>
+<hr>
+<h3 id="5、JDBC-API"><a href="#5、JDBC-API" class="headerlink" title="5、JDBC API"></a>5、JDBC API</h3><ul>
+<li>JDBC API 是一系列的接口，它使得应用程序能够进行数据库联接，执行SQL语句，并且得到返回结果。<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1f03tq9igj30ko09rjtr.jpg" width="900"/>
+
+</li>
+</ul>
+<hr>
+<h2 id="二、Driver-接口"><a href="#二、Driver-接口" class="headerlink" title="二、Driver 接口"></a>二、Driver 接口</h2><ul>
+<li>Java.sql.Driver 接口是所有 JDBC 驱动程序需要实现的接口。</li>
+<li>这个接口是提供给数据库厂商使用的，不同数据库厂商提供不同的实现。</li>
+<li>在程序中不需要直接去访问实现了 Driver 接口的类，而是由驱动程序管理器类(java.sql.DriverManager)去调用这些Driver实现。</li>
+</ul>
+<h3 id="1、加载与注册-JDBC-驱动"><a href="#1、加载与注册-JDBC-驱动" class="headerlink" title="1、加载与注册 JDBC 驱动"></a>1、加载与注册 JDBC 驱动</h3><ul>
+<li>加载 JDBC 驱动需调用 Class 类的静态方法forName()，向其传递要加载的JDBC驱动的类名。</li>
+<li>driverClass=com.mysql.jdbc.Driver</li>
+<li>加载数据库驱动程序(对应的Driver 实现类中有注册驱动的静态代码块)</li>
+<li><strong>Class.forName(driverClass)；</strong></li>
+<li>DriverManager 类是驱动程序管理器类，负责管理驱动程序。</li>
+<li>通常不用显式调用 DriverManager 类的 registerDriver() 方法来注册驱动程序类的实例。</li>
+<li>因为 Driver 接口的驱动程序类都包含了静态代码块，在这个静态代码块中，会调用 DriverManager.registerDriver() 方法来注册自身的一个实例。</li>
+</ul>
+<h3 id="2、建立连接"><a href="#2、建立连接" class="headerlink" title="2、建立连接"></a>2、建立连接</h3><ul>
+<li><strong>加入 mysql 驱动 jar包。 mysql-connector-java-5.1.7-bin.jar</strong></li>
+<li><strong>可以调用 DriverManager 类的 getConnection() 方法建立到数据库的连接。</strong><ul>
+<li><strong>DriverManager 是驱动管理类。</strong></li>
+</ul>
+</li>
+<li>JDBC URL 用于标识一个被注册的驱动程序，驱动程序管理器通过这个 URL 选择正确的驱动程序，从而建立到数据库的连接。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Connection <span class="title">getConnection</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">	<span class="comment">// 1. 准备连接数据库的 4 个字符串.</span></span><br><span class="line">	<span class="comment">// 1). 创建 Properties 对象</span></span><br><span class="line">	Properties properties = <span class="keyword">new</span> Properties();</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 2). 获取 jdbc.properties 对应的输入流</span></span><br><span class="line">	InputStream in = JDBCTools.class.getClassLoader().getResourceAsStream("jdbc.properties");</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 3). 加载 2） 对应的输入流</span></span><br><span class="line">	properties.load(in);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 4). 具体决定 user, password 等4 个字符串.</span></span><br><span class="line">	String user = properties.getProperty(<span class="string">"user"</span>);</span><br><span class="line">	String password = properties.getProperty(<span class="string">"password"</span>);</span><br><span class="line">	String jdbcUrl = properties.getProperty(<span class="string">"jdbcUrl"</span>);</span><br><span class="line">	String driver = properties.getProperty(<span class="string">"driver"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 2. 加载数据库驱动程序(对应的 Driver 实现类中有注册驱动的静态代码块.)</span></span><br><span class="line">	Class.forName(driver);</span><br><span class="line"></span><br><span class="line">	<span class="comment">// 3. 通过 DriverManager 的 getConnection() 方法获取数据库连接.</span></span><br><span class="line">	<span class="keyword">return</span> DriverManager.getConnection(jdbcUrl, user, password);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>JDBC URL的标准由三部分组成，各部分间用冒号分隔。</strong></p>
+<ul>
+<li>jdbc：mysql：//localhost：3306/test</li>
+<li>jdbc：&lt;子协议&gt;：&lt;子名称&gt;</li>
+<li><strong>协议：JDBC URL中的协议总是jdbc 。</strong></li>
+<li><strong>子协议：子协议用于标识一个数据库驱动程序。</strong></li>
+<li><strong>子名称：一种标识数据库的方法。子名称可以依不同的子协议而变化，用子名称的目的是为了定位数据库提供足够的信息。</strong></li>
+</ul>
+<hr>
+<ul>
+<li>对于 Oracle 数据库连接，采用如下形式： </li>
+<li>—&gt; jdbc：oracle：thin：@localhost：1521：sid</li>
+<li>对于 SQLServer 数据库连接，采用如下形式：</li>
+<li>—&gt; jdbc：microsoft：sqlserver//localhost：1433; DatabaseName=sid</li>
+<li>对于 MYSQL 数据库连接，采用如下形式：   </li>
+<li>—&gt; jdbc：mysql：//localhost：3306/sid</li>
+</ul>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">db.properties</span></span><br><span class="line"><span class="attr">文件内容</span></span><br><span class="line"><span class="meta">jdbc.user</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">jdbc.password</span>=<span class="string">root</span></span><br><span class="line"><span class="meta">jdbc.jdbcUrl</span>=<span class="string">jdbc：mysql：//test</span></span><br><span class="line"><span class="meta">jdbc.driverClass</span>=<span class="string">com.mysql.jdbc.Driver</span></span><br><span class="line"></span><br><span class="line"><span class="meta">jdbc.initPoolSize</span>=<span class="string">5</span></span><br><span class="line"><span class="meta">jdbc.maxPoolSize</span>=<span class="string">10</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3、访问数据库"><a href="#3、访问数据库" class="headerlink" title="3、访问数据库"></a>3、访问数据库</h3><ul>
+<li><p>数据库连接被用于向数据库服务器发送命令和 SQL 语句，在连接建立后，需要对数据库进行访问，执行 sql 语句。</p>
+</li>
+<li><p>在 java.sql 包中有 3 个接口分别定义了对数据库的调用的不同方式：</p>
+<ul>
+<li>Statement<ul>
+<li><strong>PrepatedStatement</strong></li>
+<li>CallableStatement</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="4、ResultSet-结果集。"><a href="#4、ResultSet-结果集。" class="headerlink" title="4、ResultSet 结果集。"></a>4、ResultSet 结果集。</h3><ul>
+<li>封住了使用 JDBC 进程查询的结果。</li>
+<li>通过调用 Statement 对象的 excuteQuery(sql) 可以得到结果集。<br>ResultSet 对象以逻辑表格的形式封装了执行数据库操作的结果集，ResultSet 接口由数据库厂商实现。<br>ResultSet 对象维护了一个指向当前数据行的游标，初始的时候，游标在第一行之前，可以通过 ResultSet 对象的 next() 方法移动到下一行。</li>
+<li>ResultSet 接口的常用方法：<ul>
+<li>boolean next()</li>
+<li>getString()</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5、JDBC-API-1"><a href="#5、JDBC-API-1" class="headerlink" title="5、JDBC API"></a>5、JDBC API</h3><ul>
+<li>java.sql.DriverManager用来装载驱动程序，获取数据库连接。</li>
+<li>java.sql.Connection完成对某一指定数据库的联接</li>
+<li>java.sql.Statement在一个给定的连接中作为SQL执行声明的容器，包含了两个重要的子类型。</li>
+<li>Java.sql.PreparedSatement 用于执行预编译的sql声明</li>
+<li>Java.sql.CallableStatement用于执行数据库中存储过程的调用</li>
+<li>java.sql.ResultSet对于给定声明取得结果的途径</li>
+</ul>
+<hr>
+<h3 id="6、PreparedStatement"><a href="#6、PreparedStatement" class="headerlink" title="6、PreparedStatement"></a>6、PreparedStatement</h3><p><strong>预防 SQL 注入攻击</strong></p>
+<ul>
+<li>SQL 注入是利用某些系统没有对用户输入的数据进行充分的检查。</li>
+<li>在用户输入数据中注入非法的 SQL 语句段或命令，利用系统的SQL引擎完成恶意行为的做法。</li>
+<li>对于 Java 而言，要防范 SQL 注入，只要用 PreparedStatement 取代 Statement 就可以了。</li>
+<li><strong>Statement,需要拼接字符，而 PreparedStatement 用 ? 占位符替代。则不会出现拼接现象</strong></li>
+</ul>
+<hr>
+<p><strong>可以通过调用 Connection 对象的 preparedStatement() 方法获取 PreparedStatement 对象</strong></p>
+<ul>
+<li>PreparedStatement 接口是 Statement 的子接口，它表示一条预编译过的 SQL 语句。</li>
+<li>PreparedStatement 对象所代表的 SQL 语句中的参数用问号(?)来表示。</li>
+<li>调用 PreparedStatement 对象的 setXXX() 方法来设置这些参数. setXXX() 方法有两个参数，</li>
+<li>第一个参数是要设置的 SQL 语句中的参数的索引(从 1 开始)，第二个是设置的 SQL 语句中的参数的值。</li>
+</ul>
+<h3 id="7、PreparedStatement-vs-Statement"><a href="#7、PreparedStatement-vs-Statement" class="headerlink" title="7、PreparedStatement vs Statement"></a>7、PreparedStatement vs Statement</h3><p><strong>代码的可读性和可维护性</strong></p>
+<ul>
+<li><strong>PreparedStatement 能最大可能提高性能</strong></li>
+<li>DBServer会对预编译语句提供性能优化。因为预编译语句有可能被重复调用，所以语句在被DBServer的编译器编译后的执行代码被缓存下来</li>
+<li>那么下次调用时只要是相同的预编译语句就不需要编译，只要将参数直接传入编译过的语句执行代码中就会得到执行。</li>
+</ul>
+<hr>
+<h3 id="8、DAO-Data-Access-Object"><a href="#8、DAO-Data-Access-Object" class="headerlink" title="8、DAO (Data Access Object)"></a>8、DAO (Data Access Object)</h3><p><strong>访问数据库的类，包含了对数据的CRUD，不包含业务信息。实现功能的模块化利于代码的维护升级</strong></p>
+<ul>
+<li>使用JDBC 编写 DAO 可能会包含方法：<ul>
+<li>void update();// insert update delete 操作都包含其中</li>
+<li><T> T get(Class<T> clazz,String sql,Object … args);//查询一条记录，返回对应的对象</li>
+<li><T> List<T> getForList(Class<T> clazz,String sql,Object … args);//查询多条记录，返回对象的集合</li>
+</ul>
+</li>
+</ul>
+<h3 id="9、使用-JDBC-驱动程序处理元数据"><a href="#9、使用-JDBC-驱动程序处理元数据" class="headerlink" title="9、使用 JDBC 驱动程序处理元数据"></a>9、使用 JDBC 驱动程序处理元数据</h3><p>Java 通过JDBC获得连接以后，得到一个Connection 对象，可以从这个对象获得有关数据库管理系统的各种信息，包括数据库中的各个表，表中的各个列，数据类型，触发器，存储过程等各方面的信息。<br>根据这些信息，JDBC可以访问一个事先并不了解的数据库。<br>获取这些信息的方法都是在DatabaseMetaData类的对象上实现的，而DataBaseMetaData对象是在Connection对象上获得的。 </p>
+<p><strong>DatabaseMetaData类</strong><br><strong>DatabaseMetaData 类中提供了许多方法用于获得数据源的各种信息，通过这些方法可以非常详细的了解数据库的信息：</strong></p>
+<ul>
+<li>getURL()：返回一个String类对象，代表数据库的URL。</li>
+<li>getUserName()：返回连接当前数据库管理系统的用户名。</li>
+<li>isReadOnly()：返回一个boolean值，指示数据库是否只允许读操作。</li>
+<li>getDatabaseProductName()：返回数据库的产品名称。</li>
+<li>getDatabaseProductVersion()：返回数据库的版本号。</li>
+<li>getDriverName()：返回驱动驱动程序的名称。</li>
+<li>getDriverVersion()：返回驱动程序的版本号。</li>
+</ul>
+<p><strong>ResultSetMetaData 类</strong><br><strong>可用于获取关于 ResultSet 对象中列的类型和属性信息的对象：</strong></p>
+<ul>
+<li>getColumnName(int column)：获取指定列的名称</li>
+<li>getColumnCount()：返回当前 ResultSet 对象中的列数。 </li>
+<li>getColumnTypeName(int column)：检索指定列的数据库特定的类型名称。 </li>
+<li>getColumnDisplaySize(int column)：指示指定列的最大标准宽度，以字符为单位。 </li>
+<li>isNullable(int column)：指示指定列中的值是否可以为 null。 </li>
+<li>isAutoIncrement(int column)：指示是否自动为指定列进行编号，这样这些列仍然是只读的。 </li>
+</ul>
+<hr>
+<h2 id="三、数据库事务"><a href="#三、数据库事务" class="headerlink" title="三、数据库事务"></a>三、数据库事务</h2><p><strong>在数据库中,所谓事务是指一组逻辑操作单元,使数据从一种状态变换到另一种状态。</strong></p>
+<ul>
+<li>事务的操作：先定义开始一个事务,然后对数据作修改操作,这时如果提交(COMMIT),这些修改就永久地保存下来。</li>
+<li>如果回退(ROLLBACK),数据库管理系统将放弃所作的所有修改而回到开始事务时的状态。</li>
+</ul>
+<p><strong>为确保数据库中数据的一致性,数据的操纵应当是离散的成组的逻辑单元</strong></p>
+<ul>
+<li>当它全部完成时,数据的一致性可以保持,而当这个单元中的一部分操作失败,整个事务应全部视为错误,所有从起始点以后的操作应全部回退到开始状态。</li>
+</ul>
+<hr>
+<h3 id="1、事务的-ACID-属性"><a href="#1、事务的-ACID-属性" class="headerlink" title="1、事务的 ACID 属性"></a>1、事务的 ACID 属性</h3><p><strong>原子性（Atomicity）：</strong> 是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生。<br><strong>一致性（Consistency）：</strong> 事务必须使数据库从一个一致性状态变换到另外一个一致性状态。<br><strong>隔离性（Isolation）：</strong> 是指一个事务的执行不能被其他事务干扰，即一个事务内部的操作及使用的数据对并发的其他事务是隔离的，并发执行的各个事务之间不能互相干扰。<br><strong>持久性（Durability）：</strong> 持久性是指一个事务一旦被提交，它对数据库中数据的改变就是永久性的，接下来的其他操作和数据库故障不应该对其有任何影响。</p>
+<hr>
+<h3 id="2、JDBC-事务处理"><a href="#2、JDBC-事务处理" class="headerlink" title="2、JDBC 事务处理"></a>2、JDBC 事务处理</h3><p><strong>事务：指构成单个逻辑工作单元的操作集合</strong></p>
+<ul>
+<li>事务处理：保证所有事务都作为一个工作单元 (同一个链接) 来执行，即使出现了故障，都不能改变这种执行方式。<ul>
+<li>当在一个事务中执行多个操作时，要么所有的事务都被提交(commit)，要么整个事务回滚(rollback)到最初状态</li>
+<li>当一个连接对象被创建时，默认情况下是自动提交事务：每次执行一个 SQL 语句时，如果执行成功，就会向数据库自动提交，而不能回滚。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>为了让多个 SQL 语句作为一个事务执行</strong><br> 1、 调用 Connection 对象的 setAutoCommit(false); 以取消自动提交事务。<br> 2、 在所有的 SQL 语句都成功执行后，调用 <strong>commit() 方法提交事务。</strong><br> 3、 在出现异常时，调用 <strong>rollback() 方法回滚事务。</strong><br> 4、 若此时 Connection 没有被关闭, 则需要恢复其自动提交状态。</p>
+<hr>
+<h3 id="3、数据库的隔离级别"><a href="#3、数据库的隔离级别" class="headerlink" title="3、数据库的隔离级别"></a>3、数据库的隔离级别</h3><p><strong>对于同时运行的多个事务, 当这些事务访问数据库中相同的数据时, 如果没有采取必要的隔离机制, 就会导致各种并发问题：</strong></p>
+<ul>
+<li><strong>脏读：</strong> 对于两个事务 T1, T2, T1 读取了已经被 T2 更新但还没有被提交的字段. 之后, 若 T2 回滚, T1读取的内容就是临时且无效的。</li>
+<li><strong>不可重复读：</strong> 对于两个事务 T1, T2, T1 读取了一个字段, 然后 T2 更新了该字段. 之后, T1再次读取同一个字段, 值就不同了。</li>
+<li><strong>幻读：</strong> 对于两个事务 T1, T2, T1 从一个表中读取了一个字段, 然后 T2 在该表中插入了一些新的行. 之后, 如果 T1 再次读取同一个表, 就会多出几行。</li>
+</ul>
+<hr>
+<p><strong>数据库事务的隔离性</strong></p>
+<ul>
+<li>数据库系统必须具有隔离并发运行各个事务的能力, 使它们不会相互影响, 避免各种并发问题。</li>
+<li>一个事务与其他事务隔离的程度称为隔离级别。不同隔离级别对应不同的干扰程度, 隔离级别越高, 数据一致性就越好, 但并发性越弱。</li>
+</ul>
+<hr>
+<p><strong>Mysql 数据库提供的 4 种事务隔离级别 isolation level</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">事务隔离级别</th>
+<th align="left">脏读</th>
+<th align="center">不可重复读</th>
+<th align="left">幻读</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">read-uncommitted (读未提交)</td>
+<td align="left">是</td>
+<td align="center">是</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">read-committed  (读已提交数据)</td>
+<td align="left">否</td>
+<td align="center">是</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">repeatable-read (可重复读)</td>
+<td align="left">否</td>
+<td align="center">否</td>
+<td align="left">是</td>
+</tr>
+<tr>
+<td align="left">serializable    (串行化否)</td>
+<td align="left">否</td>
+<td align="center">否</td>
+<td align="left">否</td>
+</tr>
+</tbody></table>
+<p><strong>Mysql 默认的事务隔离级别为：REPEATABLE READ</strong></p>
+<hr>
+<h3 id="4、在-MySql-中设置隔离级别"><a href="#4、在-MySql-中设置隔离级别" class="headerlink" title="4、在 MySql 中设置隔离级别"></a>4、在 MySql 中设置隔离级别</h3><ul>
+<li>SELECT @@tx_isolation; </li>
+<li>set [glogal | session] transaction isolation level 隔离级别名称;</li>
+<li>set tx_isolation=’隔离级别名称’;</li>
+</ul>
+<hr>
+<h2 id="四、批量处理JDBC语句提高处理速度"><a href="#四、批量处理JDBC语句提高处理速度" class="headerlink" title="四、批量处理JDBC语句提高处理速度"></a>四、批量处理JDBC语句提高处理速度</h2><p><strong>当需要成批插入或者更新记录时。可以采用Java的批量更新机制，这一机制允许多条语句一次性提交给数据库批量处理。通常情况下比单独提交处理更有效率。</strong></p>
+<p><strong>JDBC的批量处理语句包括下面几个方法：</strong><br>1、addBatch(String); ——&gt; 添加需要批量处理的SQL语句或是参数。<br>2、executeBatch(); ——&gt; 执行批量处理语句。<br>3、clearBatch(); ——&gt; 清空积攒sql。</p>
+<p><strong>通常我们会遇到两种批量执行SQL语句的情况：</strong><br>1、多条SQL语句的批量处理；<br>2、一个SQL语句的批量传参；</p>
+<h2 id="五、JDBC数据库连接池的必要性"><a href="#五、JDBC数据库连接池的必要性" class="headerlink" title="五、JDBC数据库连接池的必要性"></a>五、JDBC数据库连接池的必要性</h2><p><strong>在使用开发基于数据库的web程序时，传统的模式基本是按以下步骤</strong><br>1、在主程序（如servlet、beans）中建立数据库连接。<br>2、进行sql操作。<br>3、断开数据库连接。</p>
+<blockquote>
+<p>普通的JDBC数据库连接使用 DriverManager 来获取，每次向数据库建立连接的时候都要将 Connection 加载到内存中，<br>需要数据库连接，就向数据库请求一个，执行完成后断开连接。这样消耗大量的资源。数据库的连接资源没有得到很好的重复利用。<br>这种开发不能控制被创建的连接对象数，系统资源会被毫无顾及的分配出去，如连接过多，也可能导致内存泄漏，服务器崩溃。 </p>
+</blockquote>
+<hr>
+<h3 id="数据库连接池-connection-pool"><a href="#数据库连接池-connection-pool" class="headerlink" title="数据库连接池 (connection pool)"></a>数据库连接池 (connection pool)</h3><p><strong>数据库连接池负责分配、管理和释放数据库连接，它允许应用程序重复使用一个现有的数据库连接，而不是重新建立一个。</strong></p>
+<p><strong>数据库连接池技术的优点：</strong></p>
+<ul>
+<li><p><strong>资源重用</strong><br>由于数据库连接得以重用，避免了频繁创建，释放连接引起的大量性能开销。在减少系统消耗的基础上，另一方面也增加了系统运行环境的平稳性。</p>
+</li>
+<li><p><strong>更快的系统反应速度</strong><br>数据库连接池在初始化过程中，往往已经创建了若干数据库连接置于连接池中备用。此时连接的初始化工作均已完成。对于业务请求处理而言，直接利用现有可用连接，避免了数据库连接初始化和释放过程的时间开销，从而减少了系统的响应时间。</p>
+</li>
+<li><p><strong>新的资源分配手段</strong><br>对于多应用共享同一数据库的系统而言，可在应用层通过数据库连接池的配置，实现某一应用最大可用数据库连接数的限制，避免某一应用独占所有的数据库资源。</p>
+</li>
+<li><p><strong>统一的连接管理，避免数据库连接泄露</strong><br>在较为完善的数据库连接池实现中，可根据预先的占用超时设定，强制回收被占用连接，从而避免了常规数据库连接操作中可能出现的资源泄露。</p>
+</li>
+</ul>
+<hr>
+<h3 id="三种开源的数据库连接池"><a href="#三种开源的数据库连接池" class="headerlink" title="三种开源的数据库连接池"></a>三种开源的数据库连接池</h3><ul>
+<li>DataSource 通常被称为数据源，它包含连接池和连接池管理两个部分。</li>
+<li>JDBC 的数据库连接池使用 javax.sql.DataSource 来表示，DataSource 只是一个接口。</li>
+</ul>
+<p><strong>三种开源的数据库连接池</strong></p>
+<p>1、<strong>DBCP</strong> 数据库连接池</p>
+<ul>
+<li>commons-dbcp-1.x.jar</li>
+<li>commons-pool-1.x.x.jar</li>
+</ul>
+<p>2、<strong>C3P0</strong> 数据库连接池<br>3、<strong>Druid</strong> 数据库连接池 <a href="https://github.com/alibaba/druid" target="_blank" rel="noopener">Druid Github</a></p>
+<h1 id="CallableStatement"><a href="#CallableStatement" class="headerlink" title="CallableStatement"></a>CallableStatement</h1><p><strong>略…</strong></p>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551442650328&di=78dfb03450cc5fff5d31ea92de81ba1f&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160719%2F6ea36d17d5e94124ad1791eadd923554_th.jpg" width="150"/>
+
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2019/03/24/Spring/" data-toggle="tooltip" data-placement="top" title="Spring">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2019/03/15/MySQL/" data-toggle="tooltip" data-placement="top" title="MySQL">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=Java DataBase Connectivity&body=Hi,I found this website and thought you might like it http://yoursite-url/2019/03/20/JDBC/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Wed Mar 20 2019 14:30:19 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#一、JDBC是-java-访问数据库的基石"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、JDBC是 java 访问数据库的基石</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、JDBC基础"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">1、JDBC基础</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、数据持久化"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">2、数据持久化</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、JDBC体系结构"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">3、JDBC体系结构</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、JDBC驱动程序分类"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">4、JDBC驱动程序分类</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#5、JDBC-API"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">5、JDBC API</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#二、Driver-接口"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">二、Driver 接口</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、加载与注册-JDBC-驱动"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">1、加载与注册 JDBC 驱动</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、建立连接"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">2、建立连接</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、访问数据库"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">3、访问数据库</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、ResultSet-结果集。"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">4、ResultSet 结果集。</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#5、JDBC-API-1"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">5、JDBC API</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#6、PreparedStatement"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">6、PreparedStatement</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#7、PreparedStatement-vs-Statement"><span class="toc-nav-number">2.7.</span> <span class="toc-nav-text">7、PreparedStatement vs Statement</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#8、DAO-Data-Access-Object"><span class="toc-nav-number">2.8.</span> <span class="toc-nav-text">8、DAO (Data Access Object)</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#9、使用-JDBC-驱动程序处理元数据"><span class="toc-nav-number">2.9.</span> <span class="toc-nav-text">9、使用 JDBC 驱动程序处理元数据</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#三、数据库事务"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">三、数据库事务</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、事务的-ACID-属性"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">1、事务的 ACID 属性</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、JDBC-事务处理"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">2、JDBC 事务处理</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、数据库的隔离级别"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">3、数据库的隔离级别</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、在-MySql-中设置隔离级别"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">4、在 MySql 中设置隔离级别</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#四、批量处理JDBC语句提高处理速度"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">四、批量处理JDBC语句提高处理速度</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#五、JDBC数据库连接池的必要性"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">五、JDBC数据库连接池的必要性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#数据库连接池-connection-pool"><span class="toc-nav-number">5.1.</span> <span class="toc-nav-text">数据库连接池 (connection pool)</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三种开源的数据库连接池"><span class="toc-nav-number">5.2.</span> <span class="toc-nav-text">三种开源的数据库连接池</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#CallableStatement"><span class="toc-nav-number"></span> <span class="toc-nav-text">CallableStatement</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#感谢阅读"><span class="toc-nav-number"></span> <span class="toc-nav-text">感谢阅读</span></a>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#JDBC" title="JDBC">JDBC</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+          <li>
+            <a href="https://yexua.github.io/" target="_blank">yexua</a>
+          </li>
+          
+          <li>
+            <a href="https://snailclimb.gitee.io/javaguide/#/" target="_blank">JavaGuide</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/notes/%E5%89%91%E6%8C%87%20Offer%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%951" target="_blank">剑指Offer</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/" target="_blank">技术面试必备基础知识</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/Github-yuteng">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          余腾
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="Time" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2019/03/26/Hibernate/">
+  <title>
+    
+    Hibernate - Bolg
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">所爱隔山海</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#ORM 框架" title="ORM 框架">ORM 框架</a>
+              
+            </div>
+            <h1>Hibernate</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 余腾 on
+              2019-03-26
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">41</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">10.8k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="一、持久化框架"><a href="#一、持久化框架" class="headerlink" title="一、持久化框架"></a>一、持久化框架</h2><p><strong>ORM(Object/Relation Mapping)：对象/关系映射</strong></p>
+<table>
+<thead>
+<tr>
+<th>面向对象概念</th>
+<th>面向关系概念</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类</td>
+<td>表</td>
+</tr>
+<tr>
+<td>对象</td>
+<td>表的行(记录)</td>
+</tr>
+<tr>
+<td>属性</td>
+<td>表的列(字段)</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="ORM的思想"><a href="#ORM的思想" class="headerlink" title="ORM的思想"></a>ORM的思想</h3><p>将关系数据库中表中的记录映射成为对象，以对象的形式展现，程序员可以把对数据库的操作转化为对对象的操作。ORM 采用元数据来描述 对象-关系 映射细节，元数据通常采用 XML 格式，并且存放在专门的 对象-关系 映射文件中。</p>
+<img src="https://i.loli.net/2019/07/09/5d23f97bed4cb87111.png" alt="hb.png" title="hb.png" />
+
+<hr>
+<p><strong>添加 jar 包</strong><br><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1hary8cirj309m0790st.jpg" width="400"/></p>
+<hr>
+<hr>
+<h2 id="二、Hibernate-配置文件"><a href="#二、Hibernate-配置文件" class="headerlink" title="二、Hibernate 配置文件"></a>二、Hibernate 配置文件</h2><p><strong>Hibernate 配置文件主要用于配置数据库连接和 Hibernate 运行时所需的各种属性。</strong></p>
+<p>每个 Hibernate 配置文件对应一个 Configuration 对象。</p>
+<ul>
+<li>Hibernate配置文件可以有两种格式：<ul>
+<li><del>hibernate.properties</del></li>
+<li><strong>hibernate.cfg.xml (推荐)</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="1、创建-hibernate-cfg-xml"><a href="#1、创建-hibernate-cfg-xml" class="headerlink" title="1、创建 hibernate.cfg.xml"></a>1、创建 hibernate.cfg.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hibernate-configuration</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">session-factory</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 配置连接数据库的基本信息 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connection.username"</span>&gt;</span>root<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connection.password"</span>&gt;</span>root<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connection.driver_class"</span>&gt;</span>com.mysql.jdbc.Driver<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connection.url"</span>&gt;</span>jdbc:mysql://localhost:3306/hibernate5<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">&lt;!-- 配置 hibernate 的基本信息 --&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- hibernate 所使用的数据库方言 MySQL5InnoDBDialect 注意是MySQL5 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dialect"</span>&gt;</span>org.hibernate.dialect.MySQL5InnoDBDialect<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">&lt;!-- 执行操作时是否在控制台打印 SQL --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"show_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">&lt;!-- 是否对 SQL 进行格式化 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"format_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">&lt;!-- 指定自动生成数据表的策略 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hbm2ddl.auto"</span>&gt;</span>update<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">&lt;!-- 指定关联的 .hbm.xml 文件 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mapping</span> <span class="attr">resource</span>=<span class="string">"com/hibernate/News.hbm.xml"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="tag">&lt;/<span class="name">session-factory</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">hibernate-configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">对于Oracle有效 对于 MySQL无效</span><br><span class="line"><span class="comment">&lt;!-- 设定 JDBC 的 Statement 读取数据的时候每次从数据库中取出的记录条数 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.jdbc.fetch_size"</span>&gt;</span>100<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 设定对数据库进行批量删除，批量更新和批量插入的时候的批次大小 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"jdbc.batch_size"</span>&gt;</span>30<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2、创建持久化-Java-类"><a href="#2、创建持久化-Java-类" class="headerlink" title="2、创建持久化 Java 类"></a>2、创建持久化 Java 类</h3><ul>
+<li>Hibernate 不要求持久化类继承任何父类或实现接口，这可以保证代码不被污染。这就是Hibernate被称为低侵入式设计的原因 </li>
+</ul>
+<p><strong>1、提供一个无参的构造器：</strong> 使Hibernate可以使用Constructor.newInstance() 来实例化持久化类。<br><strong>2、提供一个标识属性(identifier property)：</strong> 通常映射为数据库表的主键字段。如果没有该属性，一些功能将不起作用，如：Session.saveOrUpdate()。<br><strong>3、为类的持久化类字段声明访问方法(get/set)：</strong> Hibernate对JavaBeans 风格的属性实行持久化。<br><strong>4、使用非 final 类：</strong> 在运行时生成代理是 Hibernate 的一个重要的功能。如果持久化类没有实现任何接口, Hibnernate 使用 CGLIB 生成代理。如果使用的是 final 类, 则无法生成 CGLIB 代理。<br><strong>5、重写 eqauls 和 hashCode 方法：</strong> 如果需要把持久化类的实例放到 Set 中(当需要进行关联映射时), 则应该重写这两个方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">News</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> Integer id; <span class="comment">// field</span></span><br><span class="line">	<span class="keyword">private</span> String title;</span><br><span class="line">	<span class="keyword">private</span> String author;</span><br><span class="line">	<span class="keyword">private</span> Date date;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">News</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">News</span><span class="params">(String title, String author, Date date)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">super</span>();</span><br><span class="line">		<span class="keyword">this</span>.title = title;</span><br><span class="line">		<span class="keyword">this</span>.author = author;</span><br><span class="line">		<span class="keyword">this</span>.date = date;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Integer <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(Integer id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getTitle</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> title;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setTitle</span><span class="params">(String title)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.title = title;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getAuthor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> author;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAuthor</span><span class="params">(String author)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.author = author;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Date <span class="title">getDate</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> date;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setDate</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.date = date;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"News [id="</span> + id + <span class="string">", title="</span> + title + <span class="string">", author="</span> + author + <span class="string">", date="</span> + date + <span class="string">"]"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3、创建对象-关系映射文件"><a href="#3、创建对象-关系映射文件" class="headerlink" title="3、创建对象-关系映射文件"></a>3、创建对象-关系映射文件</h3><ul>
+<li>Hibernate 采用 XML 格式的文件来指定对象和关系数据之间的映射。</li>
+<li>在运行时 Hibernate 将根据这个映射文件来生成各种 SQL 语句。</li>
+<li><strong>映射文件的扩展名为 .hbm.xml</strong></li>
+</ul>
+<hr>
+<h3 id="4、测试"><a href="#4、测试" class="headerlink" title="4、测试"></a>4、测试</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"><span class="keyword">import</span> org.hibernate.Session;</span><br><span class="line"><span class="keyword">import</span> org.hibernate.SessionFactory;</span><br><span class="line"><span class="keyword">import</span> org.hibernate.Transaction;</span><br><span class="line"><span class="keyword">import</span> org.hibernate.cfg.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.hibernate.service.ServiceRegistry;</span><br><span class="line"><span class="keyword">import</span> org.hibernate.service.ServiceRegistryBuilder;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HibernateTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Test</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 1. 创建一个 SessionFactory 对象</span></span><br><span class="line">		SessionFactory sessionFactory = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 1). 创建 Configuration 对象: 对应 hibernate 的基本配置信息和 对象关系映射信息</span></span><br><span class="line">		Configuration configuration = <span class="keyword">new</span> Configuration().configure();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 4.0 之前这样创建</span></span><br><span class="line">		<span class="comment">// sessionFactory = configuration.buildSessionFactory();</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 2). 创建一个 ServiceRegistry 对象: hibernate 4.x 新添加的对象</span></span><br><span class="line">		<span class="comment">// hibernate 的任何配置和服务都需要在该对象中注册后才能有效.</span></span><br><span class="line">		ServiceRegistry serviceRegistry = <span class="keyword">new</span> ServiceRegistryBuilder()</span><br><span class="line">				.applySettings(configuration.getProperties())</span><br><span class="line">				.buildServiceRegistry();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 3).</span></span><br><span class="line">		sessionFactory = configuration.buildSessionFactory(serviceRegistry);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 2. 创建一个 Session 对象</span></span><br><span class="line">		Session session = sessionFactory.openSession();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 3. 开启事务</span></span><br><span class="line">		Transaction transaction = session.beginTransaction();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 4. 执行保存操作</span></span><br><span class="line">		News news = <span class="keyword">new</span> News(<span class="string">"Java"</span>, <span class="string">"Hibernate"</span>, <span class="keyword">new</span> Date(<span class="keyword">new</span> java.util.Date().getTime()));</span><br><span class="line">		session.save(news);<span class="comment">//save后，news变成持久态</span></span><br><span class="line">					<span class="comment">//news.setTitle("HB"); ``对持久态的改变，会在session提交时自动更新数据库``</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 5. 提交事务</span></span><br><span class="line">		transaction.commit();</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 6. 关闭 Session</span></span><br><span class="line">		session.close();</span><br><span class="line">					<span class="comment">//session关闭后 news.setTitle("HB"); //这时改变其属性，将不会自动更新数据库</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">// 7. 关闭 SessionFactory 对象</span></span><br><span class="line">		sessionFactory.close();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<hr>
+<h2 id="三、Hibernate-属性"><a href="#三、Hibernate-属性" class="headerlink" title="三、Hibernate 属性"></a>三、Hibernate 属性</h2><h3 id="1、Configuration-类"><a href="#1、Configuration-类" class="headerlink" title="1、Configuration 类"></a>1、Configuration 类</h3><p><strong>Configuration 类负责管理 Hibernate 的配置信息。</strong></p>
+<p><strong>包括如下内容：</strong></p>
+<ul>
+<li>Hibernate 运行的底层信息：数据库的URL、用户名、密码、JDBC驱动类，数据库方言Dialect,数据库连接池等（对应 hibernate.cfg.xml 文件）。持久化类与数据表的映射关系（*.hbm.xml）</li>
+</ul>
+<hr>
+<p><strong>创建 Configuration 的方式</strong></p>
+<ul>
+<li>推荐使用XML方式 Xml文件（hibernate.cfg.xml）</li>
+</ul>
+<p><strong>Configuration cfg = new Configuration().configure();</strong></p>
+<hr>
+<h3 id="2、SessionFactory-接口"><a href="#2、SessionFactory-接口" class="headerlink" title="2、SessionFactory 接口"></a>2、SessionFactory 接口</h3><p><strong>针对单个数据库映射关系经过编译后的内存镜像，是线程安全的。</strong></p>
+<ul>
+<li>SessionFactory 对象一旦构造完毕，即被赋予特定的配置信息</li>
+</ul>
+<p><strong>SessionFactory是生成Session的工厂</strong></p>
+<ul>
+<li>构造 SessionFactory 很消耗资源，一般情况一个应用中只初始化一个 SessionFactory 对象。<br>Hibernate4 新增了一个 ServiceRegistry 接口，所有基于 Hibernate 的配置或者服务都必须统一向这个 ServiceRegistry  注册后才能生效。</li>
+</ul>
+<p><strong>Hibernate4 中创建 SessionFactory 的步骤</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. 创建 Configuration 对象: 对应 hibernate 的基本配置信息和 对象关系映射信息</span></span><br><span class="line">Configuration configuration = <span class="keyword">new</span> Configuration().configure();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.创建一个 ServiceRegistry 对象: hibernate 4.x 新添加的对象</span></span><br><span class="line"><span class="comment">// hibernate 的任何配置和服务都需要在该对象中注册后才能有效。</span></span><br><span class="line">ServiceRegistry serviceRegistry = <span class="keyword">new</span> ServiceRegistryBuilder()</span><br><span class="line">				.applySettings(configuration.getProperties())</span><br><span class="line">				.buildServiceRegistry();</span><br><span class="line"><span class="comment">// 3. 得到一个 SessionFactory 对象</span></span><br><span class="line"> SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3、Session-接口"><a href="#3、Session-接口" class="headerlink" title="3、Session (接口)"></a>3、Session (接口)</h3><p><strong>Session 是应用程序与数据库之间交互操作的一个单线程对象，是 Hibernate 运作的中心</strong>。</p>
+<ul>
+<li>所有持久化对象必须在 session 的管理下才可以进行持久化操作，相当于 JDBC 中的 Connection。</li>
+</ul>
+<hr>
+<p><strong>此对象的生命周期很短</strong></p>
+<ul>
+<li>Session 对象有一个一级缓存，显式执行 flush 之前，所有的持久层操作的数据都缓存在 session 对象处。</li>
+</ul>
+<p><strong>持久化类与 Session 关联起来后就具有了持久化的能力</strong><br><strong>Session 类的方法：</strong></p>
+<ul>
+<li>取得持久化对象的方法： get() load()</li>
+<li>持久化对象保存，更新和删除：save(),update(),saveOrUpdate(),delete()</li>
+<li>开启事务: beginTransaction()</li>
+<li>管理 Session 的方法：isOpen(),flush(), clear(), evict(), close()等</li>
+</ul>
+<hr>
+<h3 id="4、Transaction-事务"><a href="#4、Transaction-事务" class="headerlink" title="4、Transaction(事务)"></a>4、Transaction(事务)</h3><p><strong>代表一次原子操作，它具有数据库事务概念。所有持久层都应在事务管理下进行，即使是只读操作。</strong> </p>
+<ul>
+<li><p><strong>Transaction tx = session.beginTransaction();</strong></p>
+<p><strong>常用方法：</strong></p>
+<ul>
+<li>commit()： 提交相关联的session实例</li>
+<li>rollback()： 撤销事务操作</li>
+<li>wasCommitted()： 检查事务是否提交</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="四、Hibernate-配置文件的配置项"><a href="#四、Hibernate-配置文件的配置项" class="headerlink" title="四、Hibernate 配置文件的配置项"></a>四、Hibernate 配置文件的配置项</h2><h3 id="1、hbm2ddl-auto"><a href="#1、hbm2ddl-auto" class="headerlink" title="1、hbm2ddl.auto"></a>1、hbm2ddl.auto</h3><ul>
+<li>该属性可实现正向工程, 即由 java 代码生成数据库脚本, 进而生成具体的表结构。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 指定自动生成数据表的策略 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hbm2ddl.auto"</span>&gt;</span>update<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>取值 create | update | create-drop | validate</strong></p>
+<ul>
+<li><strong>create：</strong> 会根据 .hbm.xml  文件来生成数据表， 但是每次运行都会删除上一次的表 ，重新生成表，哪怕二次没有任何改变。 </li>
+<li><strong>create-drop：</strong> 会根据 .hbm.xml 文件生成表，但是SessionFactory一关闭，表就自动删除。</li>
+<li><strong>update：</strong> 最常用的属性值，也会根据 .hbm.xml 文件生成表，但若 .hbm.xml 文件和数据库中对应的数据表的表结构不同，Hiberante 将更新数据表结构，但不会删除已有的行和列。<br><strong>validate：</strong> 会和数据库中的表进行比较，若 .hbm.xml 文件中的列在数据表中不存在，则抛出异常。</li>
+</ul>
+<hr>
+<h3 id="2、format-sql"><a href="#2、format-sql" class="headerlink" title="2、format_sql"></a>2、format_sql</h3><ul>
+<li>是否将 SQL 转化为格式良好的 SQL。 取值 true | false <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 是否对 SQL 进行格式化 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"format_sql"</span>&gt;</span>true<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h3 id="3、在-Hibernate-中设置隔离级别"><a href="#3、在-Hibernate-中设置隔离级别" class="headerlink" title="3、在 Hibernate 中设置隔离级别"></a>3、在 Hibernate 中设置隔离级别</h3><ul>
+<li>JDBC 数据库连接使用数据库系统默认的隔离级别。</li>
+</ul>
+<p><strong>在 Hibernate 的配置文件中可以显式的设置隔离级别。 每一个隔离级别都对应一个整数：</strong></p>
+<ul>
+<li>READ UNCOMMITED —-&gt; 1</li>
+<li><strong>READ COMMITED</strong> —-&gt; 2</li>
+<li>REPEATABLE READ —-&gt; 4</li>
+<li>SERIALIZEABLE —-&gt; 8</li>
+</ul>
+<p><strong>Hibernate 通过 映射文件指定 <code>hibernate.connection.isolation</code> 属性来设置事务的隔离级别。</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 设置 Hibernate 的事务隔离级别 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"connection.isolation"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="4、在-hibernate-中使用-C3P0-数据源"><a href="#4、在-hibernate-中使用-C3P0-数据源" class="headerlink" title="4、在 hibernate 中使用 C3P0 数据源"></a>4、在 hibernate 中使用 C3P0 数据源</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 配置 C3P0 数据源 --&gt;</span></span><br><span class="line">//可配可不配 </span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.connection.provider_class"</span>&gt;</span>org.hibernate.connection.C3P0ConnectionProvider<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">//数据库连接池的最大连接数</span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.c3p0.max_size"</span>&gt;</span>10<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">//数据库连接池的最小连接数</span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"hibernate.c3p0.min_size"</span>&gt;</span>5<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">//当数据库连接池中的连接耗尽时, 同一时刻获取多少个数据库连接</span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"c3p0.acquire_increment"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">//表示连接池检测线程多长时间检测一次池内的所有链接对象是否超时</span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"c3p0.idle_test_period"</span>&gt;</span>2000<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">//数据库连接池中连接对象在多长时间没有使用过后，就应该被销毁</span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"c3p0.timeout"</span>&gt;</span>2000<span class="tag">&lt;/<span class="name">property</span>&gt;</span>		</span><br><span class="line">//缓存 Statement 对象的数量</span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"c3p0.max_statements"</span>&gt;</span>10<span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="五、通过-Session-操纵对象"><a href="#五、通过-Session-操纵对象" class="headerlink" title="五、通过 Session 操纵对象"></a>五、通过 Session 操纵对象</h2><hr>
+<ul>
+<li>Session 接口是 Hibernate 向应用程序提供的操纵数据库的最主要的接口, 它提供了基本的保存, 更新, 删除和加载 Java 对象的方法。</li>
+<li><strong>Session 具有一个缓存, 位于缓存中的对象称为持久化对象, 它和数据库中的相关记录对应。</strong></li>
+<li>Session 能够在某些时间点, 按照缓存中对象的变化来执行相关的 SQL 语句, 来同步更新数据库, 这一过程被称为刷新缓存(flush)。</li>
+</ul>
+<p><strong>站在持久化的角度, Hibernate 把对象分为 4 种状态：</strong><br><strong>Session 的特定方法能使对象从一个状态转换到另一个状态。</strong></p>
+<ul>
+<li>持久化状态</li>
+<li>临时状态</li>
+<li>游离状态</li>
+<li>删除状态</li>
+</ul>
+<hr>
+<h3 id="1、持久化对象-托管-（Persist）"><a href="#1、持久化对象-托管-（Persist）" class="headerlink" title="1、持久化对象 ( 托管 ) （Persist）"></a>1、持久化对象 ( 托管 ) （Persist）</h3><ul>
+<li>在 OID 不为 null Session 缓存中叫做持久化态 数据库中已经有和其对应的记录,持久化对象和数据库中的相关记录对应。</li>
+<li>Session 在 flush 缓存时, 会根据持久化对象的属性变化, 来计划SQL语句同步更新数据库。</li>
+<li>在事务提交后 更新数据库表中数据，数据才会永久保存下来,也就是被持久化了。</li>
+<li>在同一个 Session 实例的缓存中, 数据库表中的每条记录只对应唯一的持久化对象。</li>
+</ul>
+<hr>
+<h3 id="2、临时对象（Transient）"><a href="#2、临时对象（Transient）" class="headerlink" title="2、临时对象（Transient）"></a>2、临时对象（Transient）</h3><ul>
+<li>在使用代理主键情况下，OID 通常为 null 不处于 Session 的缓存中在数据库中没有对应记录。</li>
+</ul>
+<hr>
+<h3 id="3、游离对象-也叫-脱管）（Detached）"><a href="#3、游离对象-也叫-脱管）（Detached）" class="headerlink" title="3、游离对象(也叫 脱管）（Detached）"></a>3、游离对象(也叫 脱管）（Detached）</h3><ul>
+<li>OID 不为 null 不再处于 Session 缓存中 </li>
+<li>一般情况下，游离对象由持久化对象转变过来的，因此数据库中可能还存在与它对应的记录。</li>
+</ul>
+<hr>
+<h3 id="4、删除对象-Removed"><a href="#4、删除对象-Removed" class="headerlink" title="4、删除对象(Removed)"></a>4、删除对象(Removed)</h3><ul>
+<li>在数据库中没有和其 OID 对应的记录 不再处于 Session 缓存中 一般情况下, 应用程序不该再使用被删除的对象。</li>
+</ul>
+<hr>
+<h3 id="👉对象的状态转换图"><a href="#👉对象的状态转换图" class="headerlink" title="👉对象的状态转换图"></a>👉对象的状态转换图</h3><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1hfavns4sj30ta0gn0u4.jpg" width="700"/>
+
+<h3 id="Session-的-save-方法"><a href="#Session-的-save-方法" class="headerlink" title="Session 的 save() 方法"></a>Session 的 save() 方法</h3><p><strong>Session 的 save() 方法使一个临时对象转变为持久化对象。</strong><br><strong>Session 的 save() 方法完成以下操作：</strong></p>
+<ul>
+<li>把一个临时对象加入到 Session 缓存中, 使它进入持久化状态。</li>
+<li>选用映射文件指定的标识符生成器, 为持久化对象分配唯一的 OID。 在使用代理主键的情况下, setId() 方法为对象设置 OID 使无效的。</li>
+<li>计划执行一条 insert 语句：在 flush 缓存的时候。</li>
+<li>Hibernate 通过持久化对象的 OID 来维持它和数据库相关记录的对应关系。</li>
+<li>当一个对象处于持久化状态时, 不允许程序随意修改它的 ID。</li>
+</ul>
+<p><strong>persist() 和 save() 区别：</strong></p>
+<ul>
+<li>当对一个 OID 不为 Null 的对象执行 save() 方法时, 会把该对象以一个新的 oid 保存到数据库中。但执行 persist() 方法时会抛出一个异常。</li>
+</ul>
+<hr>
+<h3 id="Session-的-get-和-load-方法"><a href="#Session-的-get-和-load-方法" class="headerlink" title="Session 的 get() 和 load() 方法"></a>Session 的 get() 和 load() 方法</h3><p><strong>都可以根据跟定的 OID 从数据库中加载一个持久化对象。</strong></p>
+<hr>
+<p><strong>get() 和 load()区别：</strong></p>
+<ul>
+<li><strong>1、 get 是 立即检索, load 是延迟检索。</strong><ul>
+<li>执行 get 方法： 会立即加载对象，不支持延迟加载。</li>
+<li>执行 load 方法：若不使用该对象, 则不会立即执行查询操作, 而返回一个代理对象。</li>
+</ul>
+</li>
+<li><strong>2、异常： 在需要初始化代理对象之前已经关闭了 Session。</strong><ul>
+<li><strong>load 方法会抛出 LazyInitializationException</strong></li>
+</ul>
+</li>
+<li><strong>3、 若数据表中不存在与 OID 对应的记录时, Session 也没有被关闭。</strong></li>
+</ul>
+<p><strong><code>get  返回 null</code> —-&gt; load 若不使用该对象的任何属性, 没问题。若需要初始化了, 抛出 ObjectNotFoundException 异常。</strong></p>
+<hr>
+<h3 id="Session-的-update-方法"><a href="#Session-的-update-方法" class="headerlink" title="Session 的 update() 方法"></a>Session 的 update() 方法</h3><ul>
+<li><p><strong>1、若更新一个持久化对象, <code>不需要显示</code> 调用 update 方法。</strong></p>
+<ul>
+<li><strong>因为在调用 Transaction 的 commit() 方法时, 会先执行 session 的 flush 方法。</strong></li>
+</ul>
+</li>
+<li><p><strong>2、更新一个游离对象, <code>需要显式</code> 调用 session 的 update 方法。</strong></p>
+<ul>
+<li><strong>可以把一个游离对象变为持久化对象。</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>需要注意：</strong></p>
+<ul>
+<li><strong>对于当前Session是 游离对象 无论要更新的 数据和数据表的记录 是否一致, 都会发送 UPDATE 语句。</strong></li>
+</ul>
+<p><strong>Session 的 update() 方法使一个<code>游离对象转变为持久化对象</code>, 并且计划执行一条 update 语句。</strong></p>
+<p><strong>若希望 Session 仅当修改了对象的属性时, 才执行 update() 语句 可以把映射文件中 <code>&lt;class&gt;</code> 元素的select-before-update 设为 true。该属性的默认值为 false 但通常不需要设置该属性。</strong></p>
+<ul>
+<li>当 update() 方法关联一个游离对象时, 如果在 Session 的缓存中已经存在相同 OID 的持久化对象, 会抛出异常。</li>
+<li>当 update() 方法关联一个游离对象时, 如果在数据库中不存在相应的记录, 也会抛出异常。</li>
+</ul>
+<hr>
+<h3 id="Session-的-saveOrUpdate-方法"><a href="#Session-的-saveOrUpdate-方法" class="headerlink" title="Session 的 saveOrUpdate() 方法"></a>Session 的 saveOrUpdate() 方法</h3><p><strong>Session 的 saveOrUpdate() 方法同时包含了 save() 与 update() 方法的功能。</strong></p>
+<ul>
+<li>判定对象为临时对象的标准<ul>
+<li>Java 对象的 OID 为 null</li>
+<li>映射文件中为 <id> 设置了 unsaved-value  属性</li>
+<li>并且 Java 对象的 OID 取值与这个 unsaved-value 属性值匹配</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Session-的-merge-方法"><a href="#Session-的-merge-方法" class="headerlink" title="Session 的 merge() 方法"></a>Session 的 merge() 方法</h3><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1hfgzpxrrj30sv0j2ju4.jpg" width="700"/>
+
+<hr>
+<h3 id="Session-的-delete-方法"><a href="#Session-的-delete-方法" class="headerlink" title="Session 的 delete() 方法"></a>Session 的 delete() 方法</h3><p><strong>Session 的 delete() 方法既可以删除一个游离对象, 也可以删除一个持久化对象。</strong></p>
+<p><strong>Session 的 delete() 方法处理过程：</strong></p>
+<ul>
+<li>计划执行一条 delete 语句。</li>
+<li>把对象从 Session 缓存中删除, 该对象进入删除状态。<ul>
+<li>Hibernate 的 cfg.xml 配置文件中有一个 hibernate.use_identifier_rollback 属性,其默认值为 false。</li>
+<li>若把它设为 true, 将改变 delete() 方法的运行行为： <ul>
+<li>delete() 方法会把持久化对象或游离对象的 OID 设置为 null, 使它们变为临时对象。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Session-的-Evict-方法"><a href="#Session-的-Evict-方法" class="headerlink" title="Session 的 Evict() 方法"></a>Session 的 Evict() 方法</h3><ul>
+<li><strong>从 session 缓存中把指定的持久化对象移除。</strong></li>
+</ul>
+<hr>
+<h3 id="Session-的-refresh-方法"><a href="#Session-的-refresh-方法" class="headerlink" title="Session 的 refresh() 方法"></a>Session 的 refresh() 方法</h3><ul>
+<li><strong>会强制发送 SELECT 语句,使 Session 缓存中对象的状态和数据表中对应的记录保持一致！但是有事务隔离级别限制。</strong></li>
+</ul>
+<hr>
+<h3 id="Session-的-clear-方法"><a href="#Session-的-clear-方法" class="headerlink" title="Session 的 clear() 方法"></a>Session 的 clear() 方法</h3><ul>
+<li><strong>清理缓存</strong></li>
+</ul>
+<hr>
+<h3 id="Session-缓存"><a href="#Session-缓存" class="headerlink" title="Session 缓存"></a>Session 缓存</h3><ul>
+<li><strong>在 Session 接口的实现中包含一系列的 Java 集合, 这些 Java 集合构成了 Session 缓存。</strong></li>
+<li><strong>只要Session实例没有结束生命周期, 且没有清理缓存，则存放在它缓存中的对象也不会结束生命周期。</strong></li>
+<li><strong>Session 缓存可减少 Hibernate 应用程序访问数据库的频率。</strong></li>
+</ul>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1hdnrvoo7j30pp0fbwf9.jpg" width="700"/>
+
+<hr>
+<h3 id="flush-缓存"><a href="#flush-缓存" class="headerlink" title="flush 缓存"></a>flush 缓存</h3><p><strong>flush：使数据库表中的记录和 Hibernate Session 缓存中的对象的状态保持一致。为了保持一致, 则可能会发送对应的 SQL 语句。</strong></p>
+<ul>
+<li>Session 按照缓存中对象的属性变化来同步更新数据库。</li>
+</ul>
+<p><strong>默认情况下 Session 在以下时间点刷新缓存：</strong></p>
+<ul>
+<li>1、显式调用 Session 的 flush() 方法 </li>
+<li>2、应用程序调用 Transaction 的 commit() 方法，该方法先 flush ，然后向数据库提交事务。</li>
+<li>3、<code>flush() 方法会可能会发送 SQL 语句, 但不会提交事务。</code></li>
+</ul>
+<hr>
+<p><strong>flush 缓存的例外情况：</strong><br>注意： 在未提交事务或显式的调用 session.flush() 方法之前, 也有可能会进行 flush() 操作。</p>
+<ul>
+<li>执行 HQL 或 QBC 查询, 如果缓存中持久化对象的属性已经发生了变化，会先进行 flush() 操作, 以得到数据表的最新的记录。</li>
+<li>如果对象使用 native 生成器生成 OID, 那么当调用 Session 的 save() 方法保存对象时, 会立即执行向数据库插入该实体的 insert 语句。<ul>
+<li>因为 save 方法后, 必须保证对象的 ID 是存在的！</li>
+</ul>
+</li>
+</ul>
+<p><strong>commit() 和 flush() 方法的区别：</strong></p>
+<ul>
+<li>flush 执行一系列 sql 语句，但不提交事务；</li>
+<li>commit() 方法先调用 flush() 方法，然后提交事务。提交事务意味着对数据库操作永久保存。</li>
+</ul>
+<hr>
+<h2 id="六、对象关系映射文件"><a href="#六、对象关系映射文件" class="headerlink" title="六、对象关系映射文件"></a>六、对象关系映射文件</h2><p><strong>POJO 类 和 数据库的映射文件  *.hbm.xml</strong></p>
+<ul>
+<li>POJO 类和关系数据库之间的映射可以用一个XML文档来定义。</li>
+<li>通过 POJO 类的数据库映射文件，Hibernate可以理解持久化类和数据表之间的对应关系，也可以理解持久化类属性与数据库表列之间的对应关系。</li>
+<li>在运行时 Hibernate 将根据这个映射文件来生成各种 SQL 语句。</li>
+<li>映射文件的扩展名为 .hbm.xml</li>
+</ul>
+<p><strong>hibernate-mapping</strong></p>
+<ul>
+<li>类层次：class</li>
+<li>主键：id</li>
+<li>基本类型:property</li>
+<li>实体引用类: many-to-one  |  one-to-one</li>
+<li>集合:set | list | map | array<ul>
+<li>one-to-many</li>
+<li>many-to-many</li>
+</ul>
+</li>
+<li>子类:subclass | joined-subclass</li>
+<li>其它:component | any 等</li>
+<li>查询语句:query（用来放置查询语句，便于对数据库查询的统一管理和优化）</li>
+</ul>
+<p><strong>每个Hibernate-mapping中可以同时定义多个类。 但更推荐为每个类都创建一个单独的映射文件</strong></p>
+<hr>
+<h3 id="1、hibernate-mapping"><a href="#1、hibernate-mapping" class="headerlink" title="1、hibernate-mapping"></a>1、hibernate-mapping</h3><p><strong>hibernate-mapping 是 hibernate.hbm.xml 映射文件的根元素。</strong></p>
+<ul>
+<li>schema： 指定所映射的数据库schema的名称。若指定该属性, 则表明会自动添加该 schema 前缀。</li>
+<li>catalog：指定所映射的数据库catalog的名称。  </li>
+<li>default-cascade(默认为 none)： 设置hibernate默认的级联风格。<ul>
+<li>若配置 Java 属性, 集合映射时没有指定 cascade 属性, 则 Hibernate 将采用此处指定的级联风格。</li>
+</ul>
+</li>
+<li>default-access (默认为 property)： 指定 Hibernate 的默认的属性访问策略。<ul>
+<li>默认值为 property, 即使用 getter, setter 方法来访问属性. 若指定 access, 则 Hibernate 会忽略 getter/setter 方法, 而通过反射访问成员变量。</li>
+</ul>
+</li>
+<li>default-lazy(默认为 true)： 设置 Hibernat morning的延迟加载策略。<ul>
+<li>该属性的默认值为 true, 即启用延迟加载策略。 若配置 Java 属性映射, 集合映射时没有指定 lazy 属性, 则 Hibernate 将采用此处指定的延迟加载策略。</li>
+</ul>
+</li>
+<li>auto-import (默认为 true)： 指定是否可以在查询语言中使用非全限定的类名（仅限于本映射文件中的类）。 </li>
+<li>package (可选)： 指定一个包前缀,如果在映射文档中没有指定全限定的类名,就使用这个作为包名。 </li>
+</ul>
+<hr>
+<h3 id="2、class"><a href="#2、class" class="headerlink" title="2、class"></a>2、class</h3><p><strong>class 是 hibernate-mapping 的子元素,class 元素用于指定类和表的映射。</strong></p>
+<ul>
+<li>name：指定该持久化类映射的持久化类的类名。</li>
+<li>table：指定该持久化类映射的表名, Hibernate 默认以持久化类的类名作为表名。</li>
+<li>dynamic-insert： 若设置为 true, 表示当保存一个对象时, 会动态生成 insert 语句, <ul>
+<li>insert 语句中仅包含所有取值不为 null 的字段. 默认值为 false</li>
+</ul>
+</li>
+<li>dynamic-update： 若设置为 true, 表示当更新一个对象时, 会动态生成 update 语句, <ul>
+<li><code>update 语句中仅包含所有取值需要更新的字段。</code> 默认值为 false</li>
+</ul>
+</li>
+<li>select-before-update：设置 Hibernate 在更新某个持久化对象之前是否需要先执行一次查询。 默认值为 false。</li>
+<li>batch-size：指定根据 OID 来抓取实例时每批抓取的实例数。</li>
+<li>lazy： 指定是否使用延迟加载。</li>
+<li>mutable： 若设置为 true, 等价于所有的 <property> 元素的 update 属性为 false, 表示整个实例不能被更新。 默认为 true。</li>
+<li>discriminator-value： 指定区分不同子类的值. 当使用 <subclass/> 元素来定义持久化类的继承关系时需要使用该属性。</li>
+</ul>
+<hr>
+<h3 id="3、id"><a href="#3、id" class="headerlink" title="3、id"></a>3、id</h3><p><strong>id 是 class 的子元素。</strong> </p>
+<ul>
+<li>id：设定持久化类的 OID 和表的主键的映射。<ul>
+<li>Hibernate 推荐在数据表中使用代理主键, 即不具备业务含义的字段。</li>
+<li>代理主键通常为整数类型, 因为整数类型比字符串类型要节省更多的数据库空间。</li>
+</ul>
+</li>
+<li>name： 标识持久化类 OID 的属性名。</li>
+<li>column： 设置标识属性所映射的数据表的列名(主键字段的名字)。</li>
+<li>unsaved-value：若设定了该属性, Hibernate 会通过比较持久化类的 OID 值和该属性值来区分当前持久化类的对象是否为临时对象。</li>
+<li>type：指定 Hibernate 映射类型。 Hibernate 映射类型是 Java 类型与 SQL 类型的桥梁。<ul>
+<li>如果没有为某个属性显式设定映射类型, Hibernate 会运用反射机制先识别出持久化类的特定属性的 Java 类型, 然后自动使用与之对应的默认的 Hibernate 映射类型。</li>
+</ul>
+</li>
+<li>Java 的基本数据类型和包装类型对应相同的 Hibernate 映射类型. 基本数据类型无法表达 null, 所以对于持久化类的 OID 推荐使用包装类型。</li>
+<li>generator：设定持久化类设定标识符生成器。<ul>
+<li>class：指定使用的标识符生成器全限定类名或其缩写名。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>主键生成策略generator</strong></p>
+<table>
+<thead>
+<tr>
+<th>标识符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>increment</td>
+<td>适用于代理主键。由Hibernate 自动以递增方式生成。</td>
+</tr>
+<tr>
+<td>identity</td>
+<td>适用于代理主键。由底层数据库生成标识符。</td>
+</tr>
+<tr>
+<td>sequence</td>
+<td>适用于代理主键。Hibernate根据底层数据库的序列生成标识符，这要求底层数据库支持序列。</td>
+</tr>
+<tr>
+<td>hilo</td>
+<td>适用于代理主键。Hibernate分局high/low算法生成标识符。</td>
+</tr>
+<tr>
+<td>seqhilo</td>
+<td>适用于代理主键。使用一个高/低位算法来高效的生成long, short或者int类型的标识符。</td>
+</tr>
+<tr>
+<td>native</td>
+<td>适用于代理主键。根据底层数据库对自动生成标识符的方式，自动选择identity. sequence或hilo。</td>
+</tr>
+<tr>
+<td>uuid.hex</td>
+<td>适用于代理主键。Hibernate采用128位的UUID算法生成标识符。</td>
+</tr>
+<tr>
+<td>uuid.string</td>
+<td>适用于代理主键。UUID被编码成一个16字符长的字符串。</td>
+</tr>
+<tr>
+<td>assigned</td>
+<td>适用于自然主键。由Java应用程序负责生成标识符。</td>
+</tr>
+<tr>
+<td>foreign</td>
+<td>适用于代理主键。使用另外一个相关联的对象的标识符。</td>
+</tr>
+</tbody></table>
+<hr>
+<p><strong>increment 标识符生成器</strong></p>
+<ul>
+<li>increment 标识符生成器由 Hibernate 以递增的方式为代理主键赋值。</li>
+<li>Hibernate 会先读取表中的主键的最大值, 而接下来向表中插入记录时, 就在 max(id) 的基础上递增, 增量为 1。</li>
+<li><strong>适用范围：</strong><br>1、由于 increment 生存标识符机制不依赖于底层数据库系统, 因此它适合所有的数据库系统。<br>2、适用于只有单个 Hibernate 应用进程访问同一个数据库的场合, 在集群环境下不推荐使用它 测试使用。<br>3、OID 必须为 long, int 或 short 类型, 如果把 OID 定义为 byte 类型, 在运行时会抛出异常。</li>
+</ul>
+<hr>
+<p><strong>identity 标识符生成器</strong></p>
+<ul>
+<li><p>identity 标识符生成器由底层标数据库来负责生成识符, 它要求底层数据库把主键定义为自动增长字段类型。</p>
+</li>
+<li><p><strong>适用范围：</strong></p>
+<p>1、由于 identity 生成标识符的机制依赖于底层数据库系统, 因此, 要求底层数据库系统必须支持自动增长字段类型。<br>2、OID 必须为 long, int 或 short 类型, 如果把 OID 定义为 byte 类型, 在运行时会抛出异常。</p>
+</li>
+</ul>
+<hr>
+<p><strong>sequence 标识符生成器</strong></p>
+<ul>
+<li>sequence  标识符生成器利用底层数据库提供的序列来生成标识符。</li>
+<li>Hibernate 在持久化一个对象时, 先从底层数据库的表 序列中获得一个唯一的标识号, 再把它作为主键值。</li>
+<li><strong>适用范围：</strong><br>1、由于 sequence 生成标识符的机制依赖于底层数据库系统的序列,因此,要求底层数据库系统必须支持序列。支持序列的数据库包括：<code>DB2,Oracle</code>等<br>2、OID 必须为 long, int 或 short 类型, 如果把 OID 定义为 byte 类型, 在运行时会抛出异常。</li>
+</ul>
+<hr>
+<p><strong>hilo 标识符生成器</strong></p>
+<ul>
+<li>hilo 标识符生成器由 Hibernate 按照一种 high/low 算法*生成标识符, 它从数据库的特定表的字段中获取 high 值。<ul>
+<li>根据下面的公式计算值：hi*(max_lo+1)+lo </li>
+<li>但是有一种特殊情况，就是hi是0的时候，那么第一个值不是0*(max_lo+1)+0=0而是跳过0，直接就是1 </li>
+</ul>
+</li>
+<li>Hibernate 在持久化一个 News 对象时, 由 Hibernate 负责生成主键值。</li>
+<li>hilo 标识符生成器在生成标识符时, 需要读取并修改 HI_TABLE 表中的 NEXT_VALUE 值。</li>
+<li><strong>适用范围：</strong><br>1、由于 hilo 生存标识符机制不依赖于底层数据库系统, 因此它适合所有的数据库系统。<br>2、OID 必须为 long, int 或 short 类型, 如果把 OID 定义为 byte 类型, 在运行时会抛出异常。</li>
+</ul>
+<hr>
+<p><strong>native 标识符生成器</strong></p>
+<ul>
+<li>native 标识符生成器依据底层数据库对自动生成标识符的支持能力, 来选择使用 identity, sequence 或 hilo 标识符生成器。</li>
+<li><strong>适用范围：</strong><br>1、由于 native 能根据底层数据库系统的类型, 自动选择合适的标识符生成器, 因此很适合于跨数据库平台开发。<br>2、OID 必须为 long, int 或 short 类型, 如果把 OID 定义为 byte 类型, 在运行时会抛出异常。</li>
+</ul>
+<hr>
+<h3 id="4、Property"><a href="#4、Property" class="headerlink" title="4、Property"></a>4、Property</h3><p><strong>property 元素用于指定类的属性和表的字段的映射。</strong></p>
+<ul>
+<li>name：指定该持久化类的属性的名字。</li>
+<li>type：指定 Hibernate 映射类型。 Hibernate 映射类型是 Java 类型与 SQL 类型的桥梁。<ul>
+<li>如果没有为某个属性显式设定映射类型, Hibernate 会运用反射机制先识别出持久化类的特定属性的 Java 类型, 然后自动使用与之对应的默认的 Hibernate 映射类型。</li>
+</ul>
+</li>
+<li>column：指定与类的属性映射的表的字段名。<ul>
+<li>如果没有设置该属性, Hibernate 将直接使用类的属性名作为字段名。</li>
+</ul>
+</li>
+<li>not-null：若该属性值为 true, 表明不允许为 null, 默认为 false。</li>
+<li>access：指定 Hibernate 的默认的属性访问策略。<ul>
+<li>默认值为 property, 即使用 getter, setter 方法来访问属性。 </li>
+<li>若指定 field, 则 Hibernate 会忽略 getter/setter 方法, 而通过反射访问成员变量。</li>
+</ul>
+</li>
+<li>unique：设置是否为该属性所映射的数据列添加唯一约束。</li>
+<li>update：设置是否为该属性所映射的数据列能否被修改。</li>
+<li>length：指定该属性所映射数据列的字段的长度。</li>
+<li>index：指定一个字符串的索引名称。当系统需要 Hibernate 自动建表时, 用于为该属性所映射的数据列创建索引, 从而加快该数据列的查询。</li>
+<li>scale：指定该属性所映射数据列的小数位数, 对 double, float, decimal 等类型的数据列有效。</li>
+<li>formula：设置一个 SQL 表达式, Hibernate 将根据它来计算出派生属性的值。<ul>
+<li>派生属性：并不是持久化类的所有属性都直接和表的字段匹配, 持久化类的有些属性的值必须在运行时通过计算才能得出来 这种称为派生属性<ul>
+<li><strong>使用 formula 属性时</strong></li>
+</ul>
+</li>
+<li>formula=“(sql)” 的英文括号不能少</li>
+<li>Sql 表达式中的列名和表名都应该和数据库对应, 而不是和持久化对象的属性对应</li>
+<li>如果需要在 formula 属性中使用参数, 这直接使用 where cur.id=id 形式</li>
+<li>其中 id 就是参数, 和当前持久化对象的 id 属性对应的列的 id 值将作为参数传入</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="5、映射-Java-的时间-日期类型"><a href="#5、映射-Java-的时间-日期类型" class="headerlink" title="5、映射 Java 的时间, 日期类型"></a>5、映射 Java 的时间, 日期类型</h3><p><strong>两个基础知识：</strong><br>1、在 Java 中, 代表时间和日期的类型包括： <code>java.util.Date</code> 和 <code>java.util.Calendar</code></p>
+<ul>
+<li>此外, 在 JDBC API 中还提供了 3 个扩展了 java.util.Date 类的子类： <ul>
+<li>java.sql.Date</li>
+<li>java.sql.Time </li>
+<li>java.sql.Timestamp</li>
+</ul>
+</li>
+</ul>
+<p>2、这三个类分别和标准 SQL 类型中的 DATE, TIME 和 TIMESTAMP 类型对应。</p>
+<ul>
+<li>所以 java.util.Date 可以对应标准 SQL 类型中的 DATE, TIME 和 TIMESTAMP</li>
+</ul>
+<p><strong>基于上述, 所以在设置持久化类的 Date 类型是, 设置为 java.util.Date</strong></p>
+<hr>
+<p><strong>如何进行映射</strong></p>
+<p>在标准 SQL 中, DATE 类型表示日期, TIME 类型表示时间, TIMESTAMP 类型表示时间戳, 同时包含日期和时间信息。</p>
+<hr>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1mzx23jnmj30m2072wfr.jpg"/>
+
+<p><strong>如何把 java.util.Date 映射为 DATE, TIME 和 TIMESTAMP？</strong></p>
+<ul>
+<li><strong>可以通过 property 的 type 属性来进行映射</strong><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"date"</span> <span class="attr">type</span>=<span class="string">"timestamp"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"DATE"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"date"</span> <span class="attr">type</span>=<span class="string">"data"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"DATE"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"date"</span> <span class="attr">type</span>=<span class="string">"time"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"DATE"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
+<li><em>其中 timestamp, date, time 既不是 Java 类型, 也不是标准 SQL 类型, 而是 hibernate 映射类型。*</em></li>
+</ul>
+<hr>
+<h3 id="7、Java-大对象类型的-Hiberante-映射"><a href="#7、Java-大对象类型的-Hiberante-映射" class="headerlink" title="7、Java 大对象类型的 Hiberante 映射"></a>7、Java 大对象类型的 Hiberante 映射</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 映射大对象 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 若希望精确映射 SQL 类型, 可以使用 sql-type 属性. --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"content"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"CONTENT"</span> <span class="attr">sql-type</span>=<span class="string">"mediumtext"</span>&gt;</span><span class="tag">&lt;/<span class="name">column</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"image"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"IMAGE"</span> <span class="attr">sql-type</span>=<span class="string">"mediumblob"</span>&gt;</span><span class="tag">&lt;/<span class="name">column</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Mysql 不支持标准 SQL 的 CLOB 类型, 在 Mysql 中, 用 TEXT, MEDIUMTEXT 及 LONGTEXT 类型来表示长度操作 255 的长文本数据</li>
+<li>在持久化类中, 二进制大对象可以声明为 byte[] 或 java.sql.Blob 类型  字符串可以声明为 java.lang.String 或 java.sql.Clob</li>
+<li>实际上在 Java 应用程序中处理长度超过 255 的字符串, 使用 java.lang.String 比 java.sql.Clob 更方便</li>
+</ul>
+<h3 id="8、映射组成关系-component"><a href="#8、映射组成关系-component" class="headerlink" title="8、映射组成关系 component"></a>8、映射组成关系 component</h3><p><strong>Hibernate 把持久化类的属性分为两种：</strong></p>
+<ul>
+<li>值(value)类型：没有 OID, 不能被单独持久化, 生命周期依赖于所属持久化类的对象生命周期。</li>
+<li>实体(entity)类型：有 OID, 可以被单独持久化, 有独立的生命周期。</li>
+</ul>
+<p>显然无法直接用 property 映射 POJO 属性。<br>Hibernate 使用 <component> 元素来映射组成关系, 该元素表名属性是另一个类一个组成部分, 在 Hibernate 中称之为组件。</p>
+<ul>
+<li><p><component> 元素来映射组成关系</p>
+<ul>
+<li>class：设定组成关系属性的类型, 此处表明 pay 属性为 Pay 类型</li>
+</ul>
+</li>
+<li><p><parent> 元素指定组件属性所属的整体类</p>
+<ul>
+<li>name：整体类在组件类中的属性名</li>
+</ul>
+</li>
+</ul>
+<hr>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551442650328&di=78dfb03450cc5fff5d31ea92de81ba1f&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160719%2F6ea36d17d5e94124ad1791eadd923554_th.jpg" width="150"/>
+
+<h2 id="七、通过-Hibernate-调用存储过程"><a href="#七、通过-Hibernate-调用存储过程" class="headerlink" title="七、通过 Hibernate 调用存储过程"></a>七、通过 Hibernate 调用存储过程</h2><ul>
+<li>Work 接口：直接通过 JDBC API 来访问数据库的操作。</li>
+<li>Session 的 doWork(Work) 方法用于执行 Work 对象指定的操作, 即调用 Work 对象的 execute() 方法。</li>
+<li>Session 会把当前使用的数据库连接传递给 execute() 方法。</li>
+</ul>
+<h2 id="八、Hibernate-与触发器协同工作"><a href="#八、Hibernate-与触发器协同工作" class="headerlink" title="八、Hibernate 与触发器协同工作"></a>八、Hibernate 与触发器协同工作</h2><p><strong>Hibernate 与数据库中的触发器协同工作时, 会造成两类问题：</strong></p>
+<p>1、触发器使 Session 的缓存中的持久化对象与数据库中对应的数据不一致；<br>2、触发器运行在数据库中, 它执行的操作对 Session 是透明的<br>Session 的 update() 方法盲目地激发触发器：无论游离对象的属性是否发生变化, 都会执行 update 语句, 而 update 语句会激发数据库中相应的触发器</p>
+<p>解决方案：<br>在执行完 Session 的相关操作后, 立即调用 Session 的 flush() 和 refresh() 方法<br>迫使 Session 的缓存与数据库同步(refresh() 方法重新从数据库中加载对象)</p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1ho92h9jkj30nr05f3ym.jpg" width="800"/>
+
+<p>在映射文件的的 <class> 元素中设置 select-before-update 属性 (和触发器协同工作时设置)：<br> 当 Session 的 update 或 saveOrUpdate() 方法更新一个游离对象时, 会先执行 Select 语句,<br> 获得当前游离对象在数据库中的最新数据, 只有在不一致的情况下才会执行 update 语句</p>
+<hr>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1551442650328&di=78dfb03450cc5fff5d31ea92de81ba1f&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160719%2F6ea36d17d5e94124ad1791eadd923554_th.jpg" width="150"/>
+
+<h2 id="九、映射一对多关联关系"><a href="#九、映射一对多关联关系" class="headerlink" title="九、映射一对多关联关系"></a>九、映射一对多关联关系</h2><ul>
+<li><p><strong>在领域模型中, 类与类之间最普遍的关系就是关联关系。</strong></p>
+</li>
+<li><p>在 UML 中, 关联是有方向的。</p>
+</li>
+<li><p><strong>以 Customer 和 Order 为例：</strong></p>
+<ul>
+<li>一个用户能发出多个订单, 而一个订单只能属于一个客户</li>
+<li>从 Order 到 Customer 的关联是多对一关联</li>
+<li>而从 Customer 到 Order 是一对多关联</li>
+</ul>
+</li>
+</ul>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n27v7toxj30x70bewgg.jpg" width="600"/>
+
+<hr>
+<h3 id="1、单向-N-1"><a href="#1、单向-N-1" class="headerlink" title="1、单向 N-1"></a>1、单向 N-1</h3><p><strong>单向 N-1 关联只需从 N 的一端可以访问 1 的一端。</strong></p>
+<p><strong>域模型：</strong></p>
+<ul>
+<li><strong>从 Order 到 Customer多对一单向关联需要在Order 类中定义一个 Customer 属性</strong></li>
+<li><strong>而在 Customer 类中无需定义存放 Order 对象的集合属性</strong><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n2elu60yj30gz057wf7.jpg" width="400"/>
+
+</li>
+</ul>
+<p><strong>关系数据模型：ORDERS 表中的 CUSTOMER_ID 参照 CUSTOMER 表的主键</strong><br><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n2joeoetj30l40483z0.jpg" width="400"/></p>
+<ul>
+<li><strong>显然无法直接用 property 映射 customer 属性</strong></li>
+<li><strong>Hibernate 使用 <code>&lt;many-to-one&gt;</code> 元素来映射多对一关联关系</strong><ul>
+<li><many-to-one> 元素来映射组成关系<ul>
+<li>name： 设定待映射的持久化类的属性的名字</li>
+<li>class：设定待映射的持久化类的属性的类型<pre><code>* column： 设定和持久化类的属性对应的表的外键</code></pre><code>&lt;many-to-one name=&quot;customer&quot; class=&quot;Customer&quot; column=&quot;CUSTOMER_ID&quot;&gt;&lt;/many-to-one&gt;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>插入</strong></p>
+<ul>
+<li><p>先插入 1 的一端, 再插入 n 的一端, 只有 INSERT 语句<br>session.save(customer)；<br>session.save(order1)；<br>session.save(order2)；</p>
+</li>
+<li><p>先插入 n 的一端, 再插入 1 的一端, 会多出 UPDATE 语句<br>session.save(order1)；<br>  session.save(order2)；<br>session.save(customer)；<br>因为在插入多的一端时, 无法确定 1 的一端的外键值。所以只能等 1 的一端插入后, 再额外发送 UPDATE 语句。</p>
+</li>
+</ul>
+<p><strong>推荐先插入 1 的一端, 后插入 n 的一端</strong></p>
+<hr>
+<p><strong>获取</strong></p>
+<ul>
+<li>若查询多的一端的一个对象, 则默认情况下, 只查询了多的一端的对象。 而没有查询关联的的那一端的对象！</li>
+<li>在需要使用到关联的对象时, 才发送对应的 SQL 语句 懒加载。<ul>
+<li>在查询 Customer 对象时, 由多的一端导航到 1 的一端时, 若此时 session 已被关闭, 则默认情况下 会发生 LazyInitializationException 异常</li>
+</ul>
+</li>
+<li>获取 Order 对象时, 默认情况下, 其关联的 Customer 对象是一个代理对象！</li>
+</ul>
+<hr>
+<p><strong>删除</strong></p>
+<ul>
+<li><strong>在不设定级联关系的情况下, 且 1 这一端的对象有 n 的对象在引用, 不能直接删除 1 这一端对象</strong></li>
+</ul>
+<hr>
+<p><strong>更新</strong></p>
+<ul>
+<li>一切正常</li>
+</ul>
+<hr>
+<h3 id="2、双向-1-N"><a href="#2、双向-1-N" class="headerlink" title="2、双向 1-N"></a>2、双向 1-N</h3><p><strong>双向 1-N 与 双向 N-1 是完全相同的两种情形</strong></p>
+<ul>
+<li>双向 1-N 需要在 1 的一端可以访问 N 的一端, 反之依然。</li>
+</ul>
+<p><strong>域模型：</strong></p>
+<ul>
+<li><strong>从 Order 到 Customer 的多对一双向关联需要在Order 类中定义一个 Customer 属性</strong></li>
+<li><strong>而在 Customer 类中需定义存放 Order 对象的集合属性</strong></li>
+<li><strong>声明集合类型时, 需使用接口类型, 因为 hibernate 在获取集合类型时, 返回的是 Hibernate 内置的集合类型, 而不是 JavaSE 一个标准的集合实现。</strong></li>
+<li><strong>在定义集合属性时, 通常把它初始化为集合实现类的一个实例。</strong><ul>
+<li><strong>这样可以提高程序的健壮性, 避免应用程序访问取值为 null 的集合的方法抛出 NullPointerException</strong></li>
+</ul>
+</li>
+</ul>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n2zte4boj30fq04eq3m.jpg" width="400"/>
+
+<p><strong>关系数据模型：ORDERS 表中的 CUSTOMER_ID 参照 CUSTOMER 表的主键。</strong><br><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n30ziwvdj30lu04hjrw.jpg" width="400"/></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 映射 一对多的集合属性 --&gt;</span></span><br><span class="line">set： 映射 set 类型的属性</span><br><span class="line">name： 设定待映射的持久化类的属性的。</span><br><span class="line">table： set 中的元素对应的记录放在哪一个数据表中。 该值需要和多对一的 多 的那个表的名字一致。</span><br><span class="line">inverse： 指定由哪一方来维护关联关系。通常设置为 true, 来使 1 的一端放弃维护关联关系 以指定由多的一端来维护关联关系。</span><br><span class="line">cascade： 设定级联操作。开发时不建议设定该属性。建议使用手工的方式来处理。</span><br><span class="line">order-by： 在查询时对集合中的元素进行排序, order-by 中使用的是表的字段名, 而不是持久化类的属性名。</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"orders"</span> <span class="attr">table</span>=<span class="string">"ORDERS"</span> <span class="attr">inverse</span>=<span class="string">"true"</span> <span class="attr">order-by</span>=<span class="string">"ORDER_NAME DESC"</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 执行多的表中的外键列的名字 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"CUSTOMER_ID"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 指定关联的持久化类的类名 映射类型 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">one-to-many</span> <span class="attr">class</span>=<span class="string">"Order"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">set</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>&lt;set&gt; 元素的 inverse 属性</strong></p>
+<ul>
+<li>在hibernate中通过对 inverse 属性的来决定是由双向关联的哪一方来维护表和表之间的关系。<ul>
+<li>inverse = false 的为主动方维护关联关系，inverse = true 的为被动方维护关联关系</li>
+</ul>
+</li>
+<li>在 1-N 关系中，将 n 方设为主控方将有助于性能改善<ul>
+<li>(如果要国家元首记住全国人民的名字，不是太可能，但要让全国人民知道国家元首，就容易的多)</li>
+</ul>
+</li>
+<li>在 1-N 关系中，若将 1 方设为主控方<ul>
+<li>会额外多出 update 语句 插入数据时无法同时插入外键列，因而无法为外键列添加非空约束</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>插入</strong></p>
+<p>order1.setCustomer(customer)；<br>order2.setCustomer(customer)；<br>customer.getOrders().add(order1)；<br>customer.getOrders().add(order2)；</p>
+<ul>
+<li>执行save 操作： 先插入 Customer, 再插入 Order, 会多出 UPDATE 语句</li>
+<li>因为 1 的一端和 n 的一端都维护关联关系。所以会多出 UPDATE</li>
+</ul>
+<p><strong>建议设定 set 的 inverse=true, 使 1 放弃维护关系。建议先插入 1 的一端, 后插入多的一端</strong></p>
+<hr>
+<p><strong>获取</strong></p>
+<ul>
+<li>若查询多的一端的一个对象, 则默认情况下, 只查询了多的一端的对象。 而没有查询关联的的那一端的对象！</li>
+<li>在需要使用到关联的对象时, 才发送对应的 SQL 语句 懒加载。<ul>
+<li>在需要使用集合中元素的时候进行初始化。</li>
+<li>若此时 session 已被关闭 会发生 LazyInitializationException 异常。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>删除</strong></p>
+<ul>
+<li><strong>在不设定级联关系的情况下, 且 1 这端的对象有 n 的对象在引用, 不能直接删除 1 这一端的对象</strong></li>
+</ul>
+<hr>
+<p><strong>更新</strong></p>
+<ul>
+<li>一切正常</li>
+</ul>
+<hr>
+<h2 id="映射一对一关联关系"><a href="#映射一对一关联关系" class="headerlink" title="映射一对一关联关系"></a>映射一对一关联关系</h2><p><strong>域模型：</strong><br><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n5s0ctr9j30j5066ab7.jpg" width="500"/></p>
+<hr>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n5x3xny5j30i4080q3u.jpg" width="600"/>
+
+<hr>
+<p><strong>基于外键映射的 1-1 关联</strong></p>
+<ul>
+<li><strong>其外键可以存放在任意一边，在需要存放外键一端，增加many-to-one元素。为many-to-one元素增加unique=“true”属性来表示为1-1关联。</strong></li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 使用 many-to-one 的方式来映射 1-1 关联关系 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">many-to-one</span> <span class="attr">name</span>=<span class="string">"mgr"</span> <span class="attr">class</span>=<span class="string">"Manager"</span> <span class="attr">column</span>=<span class="string">"MGR_ID"</span> <span class="attr">unique</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">many-to-one</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 映射 1-1 的关联关系： 在对应的数据表中已经有外键了, 当前持久化类使用 one-to-one 进行映射 --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 没有外键的一端需要使用one-to-one元素，该元素使用 property-ref 属性指定使用被关联实体主键以外的字段作为关联字段--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">one-to-one</span> <span class="attr">name</span>=<span class="string">"dept"</span> <span class="attr">class</span>=<span class="string">"Department"</span> <span class="attr">property-ref</span>=<span class="string">"mgr"</span>&gt;</span><span class="tag">&lt;/<span class="name">one-to-one</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>基于主键映射的 1-1 关联</strong></p>
+<p><strong>基于主键的映射策略：</strong></p>
+<ul>
+<li>指一端的主键生成器使用 foreign 策略,表明根据”对方”的主键来生成自己的主键，自己并不能独立生成主键。</li>
+<li>&lt;param&gt; 子元素指定使用当前持久化类的哪个属性作为 “对方”</li>
+</ul>
+<p><strong>采用foreign主键生成器策略的一端增加 one-to-one 元素映射关联属性，其one-to-one属性还应增加 constrained=“true” 属性；</strong></p>
+<ul>
+<li>另一端增加one-to-one元素映射关联属性。</li>
+</ul>
+<ul>
+<li>constrained(约束)：指定为当前持久化类对应的数据库表的主键添加一个外键约束，引用被关联的对象(“对方”)所对应的数据库表主键</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">id</span> <span class="attr">name</span>=<span class="string">"deptId"</span> <span class="attr">type</span>=<span class="string">"java.lang.Integer"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"DEPT_ID"</span> /&gt;</span></span><br><span class="line">	<span class="comment">&lt;!-- 使用外键的方式来生成当前的主键 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">generator</span> <span class="attr">class</span>=<span class="string">"foreign"</span>&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- property 属性指定使用当前持久化类的哪一个属性的主键作为外键 --&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">param</span> <span class="attr">name</span>=<span class="string">"property"</span>&gt;</span>mgr<span class="tag">&lt;/<span class="name">param</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">generator</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">one-to-one</span> <span class="attr">name</span>=<span class="string">"mgr"</span> <span class="attr">class</span>=<span class="string">"Manager"</span> <span class="attr">constrained</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">one-to-one</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="映射多对多关联关系"><a href="#映射多对多关联关系" class="headerlink" title="映射多对多关联关系"></a>映射多对多关联关系</h2><p><strong>单向 n-n</strong><br><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n6m4qmvyj30ug0i9gnx.jpg" width="500"/></p>
+<p><strong>n-n 的关联必须使用连接表</strong></p>
+<ul>
+<li>与 1-n 映射类似，必须为 set 集合元素添加 key 子元素，指定 CATEGORIES_ITEMS 表中参照 CATEGORIES 表的外键为 CATEGORIY_ID。</li>
+<li>与 1-n 关联映射不同的是，建立 n-n 关联时, 集合中的元素使用 many-to-many。</li>
+<li>many-to-many 子元素的 class 属性指定 items 集合中存放的是 Item 对象</li>
+<li>column 属性指定  CATEGORIES_ITEMS 表中参照 ITEMS 表的外键为 ITEM_ID</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- table: 指定中间表 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"Category"</span> <span class="attr">table</span>=<span class="string">"CATEGORIES"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"items"</span> <span class="attr">table</span>=<span class="string">"CATEGORIES_ITEMS"</span>&gt;</span></span><br><span class="line">	    <span class="tag">&lt;<span class="name">key</span>&gt;</span></span><br><span class="line">	        <span class="tag">&lt;<span class="name">column</span> <span class="attr">name</span>=<span class="string">"C_ID"</span> /&gt;</span></span><br><span class="line">	    <span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">	    <span class="comment">&lt;!-- 使用 many-to-many 指定多对多的关联关系. column 执行 Set 集合中的持久化类在中间表的外键列的名称  --&gt;</span></span><br><span class="line">	    <span class="tag">&lt;<span class="name">many-to-many</span> <span class="attr">class</span>=<span class="string">"Item"</span> <span class="attr">column</span>=<span class="string">"I_ID"</span>&gt;</span><span class="tag">&lt;/<span class="name">many-to-many</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">set</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">class</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">class</span> <span class="attr">name</span>=<span class="string">"hibernate.n2n.Item"</span> <span class="attr">table</span>=<span class="string">"ITEMS"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">set</span> <span class="attr">name</span>=<span class="string">"categories"</span> <span class="attr">table</span>=<span class="string">"CATEGORIES_ITEMS"</span> <span class="attr">inverse</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">key</span> <span class="attr">column</span>=<span class="string">"I_ID"</span>&gt;</span><span class="tag">&lt;/<span class="name">key</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">many-to-many</span> <span class="attr">class</span>=<span class="string">"hibernate.n2n.Category"</span> <span class="attr">column</span>=<span class="string">"C_ID"</span>&gt;</span><span class="tag">&lt;/<span class="name">many-to-many</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">set</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">class</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>双向 n-n</strong></p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g1n72ggp8ij30uv0ismzk.jpg" width="600"/>
+
+<p><strong>双向 n-n 关联需要两端都使用集合属性</strong><br><strong>双向n-n关联必须使用连接表</strong></p>
+<ul>
+<li>集合属性应增加 key 子元素用以映射外键列, 集合元素里还应增加many-to-many子元素关联实体类。</li>
+<li>在双向 n-n 关联的两边都需指定连接表的表名及外键列的列名。两个集合元素 set 的 table 元素的值必须指定，而且必须相同。<ul>
+<li>set元素的两个子元素：key 和 many-to-many 都必须指定 column 属性，其中，</li>
+<li>key 和 many-to-many 分别指定本持久化类和关联类在连接表中的外键列名，因此两边的 key 与 many-to-many 的column属性交叉相同。</li>
+<li>也就是说，一边的set元素的key的 cloumn值为a,many-to-many 的 column 为b；</li>
+<li>则另一边的 set 元素的 key 的 column 值 b,many-to-many的 column 值为 a. </li>
+</ul>
+</li>
+</ul>
+<p><strong>对于双向 n-n 关联, 必须把其中一端的 inverse 设置为 true, 否则两端都维护关联关系可能会造成主键冲突。</strong></p>
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2019/04/01/SpringMVC/" data-toggle="tooltip" data-placement="top" title="SpringMVC">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2019/03/24/Spring/" data-toggle="tooltip" data-placement="top" title="Spring">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=Hibernate&body=Hi,I found this website and thought you might like it http://yoursite-url/2019/03/26/Hibernate/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Tue Mar 26 2019 21:30:19 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#一、持久化框架"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、持久化框架</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#ORM的思想"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">ORM的思想</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#二、Hibernate-配置文件"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">二、Hibernate 配置文件</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、创建-hibernate-cfg-xml"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">1、创建 hibernate.cfg.xml</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、创建持久化-Java-类"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">2、创建持久化 Java 类</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、创建对象-关系映射文件"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">3、创建对象-关系映射文件</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、测试"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">4、测试</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#三、Hibernate-属性"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">三、Hibernate 属性</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、Configuration-类"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">1、Configuration 类</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、SessionFactory-接口"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">2、SessionFactory 接口</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、Session-接口"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">3、Session (接口)</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、Transaction-事务"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">4、Transaction(事务)</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#四、Hibernate-配置文件的配置项"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">四、Hibernate 配置文件的配置项</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、hbm2ddl-auto"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">1、hbm2ddl.auto</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、format-sql"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">2、format_sql</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、在-Hibernate-中设置隔离级别"><span class="toc-nav-number">4.3.</span> <span class="toc-nav-text">3、在 Hibernate 中设置隔离级别</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、在-hibernate-中使用-C3P0-数据源"><span class="toc-nav-number">4.4.</span> <span class="toc-nav-text">4、在 hibernate 中使用 C3P0 数据源</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#五、通过-Session-操纵对象"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">五、通过 Session 操纵对象</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、持久化对象-托管-（Persist）"><span class="toc-nav-number">5.1.</span> <span class="toc-nav-text">1、持久化对象 ( 托管 ) （Persist）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、临时对象（Transient）"><span class="toc-nav-number">5.2.</span> <span class="toc-nav-text">2、临时对象（Transient）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、游离对象-也叫-脱管）（Detached）"><span class="toc-nav-number">5.3.</span> <span class="toc-nav-text">3、游离对象(也叫 脱管）（Detached）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、删除对象-Removed"><span class="toc-nav-number">5.4.</span> <span class="toc-nav-text">4、删除对象(Removed)</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#👉对象的状态转换图"><span class="toc-nav-number">5.5.</span> <span class="toc-nav-text">👉对象的状态转换图</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-save-方法"><span class="toc-nav-number">5.6.</span> <span class="toc-nav-text">Session 的 save() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-get-和-load-方法"><span class="toc-nav-number">5.7.</span> <span class="toc-nav-text">Session 的 get() 和 load() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-update-方法"><span class="toc-nav-number">5.8.</span> <span class="toc-nav-text">Session 的 update() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-saveOrUpdate-方法"><span class="toc-nav-number">5.9.</span> <span class="toc-nav-text">Session 的 saveOrUpdate() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-merge-方法"><span class="toc-nav-number">5.10.</span> <span class="toc-nav-text">Session 的 merge() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-delete-方法"><span class="toc-nav-number">5.11.</span> <span class="toc-nav-text">Session 的 delete() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-Evict-方法"><span class="toc-nav-number">5.12.</span> <span class="toc-nav-text">Session 的 Evict() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-refresh-方法"><span class="toc-nav-number">5.13.</span> <span class="toc-nav-text">Session 的 refresh() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-的-clear-方法"><span class="toc-nav-number">5.14.</span> <span class="toc-nav-text">Session 的 clear() 方法</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Session-缓存"><span class="toc-nav-number">5.15.</span> <span class="toc-nav-text">Session 缓存</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#flush-缓存"><span class="toc-nav-number">5.16.</span> <span class="toc-nav-text">flush 缓存</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#六、对象关系映射文件"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">六、对象关系映射文件</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、hibernate-mapping"><span class="toc-nav-number">6.1.</span> <span class="toc-nav-text">1、hibernate-mapping</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、class"><span class="toc-nav-number">6.2.</span> <span class="toc-nav-text">2、class</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、id"><span class="toc-nav-number">6.3.</span> <span class="toc-nav-text">3、id</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、Property"><span class="toc-nav-number">6.4.</span> <span class="toc-nav-text">4、Property</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#5、映射-Java-的时间-日期类型"><span class="toc-nav-number">6.5.</span> <span class="toc-nav-text">5、映射 Java 的时间, 日期类型</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#7、Java-大对象类型的-Hiberante-映射"><span class="toc-nav-number">6.6.</span> <span class="toc-nav-text">7、Java 大对象类型的 Hiberante 映射</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#8、映射组成关系-component"><span class="toc-nav-number">6.7.</span> <span class="toc-nav-text">8、映射组成关系 component</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#七、通过-Hibernate-调用存储过程"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">七、通过 Hibernate 调用存储过程</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#八、Hibernate-与触发器协同工作"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">八、Hibernate 与触发器协同工作</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#九、映射一对多关联关系"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">九、映射一对多关联关系</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、单向-N-1"><span class="toc-nav-number">9.1.</span> <span class="toc-nav-text">1、单向 N-1</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、双向-1-N"><span class="toc-nav-number">9.2.</span> <span class="toc-nav-text">2、双向 1-N</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#映射一对一关联关系"><span class="toc-nav-number">10.</span> <span class="toc-nav-text">映射一对一关联关系</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#映射多对多关联关系"><span class="toc-nav-number">11.</span> <span class="toc-nav-text">映射多对多关联关系</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#感谢阅读"><span class="toc-nav-number"></span> <span class="toc-nav-text">感谢阅读</span></a>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#ORM 框架" title="ORM 框架">ORM 框架</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+          <li>
+            <a href="https://yexua.github.io/" target="_blank">yexua</a>
+          </li>
+          
+          <li>
+            <a href="https://snailclimb.gitee.io/javaguide/#/" target="_blank">JavaGuide</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/notes/%E5%89%91%E6%8C%87%20Offer%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%951" target="_blank">剑指Offer</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/" target="_blank">技术面试必备基础知识</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/Github-yuteng">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          余腾
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

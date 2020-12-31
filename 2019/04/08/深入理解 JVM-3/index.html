@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="Time" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2019/04/08/深入理解 JVM-3/">
+  <title>
+    
+    JVM 垃圾收集器-内存分配 - Bolg
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">所爱隔山海</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#JVM" title="JVM">JVM</a>
+              
+            </div>
+            <h1>JVM 垃圾收集器-内存分配</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 余腾 on
+              2019-04-08
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">41</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">10.4k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h1 id="一、垃圾收集器与内存分配策略"><a href="#一、垃圾收集器与内存分配策略" class="headerlink" title="一、垃圾收集器与内存分配策略"></a>一、垃圾收集器与内存分配策略</h1><p><strong>Java与C++之间有一堵由内存动态分配和垃圾收集技术所围成的“高墙”，</strong><br><strong>墙外面的人想进去，墙里面的人却想出来。</strong></p>
+<h2 id="JVM-体系结构"><a href="#JVM-体系结构" class="headerlink" title="JVM 体系结构"></a>JVM 体系结构</h2><p><strong>由于 JVM 跨平台性的设计，Java的指令都是根据栈来设计的。</strong><br><strong>不同平台CPU架构不同，所以不能设计为基于寄存器的。</strong></p>
+<ul>
+<li><strong>基于栈式架构</strong><ul>
+<li><strong>优点：跨平台， 指令集小，指令多，编译器容易实现。</strong></li>
+<li><strong>缺点：性能下降比寄存器差，实现同样的功能需要更多的指令。</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>GC 作用于 <code>方法区、堆</code></strong></p>
+<p><strong>元空间(Java8)与永久代Java7)之间最大的区别在于：</strong><br><strong>永久代使用的 JVM 的堆内存， 但是 Java8 以后的元空间并不在虚拟机中而是使用本机物理内存。</strong></p>
+<img src="https://i.loli.net/2019/08/02/5d43e7f6f3f8639980.png" alt="H8C~3ZLH0B@[I_L6]VD8G{E.png" title="H8C~3ZLH0B@[I_L6]VD8G{E.png" />
+
+
+
+<h3 id="PC-寄存器"><a href="#PC-寄存器" class="headerlink" title="PC 寄存器"></a>PC 寄存器</h3><p><strong>Register 的命名源于CPU的寄存器，寄存器存储指令相关的现场信息，CPU只有把数据装载到寄存器才能够运行。这里的 PC 寄存器 并非是广义上所指的物理寄存器，JVM 中的 PC 寄存器是对物理 PC 寄存器的一种抽象模拟，它是一块很小的内存空间，几乎可以忽略不计，也是运行速度最快的存储区域。每条线程都有它自己的 PC Register，线程私有，生命周期与线程的生命周期保持一致。</strong></p>
+<p><strong>作用：用来存储指向下一条指令的地址，也是即将要执行的指令代码，由执行引擎读取下一条指令。</strong></p>
+<h3 id="虚拟机栈"><a href="#虚拟机栈" class="headerlink" title="虚拟机栈"></a>虚拟机栈</h3><p><strong>每个线程在创建时都会创建一个虚拟机栈，内部保存一个个的栈帧 Stack Frame，对应 Java 方法的调用。线程私有，生命周期与线程的生命周期保持一致。</strong></p>
+<p><strong>作用：主管 Java 程序的运行，它保存方法的局部变量、部分结果，并参与方法的调用和返回。</strong></p>
+<p><strong>栈帧</strong></p>
+<ul>
+<li><strong>局部变量表 Local Variables</strong></li>
+<li><strong>操作数栈 Operand Stack</strong></li>
+<li><strong>动态链接 Dynamic Linking</strong></li>
+<li><strong>方法返回地址 Return Address</strong></li>
+<li><strong>附加信息</strong></li>
+</ul>
+<h3 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h3><hr>
+<img src="https://i.loli.net/2019/08/02/5d43ea9d087ce29704.png" alt="30_8695454HA{E}8VUPYI]G.png" title="30_8695454HA{E}8VUPYI]G.png" />
+
+
+
+
+
+
+
+<hr>
+<h2 id="1、引入计数法"><a href="#1、引入计数法" class="headerlink" title="1、引入计数法"></a>1、引入计数法</h2><p><strong>概念：</strong></p>
+<ul>
+<li><strong>在对象中引入计数器(无符号整数)，用于记录有多少对象引用了该对象。</strong></li>
+<li><strong>每当有一个地方引用它时，计数器加1；引用失效时，计数器减1。任何计数器为0的对象都是不可能再被使用的。</strong></li>
+</ul>
+<p><strong>优点：</strong><br>1、即刻回收垃圾，在更改引用时就知道该对象是否为垃圾若是垃圾立马进行回收。<br>2、STW短，回收垃圾不需要遍历堆了。（Stop-The-World）<br>3、不需要根据 GC Roots 遍历。</p>
+<p><strong>缺点：</strong><br>1、计数器值增减频繁。<br>2、计数器需要占用很多位。<br>3、实现繁琐，更新引用时很容易导致内存泄露。<br>4、<strong>循环引用无法回收(最重要的缺点)。</strong></p>
+<h3 id="引用计数算法的缺陷"><a href="#引用计数算法的缺陷" class="headerlink" title="引用计数算法的缺陷"></a>引用计数算法的缺陷</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReferenceCountingGC</span> </span>&#123;</span><br><span class="line">	<span class="keyword">public</span> Object instance = <span class="keyword">null</span>;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> int_1MB = <span class="number">1024</span> * <span class="number">1024</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">byte</span>[] bigSize = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">10</span> * int_1MB];</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">testGC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		ReferenceCountingGC a = <span class="keyword">new</span> ReferenceCountingGC();</span><br><span class="line">		ReferenceCountingGC b = <span class="keyword">new</span> ReferenceCountingGC();</span><br><span class="line">		a.instance = b;</span><br><span class="line">		b.instance = a;</span><br><span class="line">		</span><br><span class="line">		a = <span class="keyword">null</span>;</span><br><span class="line"> 		b = <span class="keyword">null</span>;</span><br><span class="line">		System.gc();</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		testGC();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>代码中的testGC()方法：</strong></p>
+<ul>
+<li>对象a和b都有字段instance，赋值令a.instance = b 及b.instance = a，除此之外，这两个对象再无任何引用，实际上这两个对象已经不可能再被访问，但是它们因为互相引用着对方，导致它们的引用计数都不为0，于是引用计数算法无法通知GC收集器回收它们。</li>
+</ul>
+<hr>
+<h2 id="2、可达性分析算法-GC-Roots"><a href="#2、可达性分析算法-GC-Roots" class="headerlink" title="2、可达性分析算法 GC Roots"></a>2、可达性分析算法 GC Roots</h2><p><strong>在Java中，是通过可达性分析（Reachability Analysis）来判定对象是否存活的。</strong></p>
+<p><strong>内存中已经不再被使用到的空间就是垃圾。</strong></p>
+<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
+<li><strong>该算法的基本思路就是通过一系列被称为引用链（GC Roots）的对象(枚举根节点)作为起点，从这些节点开始向下搜索，搜索走过的路径被称为<code>引用链（Reference Chain)</code></strong></li>
+<li><strong>当一个对象到GC Roots没有任何引用链相连时（即从GC Roots节点到该节点不可达），则证明该对象是不可用的。</strong></li>
+</ul>
+<hr>
+<p><strong>如图所示：</strong></p>
+<ul>
+<li><strong>object1~object4 对GC Roots 都是可达的，说明不可被回收。</strong></li>
+<li><strong>object5 和 object6、object7对 GC Roots节点 不可达，说明其可以被回收。</strong></li>
+</ul>
+<p><img src="../../img/articleImg/JVM-3.png" alt=""></p>
+<p><strong>在Java中，可作为GC Roots的对象包括以下几种：</strong></p>
+<ul>
+<li>虚拟机栈（栈帧中的本地变量表）中引用的对象。</li>
+<li>方法区中类静态属性引用的对象。</li>
+<li>方法区中常量引用的对象。</li>
+<li>本地方法栈中JNI（即一般说的Native方法）引用的对象。</li>
+</ul>
+<hr>
+<h2 id="3、引用"><a href="#3、引用" class="headerlink" title="3、引用"></a>3、引用</h2><p>无论通过引用计数算法判断对象的引用数量，还是通过可达性分析算法判断对象的引用链是否可达，都是判断对象是否存活都与”引用“有关。</p>
+<p><strong>在JDK1.2之后，Java对引用的概念做了扩充，将引用分为四类（这四种引用的强度依次递减）：</strong></p>
+<ul>
+<li><strong>强引用(Strong Reference)</strong></li>
+<li><strong>软引用(Soft Reference)</strong></li>
+<li><strong>弱引用(Weak Reference)</strong></li>
+<li><strong>虚引用(Phantom Reference)</strong></li>
+</ul>
+<img src="https://i.loli.net/2019/08/01/5d429972019ec99101.png" alt="HP4_XUP_U8IPRW()YFBQY~S.png" title="HP4_XUP_U8IPRW()YFBQY~S.png" />
+
+
+<h4 id="强引用-Strong-Reference"><a href="#强引用-Strong-Reference" class="headerlink" title="强引用(Strong Reference)"></a>强引用(Strong Reference)</h4><ul>
+<li>强引用就是指在程序代码中普遍存在的，类似 Object obj = new Object() 这类的引用。只要强引用在，垃圾收集器永远不会收集被引用的对象。也就是说，<code>宁愿出现内存溢出OOM，也不会回收这些对象，OOM发生的主要原因。</code></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StrongReference</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Object obj1 = <span class="keyword">new</span> Object();<span class="comment">//这样定义的默认就是强引用</span></span><br><span class="line">        Object obj2 = obj1;<span class="comment">//obj2 5引用赋值</span></span><br><span class="line">        obj1 = <span class="keyword">null</span>;<span class="comment">//置空</span></span><br><span class="line">        System.gc();</span><br><span class="line">        System.out.println(obj1);<span class="comment">//TODO null</span></span><br><span class="line">        System.out.println(obj2);<span class="comment">//TODO java.lang.Object@74a14482</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="软引用"><a href="#软引用" class="headerlink" title="软引用"></a>软引用</h4><ul>
+<li>软引用是用来描述一些还有用但并非必需的对象。对于软引用关联着的对象，在系统将要发生内存溢出异常之前，将会把这些对象列进回收范围之中进行第二次回收。如果这次回收还没有足够的内存，才会抛出内存溢出异常。</li>
+<li>场景 加载大量图片，可以使用软引用。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.ref.SoftReference;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SoftReferenceDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     *内存够用的时候就保留，不够用就回收!</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">softRef_Memory_Enough</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Object object1 = <span class="keyword">new</span> Object();</span><br><span class="line">        SoftReference&lt;Object&gt; softReference = <span class="keyword">new</span> SoftReference&lt;&gt;(object1);</span><br><span class="line">        System.out.println(object1);<span class="comment">//TODO java.lang.Object@74a14482</span></span><br><span class="line">        System.out.println(softReference.get());<span class="comment">//TODO java.lang.Object@74a14482</span></span><br><span class="line">        object1 = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line">        System.out.println(object1);<span class="comment">//TODO null</span></span><br><span class="line">        System.out.println(softReference.get());<span class="comment">//TODO java.lang.Object@74a14482</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * JVM配置，故意产生大对象并配置小的内存，让它内存不够用了 导致00M，看软引用的回收情况</span></span><br><span class="line"><span class="comment">     * -Xms5m -Xmx5m -XX: +PrintGCDetails</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">softRef_Memory_NotEnough</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Object object1 = <span class="keyword">new</span> Object();</span><br><span class="line">        SoftReference&lt;Object&gt; softReference = <span class="keyword">new</span> SoftReference&lt;&gt;(object1);</span><br><span class="line">        System.out.println(object1);<span class="comment">//TODO java.lang.Object@1540e19d</span></span><br><span class="line">        System.out.println(softReference.get());<span class="comment">//TODO java.lang.Object@1540e19d</span></span><br><span class="line"></span><br><span class="line">        object1 = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">30</span> * <span class="number">1024</span> * <span class="number">1014</span>];</span><br><span class="line">        &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">            System.out.println(object1);<span class="comment">//TODO null</span></span><br><span class="line">            System.out.println(softReference.get());<span class="comment">//TODO null</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"><span class="comment">//        softRef_Memory_Enough();</span></span><br><span class="line">        softRef_Memory_NotEnough();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="弱引用"><a href="#弱引用" class="headerlink" title="弱引用"></a>弱引用</h4><ul>
+<li>弱引用也是用来描述非必需对象的，但是它的强度比软引用更弱一些，被弱引用关联的对象只能生存到下一次垃圾收集发生之前。当垃圾收集器工作时，无论当前内存是否足够，都会回收掉只被弱引用关联的对象。</li>
+<li>场景 加载大量图片，可以使用弱引用。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.ref.WeakReference;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WeakReferenceDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        Object object1 = <span class="keyword">new</span> Object();</span><br><span class="line">        WeakReference&lt;Object&gt; weakReference = <span class="keyword">new</span> WeakReference&lt;&gt;(object1);</span><br><span class="line">        System.out.println(object1);<span class="comment">//TODO java.lang.Object@74a14482</span></span><br><span class="line">        System.out.println(weakReference.get());<span class="comment">//TODO java.lang.Object@74a14482</span></span><br><span class="line"></span><br><span class="line">        object1 = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line"></span><br><span class="line">        System.out.println(object1);<span class="comment">//TODO null</span></span><br><span class="line">        System.out.println(weakReference.get());<span class="comment">//TODO null</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="WeakHashMap"><a href="#WeakHashMap" class="headerlink" title="WeakHashMap"></a>WeakHashMap</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.WeakHashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WeakHashMapDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        myHashMap();</span><br><span class="line">        System.out.println(<span class="string">"----------------"</span>);</span><br><span class="line">        myWeakHashMap();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">myWeakHashMap</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        WeakHashMap&lt;Integer, String&gt; weakHashMap = <span class="keyword">new</span> WeakHashMap&lt;&gt;();</span><br><span class="line">        Integer key = <span class="keyword">new</span> Integer(<span class="number">2</span>);</span><br><span class="line">        String value = <span class="string">"WeakHashMap"</span>;</span><br><span class="line">        weakHashMap.put(key, value);</span><br><span class="line">        System.out.println(weakHashMap);<span class="comment">//&#123;2=WeakHashMap&#125;</span></span><br><span class="line"></span><br><span class="line">        key = <span class="keyword">null</span>;</span><br><span class="line">        System.out.println(weakHashMap);<span class="comment">//&#123;2=WeakHashMap&#125;</span></span><br><span class="line"></span><br><span class="line">        System.gc();</span><br><span class="line">        System.out.println(weakHashMap);<span class="comment">//TODO &#123;&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">myHashMap</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        HashMap&lt;Integer, String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">        Integer key = <span class="keyword">new</span> Integer(<span class="number">1</span>);</span><br><span class="line">        String value = <span class="string">"HashMap"</span>;</span><br><span class="line">        map.put(key, value);</span><br><span class="line">        System.out.println(map);<span class="comment">//&#123;1=HashMap&#125;</span></span><br><span class="line"></span><br><span class="line">        key = <span class="keyword">null</span>;</span><br><span class="line">        System.out.println(map);<span class="comment">//&#123;1=HashMap&#125;</span></span><br><span class="line"></span><br><span class="line">        System.gc();</span><br><span class="line">        System.out.println(map);<span class="comment">//&#123;1=HashMap&#125;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h4 id="虚引用"><a href="#虚引用" class="headerlink" title="虚引用"></a>虚引用</h4><ul>
+<li>虚引用也称为幽灵引用或者幻影引用，它是最弱的种引用关系。<code>一个对象是否有虚引用的存在，完全不会对其生存时间构成影响，也无法通过虚引用来取得一个对象实例，也不能单独使用，必须和引用队列(ReferenceQueue)联合使用</code>。在任何时候都有可能被垃圾回收器回收。为一个对象设置虚引用关联的唯一目的就是能在这个对象被收集器回收时收到一个系统通知。</li>
+<li>创建引用的时候可以指定关联的队列，当GC 释放对象内存的时候，会将引用加入到引用队列，如果程序发现某个虚引用已经被加入到引用队列，那么就可以在所引用的对象的内存被回收之前采取必要的行动这相当于是一种通知机制。当关联的引用队列中有数据的时候，意味着引用指向的堆内存中的对象被回收。通过这种方式, JVM允许我们在对象被销毁后，做一些我们自己想做的事情。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.ref.PhantomReference;</span><br><span class="line"><span class="keyword">import</span> java.lang.ref.ReferenceQueue;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PhantomReferenceDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        Object object1 = <span class="keyword">new</span> Object();</span><br><span class="line">        ReferenceQueue&lt;Object&gt; referenceQueue = <span class="keyword">new</span> ReferenceQueue&lt;&gt;();</span><br><span class="line">        PhantomReference&lt;Object&gt; phantomReference = <span class="keyword">new</span> PhantomReference&lt;&gt;(object1, referenceQueue);</span><br><span class="line"></span><br><span class="line">        System.out.println(object1);<span class="comment">//java.lang.Object@74a14482</span></span><br><span class="line">        System.out.println(phantomReference.get());<span class="comment">//TODO null</span></span><br><span class="line">        System.out.println(referenceQueue.poll());<span class="comment">//TODO null</span></span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"=========GC 后放入引用队列==========="</span>);</span><br><span class="line"></span><br><span class="line">        object1 = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line">        Thread.sleep(<span class="number">500</span>);</span><br><span class="line"></span><br><span class="line">        System.out.println(object1);<span class="comment">//TODO null</span></span><br><span class="line">        System.out.println(phantomReference.get());<span class="comment">//TODO null</span></span><br><span class="line">        System.out.println(referenceQueue.poll());<span class="comment">//TODO java.lang.ref.PhantomReference@1540e19d</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">java.lang.Object@74a14482</span></span><br><span class="line"><span class="comment">null</span></span><br><span class="line"><span class="comment">null</span></span><br><span class="line"><span class="comment">=========GC 后放入引用队列===========</span></span><br><span class="line"><span class="comment">null</span></span><br><span class="line"><span class="comment">null</span></span><br><span class="line"><span class="comment">java.lang.ref.PhantomReference@1540e19d</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h4 id="引用队列-ReferenceQueue"><a href="#引用队列-ReferenceQueue" class="headerlink" title="引用队列 ReferenceQueue"></a>引用队列 ReferenceQueue</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.ref.ReferenceQueue;</span><br><span class="line"><span class="keyword">import</span> java.lang.ref.WeakReference;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ReferenceQueueDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        Object object1 = <span class="keyword">new</span> Object();</span><br><span class="line">        ReferenceQueue&lt;Object&gt; referenceQueue = <span class="keyword">new</span> ReferenceQueue&lt;&gt;();</span><br><span class="line">        WeakReference&lt;Object&gt; weakReference = <span class="keyword">new</span> WeakReference&lt;&gt;(object1, referenceQueue);</span><br><span class="line"></span><br><span class="line">        System.out.println(object1);</span><br><span class="line">        System.out.println(weakReference.get());</span><br><span class="line">        System.out.println(referenceQueue.poll());</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"=========GC后 对象引用被放入引用队列========"</span>);</span><br><span class="line"></span><br><span class="line">        object1 = <span class="keyword">null</span>;</span><br><span class="line">        System.gc();</span><br><span class="line">        Thread.sleep(<span class="number">500</span>);</span><br><span class="line">        System.out.println(object1);</span><br><span class="line">        System.out.println(weakReference.get());</span><br><span class="line">        System.out.println(referenceQueue.poll());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//TODO</span></span><br><span class="line">java.lang.Object@<span class="number">74</span>a14482</span><br><span class="line">java.lang.Object@<span class="number">74</span>a14482</span><br><span class="line"><span class="keyword">null</span></span><br><span class="line">=========GC后 对象引用被放入引用队列========</span><br><span class="line"><span class="keyword">null</span></span><br><span class="line"><span class="keyword">null</span></span><br><span class="line">java.lang.ref.WeakReference@<span class="number">1540e19</span>d</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="生存还是死亡"><a href="#生存还是死亡" class="headerlink" title="生存还是死亡"></a>生存还是死亡</h3><p><strong>要真正宣告一个对象死亡，至少要经历两次标记过程：</strong></p>
+<ul>
+<li><p><strong>如果对象在进行可达性分析后发现没有与 GC Rooots 相连接的引用链，那它将会被第一次标记并且进行一次筛选。</strong></p>
+<ul>
+<li><strong>筛选的条件是此对象是否有必要执行 finalize() 方法：</strong> 当对象没有覆盖finalize() 方法，或者finalize()方法已经被虚拟机调用过，虚拟机将这两种情况都视为“没有必要执行”。</li>
+</ul>
+</li>
+<li><p>如果对象要在finalize()中成功拯救自己，只要重新与引用链上的任何一个对象建立关联即可。那在第二次标记时它将被移除出“即将回收”的集合;如果对象这时候还没有逃脱，那基本上它就真的被回收了。</p>
+</li>
+</ul>
+<h2 id="二、垃圾收集算法"><a href="#二、垃圾收集算法" class="headerlink" title="二、垃圾收集算法"></a>二、垃圾收集算法</h2><h3 id="1、标记-—-清除算法（Mark-Sweep）"><a href="#1、标记-—-清除算法（Mark-Sweep）" class="headerlink" title="1、标记 — 清除算法（Mark-Sweep）"></a>1、标记 — 清除算法（Mark-Sweep）</h3><p><strong>标记 - 清除算法是最基础的收集算法，算法分为两个阶段“标记“和”清除。</strong><br><strong>首先标记出所有需要回收的对象，在标记完成后统一回收所有被标记的对象 <code>用于老年代</code>。</strong></p>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>效率问题：标记和清除两个过程的效率都不高；</li>
+<li>空间问题：标记清除之后会产生大量不连续的内存碎片。</li>
+<li>空间碎片太多可能会导致以后在程序运行过程中需要分配较大对象时，无法找到足够的连续内存而不得不提前触发另一次垃圾收集动作。</li>
+</ul>
+<hr>
+<h3 id="2、复制算法（Copying）"><a href="#2、复制算法（Copying）" class="headerlink" title="2、复制算法（Copying）"></a>2、复制算法（Copying）</h3><p><strong>实现简单，运行高效。<code>适合年轻代</code></strong></p>
+<ul>
+<li><strong>为了解决效率：它将可用内存按容量划分为大小相等的两块，每次只使用其中的一块。</strong><br><strong>当这一块的内存用完了，就将还存活着的对象复制到另外一块上面，然后再把已使用过的内存空间一次清理掉。这样使得每次都是对其中的一块进行内存回收，内存分配时也就不用考虑内存碎片等复杂情况，只要移动堆顶指针，按顺序分配内存即可。</strong></li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>效率问题：在对象存活率较高时，复制操作次数多，效率降低；</li>
+<li>空间问题：內存缩小了一半；需要額外空间做分配担保(老年代)。</li>
+</ul>
+<hr>
+<h3 id="3、标记-—-整理算法-Mark-Compact"><a href="#3、标记-—-整理算法-Mark-Compact" class="headerlink" title="3、标记 — 整理算法(Mark-Compact)"></a>3、标记 — 整理算法(Mark-Compact)</h3><p><strong>根据<code>老年代</code>的特点，有人提出了另外一种“标记-整理”（Mark-Compact）算法</strong></p>
+<p>标记过程与“标记-清除”算法一样，但后续步骤不是直接对可回收对象进行清理，<br>而是让所有存活的对象都向一端移动，然后直接清理掉端边界以外的内存。</p>
+<hr>
+<h3 id="4、分代收集算法（Generational-Collection）"><a href="#4、分代收集算法（Generational-Collection）" class="headerlink" title="4、分代收集算法（Generational Collection）"></a>4、分代收集算法（Generational Collection）</h3><p><strong>GC分代的基本假设：绝大部分对象的生命周期都非常短暂，存活时间短。</strong></p>
+<p><strong>“分代收集”算法：把 Java堆 分为 新生代 和 老年代，根据各个年代的特点采用适当的收集算法。</strong></p>
+<p><strong>在新生代中：</strong> 每次垃圾收集时都有大批对象死去，只有少量存活，选用<code>复制算法</code>，只需要付出少量存活对象的复制成本就可以完成收集。</p>
+<p><strong>在老年代中：</strong> 因为对象存活率高、没有额外空间对它进行分配担保，就必须使用“<code>标记-清除</code>”或“<code>标记-整理</code>”算法来进行回收。</p>
+<hr>
+<h2 id="三、垃圾收集器"><a href="#三、垃圾收集器" class="headerlink" title="三、垃圾收集器"></a>三、垃圾收集器</h2><p><strong>Java8 默认垃圾收集器  -XX:+UseParallelGC (并行GC)</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">java -XX:+PrintCommandLineFlags -version</span><br><span class="line"></span><br><span class="line">-XX:InitialHeapSize=<span class="number">132510208</span> </span><br><span class="line">-XX:MaxHeapSize=<span class="number">2120163328</span> </span><br><span class="line">-XX:+PrintCommandLineFlags </span><br><span class="line">-XX:+UseCompressedClassPointers </span><br><span class="line">-XX:+UseCompressedOops </span><br><span class="line">-XX:-UseLargePagesIndividualAllocation </span><br><span class="line">-XX:+UseParallelGC</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>如果说收集算法是内存回收的方法论，那么垃圾收集器就是内存回收的具体实现。</strong></p>
+<ul>
+<li><strong>Serial：串行</strong></li>
+<li><strong>Parallel：并行</strong></li>
+<li><strong>CMS（Concurrent Mark Sweep）：并发标记</strong></li>
+<li><strong>GC：G1(Garbage First)</strong></li>
+</ul>
+<p><strong>HotSpot虚拟机：包含的所有收集器（⑦大垃圾收集器）如下图所示：</strong></p>
+<img src="https://i.loli.net/2019/08/02/5d43d9609fa8918958.png" alt="FBHD2J2GFYB`89K}NR$IK[Q.png" title="FBHD2J2GFYB`89K}NR$IK[Q.png" />
+
+
+<p><strong>相关概念</strong></p>
+<p><strong>并行（Parallel）：</strong> 指多条垃圾收集线程并行工作，但此时用户线程仍然处于等待状态。<br><strong>并发（Concurrent）：</strong> 指用户线程与垃圾收集线程同时执行（但不一定是并行的可能会交替执行）<br><strong>吞吐量（Throughput）：</strong> 吞吐量就是CPU用于运行用户代码的时间与CPU总消耗时间的比值。</p>
+<ul>
+<li><strong>吞吐量 = 运行用户代码时间 /（运行用户代码时间 + 垃圾收集时间）。</strong></li>
+<li><strong>假设虚拟机总共运行了100分钟，其中垃圾收集花掉1分钟，那吞吐量就是99%。</strong></li>
+</ul>
+<p><strong>Server模式/Client模式 操作系统：</strong></p>
+<ul>
+<li><strong>32位 Window 操作系统, ,不论硬件如何都默认使用 Client 的JVM模式</strong></li>
+<li><strong>32位其它操作 系统，2G内存同时有2个cpu以上用 Server 模式，低于该配置还是 Client 模式</strong></li>
+<li><strong>64位 only server 模式</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>简写</th>
+<th>意义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DefNew</td>
+<td>Default New Generation - Serial</td>
+</tr>
+<tr>
+<td>Tenured</td>
+<td>Old  - Serial Old</td>
+</tr>
+<tr>
+<td>ParNew</td>
+<td>Parallel New Generation</td>
+</tr>
+<tr>
+<td>PSYoungGen</td>
+<td>Parallel Scavenge</td>
+</tr>
+<tr>
+<td>ParOldGen</td>
+<td>Parallel Old Generation</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="Minor-GC-和-Major-Full-GC"><a href="#Minor-GC-和-Major-Full-GC" class="headerlink" title="Minor GC 和 Major/Full GC"></a>Minor GC 和 Major/Full GC</h3><p><strong>新生代GC（Minor GC）：</strong></p>
+<ul>
+<li>指发生在新生代的垃圾收集动作，因为Java对象大多都具备朝生夕灭的特性，所以Minor GC非常频繁，一般回收速度也比较快。</li>
+</ul>
+<p><strong>老年代GC（Major GC / Full GC）：</strong></p>
+<ul>
+<li>指发生在老年代的GC，出现了Major GC，经常会伴随至少一次的Minor GC。Major GC的速度一般会比Minor GC慢10倍以上。</li>
+</ul>
+<hr>
+<h3 id="新生代收集器"><a href="#新生代收集器" class="headerlink" title="新生代收集器"></a>新生代收集器</h3><h4 id="1、Serial-收集器-Client-模式"><a href="#1、Serial-收集器-Client-模式" class="headerlink" title="1、Serial 收集器 (Client 模式)"></a>1、Serial 收集器 (Client 模式)</h4><p><strong>它是一个单线程收集器，简单而高效。</strong></p>
+<p><strong>Serial（串行）收集器是最基本、发展历史最悠久的收集器，它是采用<code>复制算法</code>的<code>新生代收集器</code>。</strong></p>
+<p><strong>它在进行垃圾收集时，必须暂停其他所有的工作线程，直至 Serial 收集器 收集结束为止（STW）</strong></p>
+<ul>
+<li>这项工作是由虚拟机在后台自动发起和自动完成的，在用户不可见的情况下把用户正常工作线程全部停掉，这对很多应用来说是难以接收的</li>
+</ul>
+<p><strong>Serial收集器由于没有线程交互的开销，专心做垃圾收集自然可以获得最高的单线程收集效率。</strong></p>
+<p><strong>当新生代激活了 Serial 收集器，老年代自动激活 Serial Old 收集器。</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseSerialGC</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>下图展示了<code>Serial /Serial Old</code>收集器（老年代采用Serial Old收集器）的运行过程：</strong></p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g22fztoffzj31120i0t9w.jpg" width="900"/> 
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> * java -XX:+PrintCommandLineFlags -version</span></span><br><span class="line"><span class="comment"> * &lt;p&gt;</span></span><br><span class="line"><span class="comment"> * -XX:InitialHeapSize=132510208</span></span><br><span class="line"><span class="comment"> * -XX:MaxHeapSize=2120163328</span></span><br><span class="line"><span class="comment"> * -XX:+PrintCommandLineFlags</span></span><br><span class="line"><span class="comment"> * -XX:+UseCompressedClassPointers</span></span><br><span class="line"><span class="comment"> * -XX:+UseCompressedOops</span></span><br><span class="line"><span class="comment"> * -XX:-UseLargePagesIndividualAllocation</span></span><br><span class="line"><span class="comment"> * -XX:+UseParallelGC</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseSerialGC</span></span><br><span class="line"><span class="comment"> * GC (Allocation Failure) [DefNew          Default New Generation</span></span><br><span class="line"><span class="comment"> * Full GC (Allocation Failure) [Tenured   Old</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * //TODO DefNew + Tenured</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SerialGC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h4 id="2、ParNew-收集器-Server-模式"><a href="#2、ParNew-收集器-Server-模式" class="headerlink" title="2、ParNew 收集器 (Server 模式)"></a>2、ParNew 收集器 (Server 模式)</h4><p><strong>ParNew 收集器 就是 Serial 收集器 的多线程版本，它也是一个<code>新生代收集器</code>。</strong><br><strong>除了使用多线程进行垃圾收集之外，其余行为包括Serial收集器可用的所有控制参数、收集算法（复制算法）、Stop The World、对象分配规则、回收策略等与Serial收集器完全相同，两者共用了相当多的代码。</strong></p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g22g4t6e5fj311q0i1myj.jpg" width="900"/> 
+
+<p>ParNew 收集器 除了使用多线程收集外，其他与 Serial收集器 相比并无太多创新之处，但它却是许多运行在 Server模式下的虚拟机中首选的新生代收集器，其中有一个与性能无关的重要原因是，除了Serial收集器外，目前<code>只有它能和CMS收集器（Concurrent Mark Sweep）配合工作</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * java -XX:+PrintCommandLineFlags -version</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseParNewGC</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [GC (Allocation Failure) [ParNew          Parallel New Generation</span></span><br><span class="line"><span class="comment"> * [Full GC (Allocation Failure) [Tenured    Old</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * //TODO ParNew + Tenured</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * Java HotSpot(TM) 64-Bit Server VM warning:</span></span><br><span class="line"><span class="comment"> * Using the ParNew young collector with the Serial old collector is deprecated and will likely be removed in a future release</span></span><br><span class="line"><span class="comment"> * 不推荐将 ParNew收集器 与 Serial Old收集器 一起使用，并且可能会在将来的版本中删除</span></span><br><span class="line"><span class="comment"> * 推荐 ParNew收集器 与 CMS收集器一起使用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ParNewGC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h4 id="3、Parallel-Scavenge-收集器"><a href="#3、Parallel-Scavenge-收集器" class="headerlink" title="3、Parallel Scavenge 收集器"></a>3、Parallel Scavenge 收集器</h4><p><strong>Java8 新生代默认收集器，新生代老年代都用并行收集器(Parallel Scavenge + Parallel Old)。</strong></p>
+<p><strong>Parallel Scavenge 收集器 也是一个并行的多线程<code>新生代收集器</code>，它也使用<code>复制算法</code>。</strong><br><strong>Parallel Scavenge收集器的特点是它的关注点与其他收集器不同：</strong></p>
+<ul>
+<li><strong><code>CMS</code> 等收集器的关注点是尽可能缩短垃圾收集时用户线程的停顿时间；</strong></li>
+<li><strong><code>Parallel Scavenge</code>收集器的目标是达到一个<code>可控制的吞吐量（Throughput）</code>。</strong></li>
+</ul>
+<p><strong>停顿时间越短就越适合需要与用户交互的程序，良好的响应速度能提升用户体验。而高吞吐量则可以高效率地利用CPU时间，尽快完成程序的运算任务，主要适合在后台运算而不需要太多交互的任务。自适应调解策略</strong></p>
+<ul>
+<li>另外值得注意的一点是，<strong>Parallel Scavenge收集器无法与CMS收集器配合使用；</strong></li>
+<li><strong>所以在JDK 1.6推出Parallel Old之前，如果新生代选择Parallel Scavenge收集器，老年代只有Serial Old收集器能与之配合使用，现在与 <code>Parallel Old</code> 配合使用。</strong></li>
+</ul>
+<p><strong>-XX:+UseParallelGC 或 -XX:+UseParallelOldGC(可互相激活)使用Parallel Scanvenge收集器</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseParallelGC</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [GC (Allocation Failure) [PSYoungGen:  Parallel Scavenge</span></span><br><span class="line"><span class="comment"> * [Full GC (Ergonomics) [PSYoungGen: 2047K-&gt;0K(2560K)] [ParOldGen:     Parallel Old Generation</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * //TODO PSYoungGen + ParOldGen</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ParallelGC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h3 id="老年代收集器"><a href="#老年代收集器" class="headerlink" title="老年代收集器"></a>老年代收集器</h3><h4 id="1、Serial-Old-收集器"><a href="#1、Serial-Old-收集器" class="headerlink" title="1、Serial Old 收集器"></a>1、Serial Old 收集器</h4><p><strong>Serial Old 是 Serial收集器的老年代版本，它同样是一个单线程收集器，使用“标记-整理”（Mark-Compact）算法。</strong></p>
+<p><strong>此收集器的意义也是在于给Client模式下的虚拟机使用。如果在Server模式下，它还有两大用途：</strong></p>
+<ul>
+<li>在JDK1.5 以及之前版本（Parallel Old诞生以前）中与Parallel Scavenge收集器搭配使用。</li>
+<li>作为CMS收集器的后备预案，在并发收集发生 Concurrent Mode Failure 时使用。</li>
+</ul>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g22fztoffzj31120i0t9w.jpg" width="900"/> 
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseSerialOldGC</span></span><br><span class="line"><span class="comment"> * //TODO 此参数Java8已经被优化,不存在了   </span></span><br><span class="line"><span class="comment"> * Error: Could not create the Java Virtual Machine.</span></span><br><span class="line"><span class="comment"> * Error: A fatal exception has occurred. Program will exit.</span></span><br><span class="line"><span class="comment"> * Unrecognized VM option 'UseSerialOldGC'</span></span><br><span class="line"><span class="comment"> * Did you mean '(+/-)UseSerialGC'?</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * 错误：无法创建Java虚拟机。</span></span><br><span class="line"><span class="comment"> * 错误：发生了致命异常。 程序将会退出。</span></span><br><span class="line"><span class="comment"> * 无法识别的VM选项'UseSerialOldGC'</span></span><br><span class="line"><span class="comment"> * 你的意思是'（+/-）UseSerialGC'？</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SerialOldGC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h4 id="2、Parallel-Old-收集器"><a href="#2、Parallel-Old-收集器" class="headerlink" title="2、Parallel Old 收集器"></a>2、Parallel Old 收集器</h4><p><strong>Parallel Old收集器是Parallel Scavenge收集器的老年代版本，使用<code>多线程</code>和<code>“标记-整理”</code>算法。</strong></p>
+<p>前面已经提到过，这个收集器是在 JDK 1.6 中才开始提供的，在此之前，如果新生代选择了Parallel Scavenge收集器，老年代除了Serial Old以外别无选择，所以在Parallel Old诞生以后，<code>“吞吐量优先”收集器</code>终于有了比较名副其实的应用组合，在注重吞吐量以及CPU资源敏感的场合，都可以优先考虑<code>Parallel Scavenge加Parallel Old</code>收集器。</p>
+<p><strong>Parallel Old收集器的工作流程与Parallel Scavenge相同。</strong></p>
+<p>这里给出Parallel Scavenge/Parallel Old收集器配合使用的流程图：</p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g22g6j6pwdj311j0gzmyf.jpg" width="900"/> 
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseParallelOldGC</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [GC (Allocation Failure) [PSYoungGen:  Parallel Scavenge</span></span><br><span class="line"><span class="comment"> * [Full GC (Ergonomics) [PSYoungGen: 2047K-&gt;0K(2560K)] [ParOldGen:     Parallel Old Generation</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * //TODO PSYoungGen + ParOldGen</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ParallelOldGC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="3、CMS-收集器"><a href="#3、CMS-收集器" class="headerlink" title="3、CMS 收集器"></a>3、CMS 收集器</h4><p><strong>CMS（Concurrent Mark Sweep）并发标记收集器是一种以获取最短回收停顿时间为目标的收集器，它非常符合那些集中在互联网站或者B/S系统的服务端上的Java应用这些应用都非常重视服务的响应速度。</strong><br><strong>从名字上（“Mark Sweep”）就可以看出它是基于“标记-清除”算法实现的。清除 GC Roots 不可达对象</strong></p>
+<p><strong>CMS收集器工作的整个流程分为以下4个步骤：</strong></p>
+<ul>
+<li><strong>初始标记（CMS initial mark）：</strong> 仅仅只是标记一下GC Roots能直接关联到的对象，速度很快，需要“Stop The World”。</li>
+<li><strong>并发标记（CMS concurrent mark）：</strong> 进行GC Roots Tracing的过程，在整个过程中耗时最长。</li>
+<li><strong>重新标记（CMS remark）：</strong> 为了修正并发标记期间因用户程序继续运作而导致标记产生变动的那一部分对象的标记记录，这个阶段的停顿时间一般会比初始标记阶段稍长一些，但远比并发标记的时间短。此阶段也需要“Stop The World”。</li>
+<li><strong>并发清除（CMS concurrent sweep）</strong></li>
+</ul>
+<blockquote>
+<p>由于整个过程中耗时最长的并发标记和并发清除过程收集器线程都可以与用户线程一起工作，<br>所以，<strong>从总体上来说，CMS收集器的内存回收过程是与用户线程一起并发执行的。</strong></p>
+</blockquote>
+<p><strong>老年代使用CMS -XX:+UseConcMarkSweepGC，新生代自动激活使用 ParNewGC 收集器。并且和 Serial Old收集器组合使用，Serial Old将作为CMS出错的后备收集器。</strong></p>
+<p><strong>通过下图可以比较清楚地看到CMS收集器的运作步骤中并发和需要停顿的时间：</strong></p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g22f4wr02hj30yq0hy75t.jpg" width="900"/>
+
+<p><strong>优点：</strong><br>CMS是一款优秀的收集器，<code>并发收集</code>、<code>低停顿</code>，因此CMS收集器也被称为<code>并发低停顿收集器</code>（Concurrent Low Pause Collector）。</p>
+<hr>
+<p><strong>缺点：</strong></p>
+<ul>
+<li><strong>对CPU资源非常敏感。</strong></li>
+<li><strong>CMS 必须要在老年代堆内存用尽之前完成垃圾回收，否则 CMS 回收失败时，将触发保护机制，串行老年代收集器将会以 STW 的方式进行一次 GC，从而造成较大的停顿时间。</strong></li>
+<li><strong>无法处理浮动垃圾（Floating Garbage）</strong>，由于CMS并发清理阶段用户线程还在运行着，伴随程序运行自然就还会有新的垃圾不断产生。</li>
+<li><strong>标记-清除算法导致的空间碎片</strong>，这意味着收集结束时会有大量空间碎片产生。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:+PrintCommandLineFlags -XX:+UseConcMarkSweepGC</span></span><br><span class="line"><span class="comment"> * 老年代使用CMS -XX:+UseConcMarkSweepGC，新生代自动激活使用 ParNewGC 收集器。</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * [GC (Allocation Failure) [ParNew:</span></span><br><span class="line"><span class="comment"> * [Full GC (Allocation Failure) [CMS:</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * //TODO ParNew + CMS</span></span><br><span class="line"><span class="comment"> * [GC (CMS Initial Mark)</span></span><br><span class="line"><span class="comment"> * [CMS-concurrent-mark-start]</span></span><br><span class="line"><span class="comment"> * [GC (CMS Final Remark)</span></span><br><span class="line"><span class="comment"> * [CMS-concurrent-sweep-start]</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CMSGC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="垃圾收集器的选择"><a href="#垃圾收集器的选择" class="headerlink" title="垃圾收集器的选择"></a>垃圾收集器的选择</h3><p><strong>组合：</strong></p>
+<ul>
+<li><strong>单CPU或小内存，单机程序。</strong><ul>
+<li><strong><code>-XX:+UseSerialGC</code></strong></li>
+</ul>
+</li>
+<li><strong>多CPU，需要最大吞吐量，如后台计算型应用。</strong><ul>
+<li><strong><code>-XX:+UseParallelGC/-XX:+UseParallelOldGC</code></strong></li>
+</ul>
+</li>
+<li><strong>多CPU ，追求低停顿时间，需快速响应如互联网应用。</strong><ul>
+<li><strong><code>-XX:+UseConcMarkSweepGC/-XX:+UseParNewGC</code></strong></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="四、G1收集器"><a href="#四、G1收集器" class="headerlink" title="四、G1收集器"></a>四、G1收集器</h2><p><strong>G1（Garbage-First）收集器是收集器技术发展最前沿的成果之一，面向服务端应用的垃圾收集器。</strong></p>
+<p><strong>Java9 默认收集器</strong></p>
+<p><strong>与其他GC收集器相比，G1具备如下特点：</strong></p>
+<ul>
+<li><p><strong>并行与并发：</strong> G1 能充分利用多CPU、多核环境下的硬件优势，使用多个CPU来缩短“Stop The World”停顿时间，部分其他收集器原本需要停顿 Java 线程执行的 GC 动作，G1收集器仍然可以通过并发的方式让Java程序继续执行。</p>
+</li>
+<li><p><strong>分代收集：</strong> 与其他收集器一样，分代概念在G1中依然得以保留。虽然G1可以不需要其他收集器配合就能独立管理整个GC堆，但它能够采用不同方式去处理新创建的对象和已存活一段时间、熬过多次GC的旧对象来获取更好的收集效果，G1没有内存碎片。</p>
+</li>
+<li><p><strong>空间整合：</strong> G1从整体来看是基于“标记-整理”算法实现的收集器，从局部（两个Region之间）上来看是基于“复制”算法实现的。这意味着G1运行期间不会产生内存空间碎片，收集后能提供规整的可用内存。此特性有利于程序长时间运行，分配大对象时不会因为无法找到连续内存空间而提前触发下一次GC。</p>
+</li>
+<li><p><strong>可预测的停顿：</strong> 这是G1相对CMS的一大优势，<code>降低停顿时间是G1和CMS共同的关注点</code>，但G1除了降低停顿外，还能建立可预测的停顿时间模型，能让使用者明确指定在一个长度为M毫秒的时间片段内，消耗在GC上的时间不得超过N毫秒，这几乎已经是实时Java（RTSJ）的垃圾收集器的特征了。</p>
+</li>
+</ul>
+<hr>
+<h3 id="1、横跨整个堆内存"><a href="#1、横跨整个堆内存" class="headerlink" title="1、横跨整个堆内存"></a>1、横跨整个堆内存</h3><p>在G1之前的其他收集器进行收集的范围都是整个新生代或者老生代，而G1不再是这样。G1在使用时，Java堆的内存布局与其他收集器有很大区别，<strong><code>它将整个Java堆划分为多个大小相等的独立区域（Region 1M~32M不等，必须是2的幂，默认为2048个分区）虽然还保留新生代和老年代的概念</code></strong>，新生代和老年代不再是物理隔离的了，而都是一部分 Region（不需要连续，不要求对象存储一定是物理上的连续，只要逻辑上连续即可）的集合。</p>
+<hr>
+<h3 id="2、建立可预测的时间模型"><a href="#2、建立可预测的时间模型" class="headerlink" title="2、建立可预测的时间模型"></a>2、建立可预测的时间模型</h3><p><strong>有计划地避免在整个Java堆中进行全区域的垃圾收集。</strong></p>
+<p>G1跟踪各个Region里面的垃圾堆积的价值大小（回收所获得的空间大小以及回收所需时间的经验值），<strong>在后台维护一个优先列表，每次根据允许的收集时间</strong>，优先回收价值最大的Region（这也就是Garbage-First名称的来由）。这种使用Region划分内存空间以及有优先级的区域回收方式，保证了G1收集器在有限的时间内可以获取尽可能高的收集效率。</p>
+<hr>
+<h3 id="3、避免全堆扫描——Remembered-Set"><a href="#3、避免全堆扫描——Remembered-Set" class="headerlink" title="3、避免全堆扫描——Remembered Set"></a>3、避免全堆扫描——Remembered Set</h3><p><strong>G1把Java堆分为多个Region，就是“<code>化整为零</code>”。</strong></p>
+<p>但是Region不可能是孤立的，一个对象分配在某个Region中，可以与整个Java堆任意的对象发生引用关系。在做可达性分析确定对象是否存活的时候，需要扫描整个Java堆才能保证准确性，这显然是对GC效率的极大伤害。</p>
+<p>为了避免全堆扫描的发生，虚拟机<strong>为G1中每个Region维护了一个与之对应的Remembered Set</strong>。<br>虚拟机发现程序在对Reference类型的数据进行写操作时，会产生一个Write Barrier暂时中断写操作，检查Reference引用的对象是否处于不同的Region之中（在分代的例子中就是检查是否老年代中的对象引用了新生代中的对象）。如果是，便通过CardTable把相关引用信息记录到被引用对象所属的Region的Remembered Set之中。当进行内存回收时，在GC根节点的枚举范围中加入Remembered Set即可保证不对全堆扫描也不会有遗漏。</p>
+<h3 id="4、G1收集器收集步骤"><a href="#4、G1收集器收集步骤" class="headerlink" title="4、G1收集器收集步骤"></a>4、G1收集器收集步骤</h3><p><strong>如果不计算维护Remembered Set的操作，G1收集器的运作大致可划分为以下几个步骤：</strong></p>
+<ul>
+<li><p><strong>初始标记（Initial Marking）：</strong> 仅仅只是标记一下GC Roots 能直接关联到的对象，并且修改TAMS（Nest Top Mark Start）的值，让下一阶段用户程序并发运行时，能在正确可以的Region中创建对象，此阶段需要停顿线程，但耗时很短。</p>
+</li>
+<li><p><strong>并发标记（Concurrent Marking）：</strong> 从GC Root 开始对堆中对象进行可达性分析，找到存活对象，此阶段耗时较长，但可与用户程序并发执行。</p>
+</li>
+<li><p><strong>最终标记（Final Marking）：</strong> 为了修正在并发标记期间因用户程序继续运作而导致标记产生变动的那一部分标记记录，虚拟机将这段时间对象变化记录在线程的Remembered Set Logs里面，最终标记阶段需要把Remembered Set Logs的数据合并到Remembered Set中，这阶段需要停顿线程，但是可并行执行。</p>
+</li>
+<li><p><strong>筛选回收（Live Data Counting and Evacuation）：</strong> 首先对各个Region中的回收价值和成本进行排序，根据用户所期望的GC 停顿是时间来制定回收计划。此阶段其实也可以做到与用户程序一起并发执行，但是因为只回收一部分Region，时间是用户可控制的，而且停顿用户线程将大幅度提高收集效率。</p>
+</li>
+</ul>
+<hr>
+<p><strong>通过下图可以比较清楚地看到G1收集器的运作步骤中并发和需要停顿的阶段（Safepoint处）：</strong></p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g22fiaq0c9j30vy0igabm.jpg" width="900"/>
+
+
+
+<p><strong>Java11、12 -&gt; ZGC</strong> </p>
+<hr>
+<h2 id="五、总结-收集器各个功能"><a href="#五、总结-收集器各个功能" class="headerlink" title="五、总结 收集器各个功能"></a>五、总结 收集器各个功能</h2><table>
+<thead>
+<tr>
+<th>收集器</th>
+<th>串/并行/并发</th>
+<th>新生代/老年代</th>
+<th>算法</th>
+<th>目标</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Serial</td>
+<td>串行</td>
+<td>新生代</td>
+<td>复制算法</td>
+<td>响应速度优先</td>
+<td>单CPU环境下的Client模式</td>
+</tr>
+<tr>
+<td>Serial Old</td>
+<td>串行</td>
+<td>老年代</td>
+<td>标记-整理</td>
+<td>响应速度优先</td>
+<td>单CPU环境下的Client模式、CMS的后备预案</td>
+</tr>
+<tr>
+<td>ParNew</td>
+<td>并行</td>
+<td>新生代</td>
+<td>复制算法</td>
+<td>响应速度优先</td>
+<td>多CPU环境时在Server模式下与CMS配合</td>
+</tr>
+<tr>
+<td>Parallel Scavenge</td>
+<td>并行</td>
+<td>新生代</td>
+<td>复制算法</td>
+<td>吞吐量优先</td>
+<td>在后台运算而不需要太多交互的任务</td>
+</tr>
+<tr>
+<td>Parallel Old</td>
+<td>并行</td>
+<td>老年代</td>
+<td>标记-整理</td>
+<td>吞吐量优先</td>
+<td>在后台运算而不需要太多交互的任务</td>
+</tr>
+<tr>
+<td>CMS</td>
+<td>并发</td>
+<td>老年代</td>
+<td>标记-清除</td>
+<td>响应速度优先</td>
+<td>集中在互联网站或B/S系统服务端上的Java应用</td>
+</tr>
+<tr>
+<td>G1</td>
+<td>并发</td>
+<td>Both</td>
+<td>标整+复制算法</td>
+<td>响应速度优先</td>
+<td>面向服务端应用，将来替换CMS</td>
+</tr>
+</tbody></table>
+<h3 id="垃圾收集的相关常用参数"><a href="#垃圾收集的相关常用参数" class="headerlink" title="垃圾收集的相关常用参数"></a>垃圾收集的相关常用参数</h3><hr>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UseSerialGC</td>
+<td>虚拟机运行在Client模式下的默认值，打开此开关后，使用Serial +Serial Old的收集器组合进行内存回收。</td>
+</tr>
+<tr>
+<td>UseParNewGC</td>
+<td>打开此开关后，使用ParNew + Serial Old的收集器组合进行内存回收</td>
+</tr>
+<tr>
+<td>UseConcMarkSweepGC</td>
+<td>打开此开关后，使用ParNew + CMS + Serial Old的收集器组合进行内存回收。SerialOld收集器将作为CMS收集器出现ConcurrentModeFailure失败后的后备收集器使用</td>
+</tr>
+<tr>
+<td>UseParallelGC</td>
+<td>虚拟机运行在Server模式下的默认值，打开此开关后，使用ParallelScavenge + Serial Old (PS MarkSweep)的收集器组合进行内存回收</td>
+</tr>
+<tr>
+<td>UseParallelOldGC</td>
+<td>打开此开关后，使用Parallel Scavenge + Parallel Old的收集器组合进行内存回收</td>
+</tr>
+<tr>
+<td>SurvivorRatio</td>
+<td>新生代中Eden区域与Survivor区域的容量比值，默认为8，代表Eden : Survivor-8: 1</td>
+</tr>
+<tr>
+<td>PretenureSizeThreshold</td>
+<td>直接晋升到老年代的对象大小，设置这个参数后，大于这个参数的对象将直接在老年代分配</td>
+</tr>
+<tr>
+<td>MaxTenuringThreshold</td>
+<td>晋升到老年代的对象年龄。每个对象在坚持过- - 次Minor GC之后，年龄就增加1，当超过这个参数值时就进人老年代</td>
+</tr>
+<tr>
+<td>UseAdaptiveSizePolicy</td>
+<td>动态调整Java堆中各个区域的大小以及进入老年代的年龄</td>
+</tr>
+<tr>
+<td>HandlePromotionFailure</td>
+<td>是否允许分配担保失败，即老年代的剩余空间不足以应付新生代的整个Eden和Survivor区的所有对象都存活的极端情况</td>
+</tr>
+<tr>
+<td>ParallelGCThreads</td>
+<td>设置并行GC时进行内存回收的线程数</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="六、JVM参数类型"><a href="#六、JVM参数类型" class="headerlink" title="六、JVM参数类型"></a>六、JVM参数类型</h2><ul>
+<li><p><strong>标配参数</strong></p>
+<ul>
+<li><strong>-version</strong></li>
+<li><strong>-help</strong></li>
+<li><strong>java -showversion</strong></li>
+</ul>
+</li>
+<li><p><strong>X参数</strong></p>
+<ul>
+<li><strong>-Xint：解释执行</strong></li>
+<li><strong>-Xcomp：第一次使用就编译成本地代码</strong></li>
+<li><strong>-Xmixed：混合模式</strong></li>
+</ul>
+</li>
+<li><p><strong>XX参数</strong></p>
+<p><strong>jps -l、jinfo -flags、jinfo -flag</strong> PrintGCDetails xxxx，查看当前运行程序的配置。</p>
+<ul>
+<li><strong>Boolean类型</strong><ul>
+<li>公式：<strong>-XX：</strong><code>+ (表示开启)</code>或者<code>-(表示关闭)</code>某个属性值；</li>
+<li>Case：jps -l、jinfo -flag PrintGCDetails xxxx</li>
+</ul>
+</li>
+<li><strong>KV设值类型</strong><ul>
+<li>公式：<strong>-XX：属性key=属性值value</strong></li>
+<li>Case：-XX:MetaspaceSize=128m</li>
+<li><strong>-Xms、-Xmx</strong><ul>
+<li><strong>-Xms：等价于 -XX:InitialHeapSize</strong></li>
+<li><strong>-Xmx：等价于 -XX:MaxHeapSize</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="JVM调优相关"><a href="#JVM调优相关" class="headerlink" title="JVM调优相关"></a>JVM调优相关</h3><ul>
+<li><strong>java -XX: +PrintFlagsInitial：查看默认参数</strong></li>
+<li><strong>java -XX:+ PrintFlagsFinal -version：查看修改更新过的参数</strong></li>
+<li><strong>= / :=</strong><ul>
+<li><strong>= 默认参数</strong></li>
+<li><strong>:= 修改过的参数</strong></li>
+</ul>
+</li>
+<li><strong>-XX:+PrintCommandLineFlags -version</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JVM</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">long</span> totalMemory = Runtime.getRuntime().totalMemory();<span class="comment">//返回 Java虚拟机中的内存总量。 1/64</span></span><br><span class="line">        <span class="keyword">long</span> maxMemory = Runtime.getRuntime().maxMemory();<span class="comment">//返回 Java虚拟机试图使用的最大内存量。1/4</span></span><br><span class="line">        System.out.println(<span class="string">"TOTAL_MEMORY(-Xms) ="</span> + totalMemory + <span class="string">" (字节)、"</span> + (totalMemory / (<span class="keyword">double</span>) <span class="number">1024</span> / <span class="number">1024</span>) + <span class="string">"MB"</span>);</span><br><span class="line">        System.out.println(<span class="string">"MAX_MEMORY(-Xmx) ="</span> + maxMemory + <span class="string">" (字节)、"</span> + (maxMemory / (<span class="keyword">double</span>) <span class="number">1024</span> / <span class="number">1024</span>) + <span class="string">" MB"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="常见参数"><a href="#常见参数" class="headerlink" title="常见参数"></a>常见参数</h3><ul>
+<li><strong>-Xms：初始大小内存、默认物理内存为 1/64。等价于 -XX:InitialHeapSize</strong></li>
+<li><strong>-Xmx：最大分配内存、默认物理内存为 1/4。等价于 -XX:MaxHeapSize</strong></li>
+<li><strong>-Xss：设置单个线程栈的大小，一般默认为512k~1024K。等价于 -XX:ThreadStackSize</strong></li>
+<li><strong>-Xmn：设置年轻代大小。</strong></li>
+<li><strong>-XX:MetaspaceSize</strong><ul>
+<li>元空间(Java8)与永久代Java7)之间最大的区别在于：</li>
+<li>永久代使用的JVM的堆内存， 但是java8以后的元空间并不在虚拟机中而是使用本机物理内存。</li>
+</ul>
+</li>
+<li><strong>-XX:+PrintGCDetails</strong>  输出详细GC收集日志信息</li>
+<li><strong>-XX:SurvivorRatio</strong><ul>
+<li>新生代中 eden 和 S0/S1 空间的比例默认-XX:SurvivorRatio=8，Eden:S0:S1 =8:1:1</li>
+<li>假如 -XX:SurvivorRatio=4,Eden:S0:S1 =4:1:1</li>
+<li>SurvivorRatio 值就是设置 eden区的比例占多少，SO/S1相同</li>
+</ul>
+</li>
+<li><strong>-XX:NewRatio</strong><ul>
+<li>配置 年轻代与老年代 在堆结构的占比<ul>
+<li>默认：-XX:NewRatio=2 新生代占1,老年代2，年轻代占整个堆的1/3；</li>
+<li>-XX:NewRatio=4 新生代占1,老年代4，年轻代占整个堆的1/5；</li>
+<li>NewRatio 值就是设置老年代的占比，剩下的1给新生代。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>-XX:MaxTenuringThreshold</strong> 设置垃圾最大年龄，Survivor 复制默认为 15 次。<code>0~15</code><ul>
+<li>如果设置为 0 的话，则新生代代对象不经过 Survivor 区，直接进入老年代。对于年老代比较多的应用，可以提高效率。如果将此值设置为一个较大值，则年轻代对象会在Survivor区进行多次复制，这样可以增加对象再年轻代的存活时间，增加在年轻代即被回收的概率。</li>
+</ul>
+</li>
+<li><strong>-XX: +UseSerialGC 串行垃圾回收器</strong></li>
+<li><strong>-XX: +UseParallelGC 并行垃圾回收器</strong></li>
+</ul>
+<hr>
+<p><strong>微服务相关：java -server  JVM各种参数  -jar   jar包名字</strong></p>
+<hr>
+<h2 id="七、OOM-Error"><a href="#七、OOM-Error" class="headerlink" title="七、OOM Error"></a>七、OOM Error</h2><img src="https://i.loli.net/2019/08/01/5d42c368d3fd679583.png" alt="@L%M@2`7EN)NTMDR8CC2]MF.png" title="@L%M@2`7EN)NTMDR8CC2]MF.png" />
+
+<h3 id="StackOverflowError"><a href="#StackOverflowError" class="headerlink" title="StackOverflowError"></a>StackOverflowError</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StackOverflowError</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        StackOverflow();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">StackOverflow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        StackOverflow();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="Java-heap-space"><a href="#Java-heap-space" class="headerlink" title="Java heap space"></a>Java heap space</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JavaHeapSpace</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * -Xms10m -Xmx10m</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">            <span class="keyword">byte</span>[] bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">10</span> * <span class="number">1024</span> * <span class="number">1024</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="GC-overhead-limit-exceeded"><a href="#GC-overhead-limit-exceeded" class="headerlink" title="GC overhead limit exceeded"></a>GC overhead limit exceeded</h3><ul>
+<li>GC 回收时间过长时会抛出 OutOfMemroyError。过长的定义是，超过98%的时间用来做 GC 并且回收了不到2%的堆内存，连续多次 GC 都只回收了不到 2% 的极端情况下才会抛出。</li>
+<li>假如不抛出GC overhead limit 错误会发生什么情况呢？那就是 GC 清理的内存很快会再次被填满，迫使GC 再次执行。这样就形成恶性循环，CPU使用率一直是100%， 而GC 却没有任何成果。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:MaxDirectMemorySize=5m</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GCOverheadLimit</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                list.add(String.valueOf(++i).intern());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"i:"</span> + i);<span class="comment">//i:145884</span></span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">throw</span> e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="Direct-buffer-memory"><a href="#Direct-buffer-memory" class="headerlink" title="Direct buffer memory"></a>Direct buffer memory</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.nio.ByteBuffer;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> * -Xms10m -Xmx10m -XX:+PrintGCDetails -XX:MaxDirectMemorySize=5m</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DirectBufferMemory</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"配置的maxDirectMemory："</span> + (sun.misc.VM.maxDirectMemory() / (<span class="keyword">double</span>) <span class="number">1024</span> / <span class="number">1024</span>) + <span class="string">"MB"</span>);</span><br><span class="line">        Thread.sleep(<span class="number">3000</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//设置为 5m 要分配 6m</span></span><br><span class="line">        ByteBuffer byteBuffer = ByteBuffer.allocateDirect(<span class="number">6</span> * <span class="number">1024</span> * <span class="number">1024</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="Unable-to-create-new-native-thread"><a href="#Unable-to-create-new-native-thread" class="headerlink" title="Unable to create new native thread"></a>Unable to create new native thread</h3><ul>
+<li><p>高并发请求服务器时，出现此异常。native thread与对应平台有关。</p>
+<ul>
+<li><pre><code class="java"><span class="keyword">new</span> Thread().start();<span class="comment">//内部调用本地方法 start0();</span>
+<span class="function"><span class="keyword">private</span> <span class="keyword">native</span> <span class="keyword">void</span> <span class="title">start0</span><span class="params">()</span></span>;
+&lt;!--￼<span class="number">20</span>--&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Metaspace"><a href="#Metaspace" class="headerlink" title="Metaspace"></a>Metaspace</h3><p><strong>元空间(Java8)与永久代Java7)之间最大的区别在于：</strong></p>
+<ul>
+<li><strong>永久代使用的 JVM 的堆内存， 但是 Java8 以后的元空间并不在虚拟机中而是使用本机物理内存。</strong></li>
+<li><strong>元空间主要存放：虚拟机加载类的信息，常量池，静态变量，即时编译后的代码。</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> net.sf.cglib.proxy.Enhancer;</span><br><span class="line"><span class="keyword">import</span> net.sf.cglib.proxy.MethodInterceptor;</span><br><span class="line"><span class="keyword">import</span> net.sf.cglib.proxy.MethodProxy;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> Yu</span></span><br><span class="line"><span class="comment"> * -XX:MetaspaceSize=50m -XX:MaxMetaspaceSize=50m</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Metaspace</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">OOM</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="keyword">final</span> String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">                count++;</span><br><span class="line">                Enhancer enhancer = <span class="keyword">new</span> Enhancer();</span><br><span class="line">                enhancer.setSuperclass(OOM<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">                enhancer.setUseCache(<span class="keyword">false</span>);</span><br><span class="line">                enhancer.setCallback(<span class="keyword">new</span> MethodInterceptor() &#123;</span><br><span class="line">                    <span class="function"><span class="keyword">public</span> Object <span class="title">intercept</span><span class="params">(Object o, Method method, Object[] objects, MethodProxy methodProxy)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">                        <span class="keyword">return</span> methodProxy.invokeSuper(o, args);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">                enhancer.create();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Throwable e) &#123;</span><br><span class="line">            System.out.println(<span class="string">"count 次后发生异常: "</span> + count);</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<hr>
+<h2 id="八、Error和Exception"><a href="#八、Error和Exception" class="headerlink" title="八、Error和Exception"></a>八、Error和Exception</h2><p><strong>Error类 和 Exception类都是继承 Throwable类。</strong></p>
+<ul>
+<li><p>Error（错误）是系统中的错误，程序员是不能改变的和处理的，是在程序编译时出现的错误，只能通过修改程序才能修正。一般是指与虚拟机相关的问题，如系统崩溃，虚拟机错误，内存空间不足，方法调用栈溢等。对于这类错误的导致的应用程序中断，仅靠程序本身无法恢复和和预防，遇到这样的错误，建议让程序终止。</p>
+</li>
+<li><p>Exception（异常）表示程序可以处理的异常，可以捕获且可能恢复。遇到这类异常，应该尽可能处理异常，使程序恢复运行，而不应该随意终止异常。Exception又分为两类：</p>
+<ul>
+<li><p>CheckedException：（编译时异常） 需要用 try—catch 显示的捕获，对于可恢复的异常使用CheckedException。</p>
+</li>
+<li><p>UnCheckedException（RuntimeException）：（运行时异常）不需要捕获，对于程序错误（不可恢复）的异常使用 RuntimeException。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="常见的RuntimeException异常"><a href="#常见的RuntimeException异常" class="headerlink" title="常见的RuntimeException异常"></a>常见的RuntimeException异常</h3><ul>
+<li>illegalArgumentException：此异常表明向方法传递了一个不合法或不正确的参数。</li>
+<li>illegalStateException：在不合理或不正确时间内唤醒一方法时出现的异常信息。</li>
+<li>NullpointerException：空指针异常。</li>
+<li>IndexOutOfBoundsException：索引超出边界异常</li>
+</ul>
+<h3 id="常见的CheckedException异常"><a href="#常见的CheckedException异常" class="headerlink" title="常见的CheckedException异常"></a>常见的CheckedException异常</h3><ul>
+<li>我们在编写程序过程中 try—catch 捕获到的一场都是 CheckedException。</li>
+<li>io包中的IOExecption及其子类，都是 CheckedException。</li>
+</ul>
+<hr>
+<p><strong>Error 和 Exception 就像是水池和水池里的水的区别</strong></p>
+<ul>
+<li><p>“水池”，就是代码正常运行的外部环境，如果水池崩溃（系统崩溃），或者池水溢出（内存溢出）等，这些都是跟水池外部环境有关。这些就是java中的 Error。</p>
+</li>
+<li><p>“水池里的水”，就是正常运行的代码，水污染了、有杂质了，浑浊了，这些影响水质的因素就是 Exception。</p>
+</li>
+</ul>
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2019/04/10/深入理解 JVM-7/" data-toggle="tooltip" data-placement="top" title="JVM 虚拟机类加载机制">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2019/04/07/Redis/" data-toggle="tooltip" data-placement="top" title="Redis">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=JVM 垃圾收集器-内存分配&body=Hi,I found this website and thought you might like it http://yoursite-url/2019/04/08/深入理解 JVM-3/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Mon Apr 08 2019 09:40:11 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#一、垃圾收集器与内存分配策略"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、垃圾收集器与内存分配策略</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#JVM-体系结构"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">JVM 体系结构</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#PC-寄存器"><span class="toc-nav-number">1.1.1.</span> <span class="toc-nav-text">PC 寄存器</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#虚拟机栈"><span class="toc-nav-number">1.1.2.</span> <span class="toc-nav-text">虚拟机栈</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#堆"><span class="toc-nav-number">1.1.3.</span> <span class="toc-nav-text">堆</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#1、引入计数法"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">1、引入计数法</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#引用计数算法的缺陷"><span class="toc-nav-number">1.2.1.</span> <span class="toc-nav-text">引用计数算法的缺陷</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2、可达性分析算法-GC-Roots"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">2、可达性分析算法 GC Roots</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#概念"><span class="toc-nav-number">1.3.1.</span> <span class="toc-nav-text">概念</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#3、引用"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">3、引用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#强引用-Strong-Reference"><span class="toc-nav-number">1.4.0.1.</span> <span class="toc-nav-text">强引用(Strong Reference)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#软引用"><span class="toc-nav-number">1.4.0.2.</span> <span class="toc-nav-text">软引用</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#弱引用"><span class="toc-nav-number">1.4.0.3.</span> <span class="toc-nav-text">弱引用</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#WeakHashMap"><span class="toc-nav-number">1.4.0.3.1.</span> <span class="toc-nav-text">WeakHashMap</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#虚引用"><span class="toc-nav-number">1.4.0.4.</span> <span class="toc-nav-text">虚引用</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#引用队列-ReferenceQueue"><span class="toc-nav-number">1.4.0.5.</span> <span class="toc-nav-text">引用队列 ReferenceQueue</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#生存还是死亡"><span class="toc-nav-number">1.4.1.</span> <span class="toc-nav-text">生存还是死亡</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#二、垃圾收集算法"><span class="toc-nav-number">1.5.</span> <span class="toc-nav-text">二、垃圾收集算法</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、标记-—-清除算法（Mark-Sweep）"><span class="toc-nav-number">1.5.1.</span> <span class="toc-nav-text">1、标记 — 清除算法（Mark-Sweep）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、复制算法（Copying）"><span class="toc-nav-number">1.5.2.</span> <span class="toc-nav-text">2、复制算法（Copying）</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、标记-—-整理算法-Mark-Compact"><span class="toc-nav-number">1.5.3.</span> <span class="toc-nav-text">3、标记 — 整理算法(Mark-Compact)</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、分代收集算法（Generational-Collection）"><span class="toc-nav-number">1.5.4.</span> <span class="toc-nav-text">4、分代收集算法（Generational Collection）</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#三、垃圾收集器"><span class="toc-nav-number">1.6.</span> <span class="toc-nav-text">三、垃圾收集器</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Minor-GC-和-Major-Full-GC"><span class="toc-nav-number">1.6.1.</span> <span class="toc-nav-text">Minor GC 和 Major&#x2F;Full GC</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#新生代收集器"><span class="toc-nav-number">1.6.2.</span> <span class="toc-nav-text">新生代收集器</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#1、Serial-收集器-Client-模式"><span class="toc-nav-number">1.6.2.1.</span> <span class="toc-nav-text">1、Serial 收集器 (Client 模式)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#2、ParNew-收集器-Server-模式"><span class="toc-nav-number">1.6.2.2.</span> <span class="toc-nav-text">2、ParNew 收集器 (Server 模式)</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#3、Parallel-Scavenge-收集器"><span class="toc-nav-number">1.6.2.3.</span> <span class="toc-nav-text">3、Parallel Scavenge 收集器</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#老年代收集器"><span class="toc-nav-number">1.6.3.</span> <span class="toc-nav-text">老年代收集器</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#1、Serial-Old-收集器"><span class="toc-nav-number">1.6.3.1.</span> <span class="toc-nav-text">1、Serial Old 收集器</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#2、Parallel-Old-收集器"><span class="toc-nav-number">1.6.3.2.</span> <span class="toc-nav-text">2、Parallel Old 收集器</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#3、CMS-收集器"><span class="toc-nav-number">1.6.3.3.</span> <span class="toc-nav-text">3、CMS 收集器</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#垃圾收集器的选择"><span class="toc-nav-number">1.6.4.</span> <span class="toc-nav-text">垃圾收集器的选择</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#四、G1收集器"><span class="toc-nav-number">1.7.</span> <span class="toc-nav-text">四、G1收集器</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#1、横跨整个堆内存"><span class="toc-nav-number">1.7.1.</span> <span class="toc-nav-text">1、横跨整个堆内存</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#2、建立可预测的时间模型"><span class="toc-nav-number">1.7.2.</span> <span class="toc-nav-text">2、建立可预测的时间模型</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#3、避免全堆扫描——Remembered-Set"><span class="toc-nav-number">1.7.3.</span> <span class="toc-nav-text">3、避免全堆扫描——Remembered Set</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#4、G1收集器收集步骤"><span class="toc-nav-number">1.7.4.</span> <span class="toc-nav-text">4、G1收集器收集步骤</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#五、总结-收集器各个功能"><span class="toc-nav-number">1.8.</span> <span class="toc-nav-text">五、总结 收集器各个功能</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#垃圾收集的相关常用参数"><span class="toc-nav-number">1.8.1.</span> <span class="toc-nav-text">垃圾收集的相关常用参数</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#六、JVM参数类型"><span class="toc-nav-number">1.9.</span> <span class="toc-nav-text">六、JVM参数类型</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#JVM调优相关"><span class="toc-nav-number">1.9.1.</span> <span class="toc-nav-text">JVM调优相关</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#常见参数"><span class="toc-nav-number">1.9.2.</span> <span class="toc-nav-text">常见参数</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#七、OOM-Error"><span class="toc-nav-number">1.10.</span> <span class="toc-nav-text">七、OOM Error</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#StackOverflowError"><span class="toc-nav-number">1.10.1.</span> <span class="toc-nav-text">StackOverflowError</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Java-heap-space"><span class="toc-nav-number">1.10.2.</span> <span class="toc-nav-text">Java heap space</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#GC-overhead-limit-exceeded"><span class="toc-nav-number">1.10.3.</span> <span class="toc-nav-text">GC overhead limit exceeded</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Direct-buffer-memory"><span class="toc-nav-number">1.10.4.</span> <span class="toc-nav-text">Direct buffer memory</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Unable-to-create-new-native-thread"><span class="toc-nav-number">1.10.5.</span> <span class="toc-nav-text">Unable to create new native thread</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Metaspace"><span class="toc-nav-number">1.10.6.</span> <span class="toc-nav-text">Metaspace</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#八、Error和Exception"><span class="toc-nav-number">1.11.</span> <span class="toc-nav-text">八、Error和Exception</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#常见的RuntimeException异常"><span class="toc-nav-number">1.11.1.</span> <span class="toc-nav-text">常见的RuntimeException异常</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#常见的CheckedException异常"><span class="toc-nav-number">1.11.2.</span> <span class="toc-nav-text">常见的CheckedException异常</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#感谢阅读"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">感谢阅读</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#JVM" title="JVM">JVM</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+          <li>
+            <a href="https://yexua.github.io/" target="_blank">yexua</a>
+          </li>
+          
+          <li>
+            <a href="https://snailclimb.gitee.io/javaguide/#/" target="_blank">JavaGuide</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/notes/%E5%89%91%E6%8C%87%20Offer%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%951" target="_blank">剑指Offer</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/" target="_blank">技术面试必备基础知识</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/Github-yuteng">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          余腾
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

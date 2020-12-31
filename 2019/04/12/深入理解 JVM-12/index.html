@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-xxxxxx-xx');
+  </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+  <script type="text/javascript">
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+
+  <!-- Baidu Push -->
+  
+  <script>
+    (function() {
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      } else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+  
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc" />
+  <meta name="baidu-site-verification" content="PpzM9WxOJU" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="It&#39;s an IT blog..." />
+  <meta name="keyword" content="Time" />
+  <link rel="shortcut icon" href="/img/avatar/roguerabbit.jpg" />
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+  <!-- Bootstrap Core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/beantech.min.css" />
+
+  <!-- Pygments Highlight CSS -->
+  
+<link rel="stylesheet" href="../../../../css/highlight.css">
+<link rel="stylesheet" href="../../../../css/widget.css">
+<link rel="stylesheet" href="../../../../css/rocket.css">
+<link rel="stylesheet" href="../../../../css/signature.css">
+<link rel="stylesheet" href="../../../../css/catalog.css">
+<link rel="stylesheet" href="../../../../css/livemylife.css">
+
+
+  
+  <!-- wave start -->
+  <link rel="stylesheet" href="/css/wave.css" />
+  <!-- wave end -->
+  
+
+  
+  <!-- top start (article top hot config) -->
+  <link rel="stylesheet" href="/css/top.css" />
+  <!-- top end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/scroll.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+  <!-- viewer start (Picture preview) -->
+  <link rel="stylesheet" href="/css/viewer.min.css" />
+  <!-- viewer end -->
+  
+
+  
+  <!-- Search start -->
+  <link rel="stylesheet" href="/css/search.css" />
+  <!-- Search end -->
+  
+
+  
+  <!-- ThemeColor start -->
+  <link rel="stylesheet" href="/css/themecolor.css" />
+  <!-- ThemeColor end -->
+  
+
+  
+
+  
+  <!-- gitalk start -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+  <link rel="stylesheet" href="/css/gitalk.css" />
+  <!-- gitalk end -->
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2019/04/12/深入理解 JVM-12/">
+  <title>
+    
+    JVM Java内存模型与线程 - Bolg
+    
+  </title>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+<body ontouchstart="" class="body--home">
+	<!-- ThemeColor -->
+	
+	<!-- ThemeColor -->
+<!-- <div class="toggle" onclick="document.body.classList.toggle('body--dark')">Switch Color</div> -->
+
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons bright-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+
+	
+
+	<!-- Gitter -->
+	
+	<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+	
+
+	<!-- Navigation (contains search)-->
+	<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">所爱隔山海</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          
+
+          
+          
+
+          
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/archive/">Archives</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/categories/">Categories</a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a href="/tags/">Tags</a>
+          </li>
+          
+          
+
+          
+          <li><a class="popup-trigger" title="Search"><span class="search-icon"></span>Search</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+
+<script>
+  // Drop Bootstarp low-performance Navbar
+  // Use customize navbar with high-quality material design animation
+  // in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+	<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    header.intro-header {
+       /*post*/
+        background-image: url('');
+      
+    }
+
+    
+      #signature {/*signature*/
+        background-image: url('/img/signature/vincent-white.png');
+      }
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#JVM" title="JVM">JVM</a>
+              
+            </div>
+            <h1>JVM Java内存模型与线程</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by 余腾 on
+              2019-04-12
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">12</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">3.6k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- 不蒜子统计 start -->
+            <span class="meta">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            <!-- WordCount end -->
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+	<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+	<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <p><strong>本篇介绍虚拟机如何实现多线程、多线程之间由于共享和竞争数据而导致的一系列问题及解决方案。</strong></p>
+<p><strong><code>内存模型：在特定的操作协议下，对特定的内存或高速缓存进行读写访问的过程抽象。</code></strong></p>
+<ul>
+<li>概述</li>
+<li>Java内存模型</li>
+<li>Java与线程</li>
+</ul>
+<hr>
+<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p><strong>多任务处理的必要性：</strong></p>
+<ul>
+<li>1、充分利用计算机处理器的能力，避免处理器在磁盘I/O、网络通信或数据库访问时总是处于等待其他资源的状态。</li>
+<li>2、便于一个服务端同时对多个客户端提供服务。通过指标TPS（Transactions Per Second）可衡量一个服务性能的高低好坏。<ul>
+<li>它表示每秒服务端平均能响应的请求总数，进而体现出程序的并发能力。</li>
+</ul>
+</li>
+</ul>
+<p><strong>硬件的效率与一致性：</strong></p>
+<ul>
+<li>为了更好的理解Java内存模型，先理解物理计算机中的并发问题，两者有很高的可比性。</li>
+</ul>
+<hr>
+<h3 id="高速缓存"><a href="#高速缓存" class="headerlink" title="高速缓存"></a>高速缓存</h3><p><strong>由于计算机的存储设备与处理器的运算速度有几个数量级的差距。所以现代计算机系统都不得加入一层读写速度尽可能接近处理器运算速度的<font color=#EE2C2C>高速缓存（Cache）</font>来作为内存与处理器之间的缓冲：</strong></p>
+<ul>
+<li><strong>将运算需要使用到的数据复制到缓存中，让运算能快速进行，</strong></li>
+<li><strong>当运算结束后再从缓存同步回内存之中，而无须让处理器等待缓慢的内存读写。</strong></li>
+</ul>
+<p><strong>但是基于高速缓存的存储交互在多处理器系统中会带来缓存一致性（Cache Coherence）的问题。<br>这是因为每个处理器都有自己的高速缓存，而它们又共享同一主内存（Main Memory），当多个处理器的运算任务都涉及同一块主内存区域时，就可能导致各自的缓存数据不一致。解决办法就是需要各个处理器访问缓存时都遵循一些协议，在读写时要根据协议来进行操作。</strong></p>
+<p><strong>如下图：</strong></p>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g20v4599sej30s50cwmy4.jpg" width="900"/>
+
+<hr>
+<h3 id="内存模型"><a href="#内存模型" class="headerlink" title="内存模型"></a>内存模型</h3><p><strong>在本篇提到的“内存模型”可以理解为</strong></p>
+<p><strong><font color=#EE2C2C>在特定的操作协议下，对特定的内存或高速缓存进行读写访问的过程抽象。</font></strong></p>
+<ul>
+<li><strong>不同架构的物理机可以拥有不同的内存模型，Java虚拟机也有自己的内存模型。</strong></li>
+</ul>
+<hr>
+<hr>
+<h2 id="二、Java内存模型"><a href="#二、Java内存模型" class="headerlink" title="二、Java内存模型"></a>二、<font color=black>Java内存模型</font></h2><p><strong><font color=#EE2C2C>目的：</font>屏蔽掉各种硬件和操作系统的内存访问差异，实现Java程序在各种平台下都能达到一致的内存访问效果。</strong></p>
+<p><strong><font color=#EE2C2C>主要目标：</font>通过定义程序中各个变量的访问规则，即在虚拟机中将变量存储到内存和从内存中取出变量这样的底层细节。</strong></p>
+<ul>
+<li><strong>注意：这里的变量与Java编程中说的变量有所区别，它包括了 实例字段、静态字段 和 构成数组对象的元素。但不包括局部变量与方法参数，因为后者是线程私有的，不会被共享，自然就不会存在竞争问题。</strong></li>
+</ul>
+<hr>
+<h3 id="Java内存模型规定"><a href="#Java内存模型规定" class="headerlink" title="Java内存模型规定"></a>Java内存模型规定</h3><p><strong><font color=#EE2C2C>主内存（Main Memory）：</font>所有的变量都存储在主内存中。直接对应物理硬件的内存。</strong></p>
+<ul>
+<li><strong>这里的主内存、工作内存与Java内存区域中的Java堆、栈、方法区等并不是同一个层次的内存划分，两者基本上是没有关系的。</strong></li>
+</ul>
+<p><strong><font color=#EE2C2C>工作内存（Working Memory)：</font>每条线程还有自己的工作内存，用于保存被该线程使用到的变量的主内存副本拷贝。</strong></p>
+<ul>
+<li><strong>线程对变量所有操作(读取、赋值等)都必须在工作内存中进行，不能直接读写主内存中变量。</strong></li>
+<li><strong>不同的线程之间也无法直接访问对方工作内存中的变量，线程间变量值的传递均必须需要通过主内存来完成。</strong></li>
+<li><strong>为了获取更好的运行速度，虚拟机可能会让工作内存优先存储于寄存器和高速缓存中。</strong></li>
+</ul>
+<img src="http://ww1.sinaimg.cn/large/006vWPzFly1g20w1740opj30ru0bw3zd.jpg" width="800"/>
+
+<hr>
+<h3 id="内存间交互操作"><a href="#内存间交互操作" class="headerlink" title="内存间交互操作"></a>内存间交互操作</h3><p><strong>交互协议：</strong></p>
+<ul>
+<li><strong>规定一个变量如何从主内存拷贝到工作内存、如何从工作内存同步回主内存之类的实现细节。</strong></li>
+</ul>
+<h4 id="交互八种操作"><a href="#交互八种操作" class="headerlink" title="交互八种操作"></a>交互八种操作</h4><p><strong><font color=#EE2C2C>锁定（lock）：</font></strong> 作用于<code>主内存</code>的变量，把一个变量标识为一条线程独占的状态。<br><strong><font color=#EE2C2C>解锁（unlock）：</font></strong> 作用于<code>主内存</code>的变量，把处于锁定状态的变量释放出来，释放后的变量才可以被其他线程锁定。<br><strong><font color=#EE2C2C>读取（read）：</font></strong> 作用于<code>主内存</code>的变量，把变量的值从主内存传输到线程的工作内存中，以便随后的load动作使用。<br><strong><font color=#EE2C2C>载入（load）：</font></strong> 作用于工作内存的变量，把read操作从主内存中得到的变量值放入工作内存的变量副本中。<br><strong><font color=#EE2C2C>使用（use）：</font></strong> 作用于工作内存的变量，把工作内存中一个变量的值传递给执行引擎。<br><strong><font color=#EE2C2C>赋值（assign）：</font></strong> 作用于工作内存的变量，把从执行引擎接收到的值赋给工作内存的变量。<br><strong><font color=#EE2C2C>存储（store）：</font></strong> 作用于工作内存的变量，把工作内存中变量的值传送到主内存中，以便随后的write操作使用。<br><strong><font color=#EE2C2C>写入（write）：</font></strong> 作用于<code>主内存</code>的变量，把store操作从工作内存中得到的变量值放入主内存变量中。</p>
+<p><strong>结论：注意是<code>顺序非连续。</code></strong></p>
+<ul>
+<li><strong>如果要把变量从主内存复制到工作内存，那就要顺序地执行 read 和 load。</strong></li>
+<li><strong>如果要把变量从工作内存同步回主内存，就要顺序地执行 store 和 write。</strong></li>
+</ul>
+<hr>
+<p><strong>确保并发操作安全的原则，在Java内存模型中规定了执行上述8种基本操作时需要满足如下规则：</strong></p>
+<ul>
+<li><strong>1、不允许read和load、store和write操作之一单独出现。即不允许一个变量从主内存读取了但工作内存不接受，或者从工作内存发起回写了但主内存不接受的情况出现。</strong></li>
+<li><strong>2、不允许一个线程丢弃它的最近的assign操作，即变量在工作内存中改变了之后必须把该变化同步回主内存。</strong></li>
+<li><strong>3、不允许一个线程无原因地，即没有发生过任何assign操作就把数据从线程的工作内存同步回主内存中。</strong></li>
+<li><strong>4、一个新的变量只能在主内存中“诞生”，不允许在工作内存中直接使用一个未被初始化（load或assign）的变量，即对一个变量实施use、store操作之前必须先执行过了assign和load操作。</strong></li>
+<li><strong>5、一个变量在同一个时刻只允许一条线程对其进行lock操作。但lock操作可以被同一条线程重复执行多次，多次执行lock后，只有执行相同次数的unlock操作，变量才会被解锁。</strong></li>
+<li><strong>6、如果对一个变量执行lock操作，将会清空工作内存中此变量的值，在执行引擎使用这个变量前，需要重新执行load或assign操作初始化变量的值。</strong></li>
+<li><strong>7、如果一个变量事先没有被lock操作锁定，那就不允许对它执行unlock操作，也不允许去unlock一个被其他线程锁定住的变量。</strong></li>
+<li><strong>8、对一个变量执行unlock操作之前，必须先把此变量同步回主内存中。</strong></li>
+</ul>
+<hr>
+<p><strong>可见这么多规则相当严谨但又十分繁琐，实践起来非常麻烦。</strong><br><strong>下面👇介绍一个等效判断原则：<font color=#EE2C2C>先行发生原则</font>。</strong></p>
+<h3 id="先行发生原则"><a href="#先行发生原则" class="headerlink" title="先行发生原则"></a>先行发生原则</h3><p><strong>先行发生原则是Java内存模型中定义的两项操作之间的偏序关系。它是判断数据是否存在竞争、线程是否安全的主要依据。下面例举一些“天然的”先行发生关系，无须任何同步器协助就已经存在，可以在编码中直接使用。</strong></p>
+<ul>
+<li><p><strong><font color=#EE2C2C>程序次序规则（Program Order Rule）：</font></strong> 在一个线程内，按照控制流顺序，书写在前面的操作先行发生于书写在后面的操作。</p>
+</li>
+<li><p><strong><font color=#EE2C2C>管程锁定规则（Monitor Lock Rule）：</font></strong> 一个unlock操作先行发生于后面对同一个锁的lock操作。</p>
+</li>
+<li><p><strong><font color=#EE2C2C>volatile变量规则（Volatile Variable Rule）：</font></strong> 对一个volatile变量的写操作先行发生于后面对这个变量的读操作。</p>
+</li>
+<li><p><strong><font color=#EE2C2C>线程启动规则（Thread Start Rule）：</font></strong> Thread对象的start()先行发生于此线程的每一个动作。</p>
+</li>
+<li><p><strong><font color=#EE2C2C>线程终止规则（Thread Termination Rule）：</font></strong> 线程中的所有操作都先行发生于对此线程的终止检测。</p>
+<ul>
+<li>可通过Thread.join()结束、Thread.isAlive()的返回值等手段检测到线程已经终止执行。</li>
+</ul>
+</li>
+<li><p><strong><font color=#EE2C2C>线程中断规则（Thread Interruption Rule）：</font></strong> 对线程interrupt()的调用先行发生于被中断线程的代码检测到中断事件的发生。</p>
+<ul>
+<li>可通过Thread.interrupted()检测到是否有中断发生。</li>
+</ul>
+</li>
+<li><p><strong><font color=#EE2C2C>对象终结规则（Finalizer Rule）：</font></strong> 一个对象的初始化完成先行发生于它的finalize()的开始。</p>
+</li>
+<li><p><strong><font color=#EE2C2C>传递性（Transitivity）：</font></strong> 如果操作A先行发生于操作B，操作B先行发生于操作C，那么操作A一定先行发生于操作C。</p>
+</li>
+</ul>
+<hr>
+<hr>
+<h3 id="原子性、可见性、有序性"><a href="#原子性、可见性、有序性" class="headerlink" title="原子性、可见性、有序性"></a><font color=black>原子性、可见性、有序性</font></h3><p><strong>原子性（Atomicity）：一个操作要么都执行要么都不执行。</strong></p>
+<ul>
+<li>可直接保证的原子性变量操作有：read、load、assign、use、store和write，因此可认为基本数据类型的访问读写是具备原子性的。</li>
+</ul>
+<p><strong>可见性（Visibility）：当一个线程修改了共享变量的值，其他线程能够立即得知这个修改。</strong></p>
+<ul>
+<li>通过在变量修改后将新值同步回主内存，在变量读取前从主内存刷新变量值这种依赖主内存作为传递媒介的方式来实现。</li>
+<li><strong>提供三个关键字保证可见性：</strong><ul>
+<li><strong><code>volatile</code> 能保证新值能立即同步到主内存，且每次使用前立即从主内存刷新；</strong></li>
+<li><strong><code>synchronized</code>对一个变量执行unlock操作之前可以先把此变量同步回主内存中；</strong></li>
+<li><strong><code>final</code> 修饰的字段在构造器中一旦初始化完成且构造器没有把this的引用传递出去，就可以在其他线程中就能看见final字段的值。</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>有序性（Ordering）：程序代码按照指令顺序执行。</strong></p>
+<ul>
+<li><strong>如果在本线程内观察，所有的操作都是有序的，指“线程内表现为串行的语义”；</strong></li>
+<li><strong>如果在一个线程中观察另一个线程，所有的操作都是无序的，指“指令重排序”现象和“工作内存与主内存同步延迟”现象。</strong><ul>
+<li><strong>提供两个关键字保证有序性：</strong></li>
+<li><code>volatile</code> 本身就包含了禁止指令重排序的语义；</li>
+<li><code>synchronized</code>保证一个变量在同一个时刻只允许一条线程对其进行lock操作，使得持有同一个锁的两个同步块只能串行地进入。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<hr>
+<h2 id="三、Java与线程"><a href="#三、Java与线程" class="headerlink" title="三、Java与线程"></a>三、Java与线程</h2><h3 id="线程实现的三种方式"><a href="#线程实现的三种方式" class="headerlink" title="线程实现的三种方式"></a>线程实现的三种方式</h3><p><strong>1、使用内核线程（Kernel-Level Thread,KLT）（一对一线程模型）</strong><br><strong>2、使用用户线程（User Thread,UT）（一对多线程模型）</strong><br><strong>3、使用用户线程加轻量级进程混合（多对多线程模型）</strong></p>
+<hr>
+<h3 id="Java线程调度的两种方式"><a href="#Java线程调度的两种方式" class="headerlink" title="Java线程调度的两种方式"></a>Java线程调度的两种方式</h3><p><strong>线程调度：指系统为线程分配处理器使用权的过程。</strong></p>
+<p><strong>1、协同式线程调度（Cooperative Threads-Scheduling）</strong></p>
+<ul>
+<li><strong>由线程本身来控制线程的执行时间。线程把自己的工作执行完后，要主动通知系统切换到另外一个线程上。</strong></li>
+<li><strong>优点：</strong> 实现简单；切换操作自己可知，不存在线程同步的问题。</li>
+<li><strong>缺点：</strong> 线程执行时间不可控，假如一个线程编写有问题一直不告知系统进行线程切换，那么程序就会一直被阻塞。</li>
+</ul>
+<hr>
+<p><strong>2、抢占式线程调度（Preemptive Threads-Scheduling）</strong></p>
+<ul>
+<li><strong>由系统来分配每个线程的执行时间。</strong></li>
+<li><strong>优点：</strong> 线程执行时间是系统可控的，不存在一个线程导致整个进程阻塞的问题。</li>
+<li><strong>可以通过设置线程优先级</strong>，优先级越高的线程越容易被系统选择执行。<ul>
+<li><strong>但是线程优先级并不是太靠谱：</strong></li>
+<li>1、优先级可能会被系统自行改变。</li>
+<li>2、因为Java的线程是通过映射到系统的原生线程上来实现的，所以线程调度最终还是取决于操作系统，在一些平台上不同的优先级实际会变得相同；</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="线程的五种状态"><a href="#线程的五种状态" class="headerlink" title="线程的五种状态"></a>线程的五种状态</h3><p><strong>在任意一个时间，一个线程只能有且只有其中的一种状态</strong></p>
+<hr>
+<p><strong>1、新建（New）：线程创建后尚未启动。</strong></p>
+<p><strong>2、运行（Runable）：包括正在执行（Running）和等待CPU为它分配执行时间（Ready）两种。</strong></p>
+<p><strong>3、无限期等待（Waiting）：该线程不会被分配CPU执行时间，要等待被其他线程显式地唤醒。</strong></p>
+<ul>
+<li><strong>以下方法会让线程陷入无限期等待状态：</strong><ul>
+<li><strong>没有设置Timeout参数的Object.wait()</strong></li>
+<li><strong>没有设置Timeout参数的Thread.join()</strong></li>
+<li><strong>LockSupport.park()</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>4、限期等待（Timed Waiting）：该线程不会被分配CPU执行时间，但在一定时间后会被系统自动唤醒。</strong></p>
+<ul>
+<li><strong>以下方法会让线程进入限期等待状态：</strong><ul>
+<li><strong>Thread.sleep()</strong></li>
+<li><strong>设置了Timeout参数的Object.wai()</strong></li>
+<li><strong>设置了Timeout参数的Thread.join()</strong></li>
+<li><strong>LockSupport.parkNanos()</strong></li>
+<li><strong>LockSupport.parkUntil()</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>5、阻塞（Blocked）：线程被阻塞。</strong></p>
+<p><strong>注意区别：</strong></p>
+<ul>
+<li><strong>阻塞状态：在等待获取到一个排他锁，在另外一个线程放弃这个锁的时候发生；</strong></li>
+<li><strong>等待状态：在等待一段时间或者唤醒动作的发生，在程序等待进入同步区域的时候发生。</strong></li>
+</ul>
+<p><strong>6、结束（Terminated）：线程已经结束执行。</strong></p>
+<hr>
+<p><strong>线程状态之间的转换图：</strong><br><img src="http://ww1.sinaimg.cn/large/006vWPzFly1g20ytckay4j30rs0g8gmh.jpg" width="800"/></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.jianshu.com/p/90a036212cb4" target="_blank" rel="noopener">厘米姑娘-要点提炼| 理解JVM之内存模型&amp;线程</a></p>
+<h1 id="感谢阅读"><a href="#感谢阅读" class="headerlink" title="感谢阅读"></a>感谢阅读</h1>
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2019/04/14/深入理解 JVM-13/" data-toggle="tooltip" data-placement="top" title="JVM 线程安全与锁优化">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2019/04/10/深入理解 JVM-7/" data-toggle="tooltip" data-placement="top" title="JVM 虚拟机类加载机制">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <div class="tip">
+          <p>
+            If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+          </p>
+        </div>
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=JVM Java内存模型与线程&body=Hi,I found this website and thought you might like it http://yoursite-url/2019/04/12/深入理解 JVM-12/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+<!-- gitalk start -->
+<!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+<div id="gitalk-container"></div>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+<script src="/js/comment/gitalk.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: '',
+    id: 'Fri Apr 12 2019 09:40:11 GMT+0800', // Ensure uniqueness and length less than 50
+    distractionFreeMode: false, // Facebook-like distraction free mode
+    perPage: 10 ,
+    pagerDirection: 'last',
+    createIssueManually: false ,
+    language: 'en'
+  });
+  gitalk.render('gitalk-container');
+
+  var gtFolded = () => {
+    setTimeout(function() {
+      let markdownBody = document.getElementsByClassName("markdown-body");
+      let list = Array.from(markdownBody);
+      list.forEach(item => {
+        if (item.clientHeight > 250) {
+          item.classList.add('gt-comment-body-folded');
+          item.style.maxHeight = '250px';
+          item.title = 'Click to Expand';
+          item.onclick = function() {
+            item.classList.remove('gt-comment-body-folded');
+            item.style.maxHeight = '';
+            item.title = '';
+            item.onclick = null;
+          };
+        }
+      })
+    }, 800);
+  }
+</script>
+
+<!-- gitalk end -->
+
+
+
+<!-- 2. gitment comment -->
+
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#一、概述"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、概述</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#高速缓存"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">高速缓存</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#内存模型"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">内存模型</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#二、Java内存模型"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">二、Java内存模型</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Java内存模型规定"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">Java内存模型规定</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#内存间交互操作"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">内存间交互操作</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#交互八种操作"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">交互八种操作</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#先行发生原则"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">先行发生原则</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#原子性、可见性、有序性"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">原子性、可见性、有序性</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#三、Java与线程"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">三、Java与线程</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#线程实现的三种方式"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">线程实现的三种方式</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Java线程调度的两种方式"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">Java线程调度的两种方式</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#线程的五种状态"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">线程的五种状态</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#参考"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">参考</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#感谢阅读"><span class="toc-nav-number"></span> <span class="toc-nav-text">感谢阅读</span></a>
+        
+        </div>
+      </aside>
+    
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#JVM" title="JVM">JVM</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://v-vincen.life/" target="_blank">V_Vincen</a>
+          </li>
+          
+          <li>
+            <a href="http://huangxuan.me" target="_blank">Hux Blog</a>
+          </li>
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+          <li>
+            <a href="https://yexua.github.io/" target="_blank">yexua</a>
+          </li>
+          
+          <li>
+            <a href="https://snailclimb.gitee.io/javaguide/#/" target="_blank">JavaGuide</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/notes/%E5%89%91%E6%8C%87%20Offer%20%E9%A2%98%E8%A7%A3%20-%20%E7%9B%AE%E5%BD%951" target="_blank">剑指Offer</a>
+          </li>
+          
+          <li>
+            <a href="http://cyc2018.gitee.io/cs-notes/#/" target="_blank">技术面试必备基础知识</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+	<!-- Footer (contains ThemeColor、viewer) -->
+	<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/Github-yuteng">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          余腾
+          2020
+          <br>
+          Theme by
+          <a href="http://beantech.org" target="_blank" rel="noopener">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a href="https://v-vincen.life/" target="_blank" rel="noopener">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+<!-- jQuery -->
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script type="text/javascript" src="/js/hux-blog.min.js"></script>
+
+<!-- catalog -->
+<script type="text/javascript" async="true" src="/js/catalog.js?v=1.0.0"></script>
+
+<!-- totop(rocket) -->
+<script type="text/javascript" async="true" src="/js/totop.js?v=1.0.0"></script>
+
+<!-- Busuanzi JavaScript -->
+<script type="text/javascript" async="true" src="/js/busuanzi.pure.mini.js"></script>
+
+
+  <!-- Scroll start -->
+  <script type="text/javascript" src="/js/scroll.js"></script>
+  <!-- Scroll end -->
+
+
+
+  <!-- ThemeColor start -->
+  <script type="text/javascript" src="/js/themecolor.js"></script>
+  <!-- ThemeColor end -->
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  <script type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+  <script type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){ hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if($('#tag_cloud').length !== 0){ async("http://yoursite-url/js/jquery.tagcloud.js",function(){ $.fn.tagcloud.defaults = { //size: {start: 1, end: 1, unit: 'em'}, color: {start:
+'#bbbbee', end: '#0085a1'}, }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+	<!-- Search -->
+	
+	<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/ziploader.js"></script>
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+	
+
+	<!-- Image to hack wechat -->
+	<!-- <img src="http://yoursite-url/img/icon_wechat.png" width="0" height="0" /> -->
+	<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
